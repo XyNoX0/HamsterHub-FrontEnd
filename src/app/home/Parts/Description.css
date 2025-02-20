@@ -1,0 +1,133 @@
+.description {
+    display: flex;
+    width: 100%;
+    background-color: var(--off-white);
+    color: var(--navy);
+    z-index: 2;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    opacity: 0;
+    animation: opacityIn 0.8s 1.4s forwards;
+}
+
+.nsc-video-desktop {
+    border-radius: 25px;
+}
+
+.nsc-video-mobile {
+    display: none;
+}
+
+.description .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+
+    /* img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    } */
+}
+
+.des-text-wrap {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-btn {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 40px;
+    justify-self: center;
+    margin: 1rem;
+    width: auto;
+    height: 1.6rem;
+    padding: 0 20px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.des-overlay {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 0 0 1rem 0;
+    width: 40%;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.des-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+.des-links a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 40px;
+    height: 1.6rem;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.des-links .post-trans {
+    background-color: var(--off-white);
+    font-weight: 400;
+    color: var(--blue);
+}
+
+/* Media Query for screen width less than 1000px */
+@media (max-width: 1000px) {
+    .nsc-video-desktop {
+        display: none;
+    }
+
+    .nsc-video-mobile {
+        display: block;
+        width: 90vw;
+    }
+
+    .description {
+        flex-direction: column;
+        /* Stack the panels vertically */
+    }
+
+    .des-overlay {
+        width: 80%;
+    }
+
+    .des-text-wrap {
+        width: 100%;
+    }
+}

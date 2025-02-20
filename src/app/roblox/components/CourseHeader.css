@@ -1,0 +1,101 @@
+.Unity-Header {
+    width: 100%;
+    height: max-content;
+    background-color: var(--off-white);
+}
+
+.Img-mobile {
+    display: none;
+}
+
+.Header {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.Header-Detail {
+    h3 {
+        margin-top: 1%;
+        margin-left: 1%;
+        font-size: 1rem;
+    }
+
+    p {
+        margin: auto;
+        width: 85%;
+        font-size: 0.7rem;
+    }
+}
+
+.space {
+    padding: 5px;
+}
+
+.Header-Roblox-Image {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    animation: sizeInCourse 1s 0.4s forwards;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.Header-Detail-Box {
+    padding: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.Detail-Box {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.Header-Detail-Box2 {
+    padding: 0.7rem;
+    width: 50%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .Img-desktop {
+        display: none;
+    }
+    .Img-mobile {
+        display: block;
+    }
+    .Header-Roblox-Image {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        animation: sizeInCourse 1s 0.4s forwards;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .Detail-Box {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .Header-Detail-Box2 {
+        padding: 0.7rem;
+        width: 95%;
+        margin-left: 20px;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,159 @@
+.post {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center; /* Center items horizontally */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure it takes up full width */
+  height: auto; /* Let the height adjust based on content */
+  overflow: hidden;
+  position: relative;
+}
+
+.post-item, .post-img  {
+  width: 100%; /* Ensure each item takes up full width of the parent */
+  margin-bottom: 8px; /* Add space between items */
+  position: relative; /* To position the overlay on top of the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+} 
+.post-text-panel {
+  background-color: var(--off-white);
+  color: white;
+  z-index: 2;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.post-text {
+  position: absolute;
+  color: black;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  font-size: 2rem;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  h3{
+    font-size: 1rem;
+  }
+}
+
+.post-text.visible {
+  opacity: 1; /* Make it visible */
+  visibility: visible; /* Ensure it becomes interactable */
+
+}
+.post-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  pointer-events: none;
+}
+.post img {
+  width: 100%; /* Let the image fill the width of the container */
+  height: 800px; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  top: 0;
+}
+
+.post-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(122,122,122,0) 50%);
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 600;
+
+  }
+  p {
+    width: 80%;
+    max-width: 400px;
+    font-size: 0.6rem;
+    line-height: 1.3;
+    font-weight: 400;
+  
+  }
+}
+.post-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 40px;
+    height: 1.2rem;
+    padding: 0 20px;
+    font-size: 0.6rem;
+    font-weight: 500;
+    transition: 0.2s;
+  }
+  .post-trans {
+    background-color: white;
+    font-weight: 600;
+    color: var(--blue);
+  }
+}
+.post-links a:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  .post img {
+    height: 600px;
+  }
+  .post-overlay{
+    height: 600px;
+  }
+
+
+}
+@media (max-width: 1000px) {
+  .post-text-panel {
+    grid-template-columns: 1fr;
+  }
+}

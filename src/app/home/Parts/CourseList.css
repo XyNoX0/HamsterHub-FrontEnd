@@ -1,0 +1,145 @@
+.course-not-found {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-gray);
+
+    h1 {
+        font-size: 1rem;
+        color: white;
+        padding: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+        background-color: var(--blue);
+        padding: 0.2rem 0.4rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.course-intel-img{
+    margin-right: 10px;
+}
+
+.course-open-content {
+    width: 100%;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.content-open-header {
+    font-size: 50px;
+}
+
+.course-open-list {
+    padding: 0.8rem;
+
+    h4 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.course-intel-price {
+    color: rgb(21, 175, 21);
+}
+
+.course-intel-date {
+    color: rgb(28, 63, 216);
+}
+
+.course-intel-time {
+    color: rgb(84, 28, 216);
+}
+
+.course-intel {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0.3rem;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.course-intel-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-intel-bottom {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.more-open {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+    background-color: var(--blue);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.space {
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .content-open-header {
+        font-size: 35px;
+    }
+    .course-open-content {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .course-intel-img{
+        margin-right: 15px;
+    }
+
+    .course-open-list {
+        padding: 0.3rem;
+    
+        h4 {
+            font-size: 22px;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+    .course-intel {
+        gap: 10px; 
+    }
+    .course-intel-bottom{
+        display: inline-block;
+    }
+
+    .course-intel-img {
+        flex-shrink: 0; 
+    }
+
+    .more-open {
+        display: none;
+    }
+}

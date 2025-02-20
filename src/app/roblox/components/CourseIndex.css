@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+:target {
+    scroll-margin-top: 30vh; /* Adjusts the scroll position so the target is in the middle */
+}
+
+.Index-Main-Box {
+    background-color: var(--off-white);
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Arrange boxes vertically */
+    align-items: center; /* Center the boxes horizontally */
+}
+
+.Index-Detail-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: var(--off-white);
+    width: 30vw;
+    height: 20vh;
+    padding: 0.5rem;
+    margin: 10px auto; /* Add spacing between boxes */
+}
+
+.Index-Detail-Box a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: flex; /* Make link content flexible */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 100%; /* Make the link take the full width of the box */
+    height: 100%; /* Make the link take the full height of the box */
+}
+
+.Arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg); /* Create an arrow shape */
+    margin: 5px auto; /* Center the arrow between boxes */
+}
+
+@media screen and (max-width: 1200px) {
+    .Index-Detail-Box {
+        width: 30vw;
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Index-Detail-Box {
+        width: 70vw;
+        height: 15vh;
+    }
+}
+

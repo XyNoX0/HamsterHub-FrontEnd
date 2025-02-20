@@ -1,0 +1,1478 @@
+[
+  {
+    "courseDetail": {
+      "id": "94202",
+      "no": "942",
+      "course_path":"np",
+      "name": "National Project 2025",
+      "description": "พัฒนาผลงานสู่การแข่งระดับประเทศใน 9 เดือน",
+      "cover": "/assets/np2.png",
+      "price": "19,990",
+      "discount":"19,990",
+      "promotion": "ภายใน 15 ธันวาคมนี้ใช้รหัสผู้แนะนำ \"2025\" ได้ราคาพิเศษ",
+      "date": "9 ม.ค. 68 - 22 ก.ย. 68 (จันทร์, พฤหัส)",
+      "time":"19:00-21:00",
+      "definition": "\"ความสนุก\" เป็นสำคัญและต่อเนื่อง ทะลายขีดจำกัดของน้องพัฒนาทักษะสู่ผลงานระดับประเทศ",
+      "book_link": "/apply/942"
+    },
+    "content": {
+      "content_title": "กระบวนการพัฒนาโปรเจค",
+      "content_description": "กระบวนการพัฒนาโปรเจค ใช้หลัก Software Engineering ผนวกเข้ากับประสบการณ์ออกแบบ ส่งมอบโครงการซอฟต์แวร์ขนาดใหญ่ให้บริษัทชั้นนำหลายแห่ง Simplify จนเหลือกระบวนการที่ง่าย แล้วพัฒนาโครงการให้น้องๆ จนได้ผลดีขึ้นมากในปีนี้",
+      "content_img": "/assets/NSC3.png",
+      "content_img_mobile": "/assets/NSC-mobile.png",
+      "img_description": "เริ่มด้วยความสนุก ออกแบบเป้าหมายร่วมกัน พัฒนาเส้นทางพัฒนาสู่การยกระดับผลงานสู่ระดับ Pro ด้วยการคุมคุณภาพทุกขั้นตอน แล้วนำไปใช้ประโยชน์ได้จริง",
+      "content_detail": [
+        {
+          "header": "Conceptual Design",
+          "content": "ออกแบบแนวคิดที่แตกต่าง หรือมีประโยชน์ชัดเจน นำไปสู่ชัยชนะร่วมกับผู้เชี่ยวชาญ"
+        },
+        {
+          "header": "Personal Coach",
+          "content": "เจาะลึกถึงจุดอ่อนและจุดแข็งของทีมงานทุกคน และปรับแนวการพัฒนาให้เข้ากับศักยภาพ"
+        },
+        {
+          "header": "Prototype",
+          "content": "สร้างต้นแบบเพื่อเก็บประสบการณ์การใช้งานและความคิดเห็นในกลุ่มผู้ทดสอบ"
+        },
+        {
+          "header": "Simulation",
+          "content": "จําลองสถานการณ์ให้เหมือนจริง ก่อนจะลงพื้นที่ทดสอบจริง"
+        },
+        {
+          "header": "UX/UI Design",
+          "content": "ออกแบบประสบการณ์ที่ดีที่สุดเพื่อให้ประทับใจผู้ใช้งาน"
+        },
+        {
+          "header": "เลือกเทคโนโลยีที่เหมาะกับตัวผลงาน",
+          "content": "เพื่อความเร็วการพัฒนาและคุณภาพผลงาน"
+        },
+        {
+          "header": "เข้าร่วมการแข่งโชว์ผลงานให้โลกรู้",
+          "content": "ในระการระดับประเทศขึ้นไปเช่น NSC, YSC, Thailand Game Show, Global Game Jam, The New Gen และอื่น"
+        },
+        {
+          "header": "Agile Techniques",
+          "content": "เทคนิคค่อยๆ พัฒนาทีละส่วนและเก็บรายละเอียดแบบมืออาชีพ"
+        },
+        {
+          "header": "พัฒนาผลงานแล้วนำขึ้น Store",
+          "content": "เก็บรายละเอียดจนสมบูรณ์ เข้าถึงผู้คนทั้งโลกและอาจสร้างรายได้ด้วย"
+        }
+      ]
+    },
+    "get": {
+      "get_video": "/assets/WhoWeAre.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "👨‍🏫 ฝึกกับผู้เชี่ยวชาญ",
+          "description": "ฝึกกับทีมงานผู้ปั้นน้องๆ ที่ได้เข้ารอบชิง 7 ผลงาน ใน NSC-2024"
+        },
+        {
+          "title": "📂 ผลงาน เข้ารอบ Portfolio",
+          "description": "ผลงานที่มั่นใจเข้ารอบ Port + ฝีมือระดับน้องๆ วิศวะคอมฯ"
+        },
+        {
+          "title": "🏆 เข้าแข่งขันรายการระดับประเทศ",
+          "description": "เข้าร่วมแข่งขันรายการที่เลือกสรร up ประสบการณ์เทพๆ"
+        },
+        {
+          "title": "🎉 ฝึกทำงานเป็นทีม",
+          "description": "ฝึกทำงานเป็นทีม ได้แก้ปัญหาพร้อมเพื่อนๆ"
+        },
+        {
+          "title": "🌟 ทักษะสำคัญ",
+          "description": "ทักษะสำคัญในโลกเทคโนโลยีที่ทำให้น้องได้เปรียบ"
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "แผนการตั้งแต่พื้นฐานจำเป็น สร้างความแตกต่างสู่ผลงานสุดยอดของประเทศใน 9 เดือน พร้อมโปรแกรมการแข่งขันที่น่าสนใจทั้งปี 2025",
+      "timeline_img": "/assets/npimg.png",
+      "timeline_list": [
+        {
+          "title": "Conceptual Design",
+          "topics": [
+            "Inspiration",
+            "Buddy System",
+            "Story Telling",
+            "Gameplay & Mechanic Design (Game)",
+            "Conceptual Design",
+            "Global Game Jam Competition"
+          ]
+        },
+        {
+          "title": "Storyboard Design",
+          "topics": [
+            "Workflow",
+            "Storyboard Design"
+          ]
+        },
+        {
+          "title": "Foundation",
+          "topics": [
+            "Basic Programming with C#",
+            "Unity",
+            "Basic Modeling with Blender",
+            "Animation",
+            "Basic UI & UX"
+          ]
+        },
+        {
+          "title": "Mini Project",
+          "topics": [
+            "Mini-Team Setup",
+            "Intermediate C# Programming",
+            "Mini Project Design"
+          ]
+        },
+        {
+          "title": "Development",
+          "topics": [
+            "Advanced C# Programming",
+            "Mini Project Presentation"
+          ]
+        },
+        {
+          "title": "Teamwork",
+          "topics": [
+            "Team Setup",
+            "Project Management",
+            "Hamster Hub Game Jam#5"
+          ]
+        },
+        {
+          "title": "Project Development",
+          "topics": [
+            "OOP Concept",
+            "Class & Object",
+            "Advanced Level Design",
+            "Project Design",
+            "National Software Contest (NSC-2025)"
+          ]
+        },
+        {
+          "title": "Basic Visual Effect",
+          "topics": [
+            "Block-base Programming",
+            "Shader Graph",
+            "Lighting & Visual Effect"
+          ]
+        },
+        {
+          "title": "Advanced Graphics",
+          "topics": [
+            "Advanced Terrain",
+            "Advanced Lighting & Shader",
+            "Advanced Visual Effect",
+            "Post Processing",
+            "Final Presentation"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "mrCITY",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/mrCITY.PNG",
+        "content": "https://nj.dekhub.com/public/videos/mrCITY.mp4"
+      },
+      {
+        "title": "Beam",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Beam.png",
+        "content": "https://nj.dekhub.com/public/videos/Beam.mp4"
+      },
+      {
+        "title": "Veggie Dash",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Veggie Dash.png",
+        "content": "https://nj.dekhub.com/public/videos/Veggie%20Dash.mp4"
+      },
+      {
+        "title": "ขนมปัง",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Knompang.png",
+        "content": "https://nj.dekhub.com/public/videos/Knompang.mp4"
+      },
+      {
+        "title": "wOof",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/wOof.png",
+        "content": "https://nj.dekhub.com/public/videos/wOof.mp4"
+      },
+      {
+        "title": "Pang",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Pang.png",
+        "content": "https://nj.dekhub.com/public/videos/Pang.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "93501",
+      "no": "935",
+      "course_path":"nsc",
+      "name": "",
+      "description": "",
+      "cover_desktop": "https://nj.dekhub.com/public/imgs/NSC.png",
+      "cover_mobile": "https://nj.dekhub.com/public/imgs/NSCBannerMobile.png",
+      "price": "7990",
+      "discount":"5990",
+      "promotion": "",
+      "date": "17 มี.ค.-12 พ.ค.(จันทร์ พุธ ศุกร์)",
+      "time":"19:00-21:00",
+      "definition": "พัฒนาด้วยหลัก Software Engineering สู่ผลงานคุณภาพ แค่น้องสนใจ ไม่ต้องมีพื้นฐานก็ทำได้",
+      "book_link": "/apply/935"
+    },
+    "content": {
+      "content_title": "กระบวนการพัฒนา Software Project",
+      "content_description": "ฝึกสร้างความแตกต่าง เหนือชั้น เพื่อวาง Concept ผนวกเข้ากับประสบการณ์ออกแบบ ส่งมอบโครงการซอฟต์แวร์ขนาดใหญ่ให้บริษัทชั้นนำหลายแห่ง ต่อยอดจากผลงานระดับโลก Simplify จนเหลือกระบวนการที่ง่าย แล้วพัฒนาโครงการให้น้องๆ จนได้ผลดี สู่ความเป็นมืออาชีพและรางวัลมากมายจากรายการต่างๆ",
+      "content_img": "/assets/NSC3.png",
+      "content_img_mobile": "/assets/NSC-mobile.png",
+      "img_description": "เริ่มด้วยความสนุก ออกแบบเป้าหมายร่วมกัน พัฒนาเส้นทางพัฒนาสู่การยกระดับผลงานสู่ระดับ Pro ด้วยการคุมคุณภาพทุกขั้นตอน แล้วนำไปใช้ประโยชน์ได้จริง",
+      "content_detail": [
+        {
+          "header": "Conceptual Design",
+          "content": "ออกแบบแนวคิดที่แตกต่าง หรือมีประโยชน์ชัดเจน นำไปสู่ชัยชนะร่วมกับผู้เชี่ยวชาญ"
+        },
+        {
+          "header": "Personal Coach",
+          "content": "เจาะลึกถึงจุดอ่อนและจุดแข็งของทีมงานทุกคน และปรับแนวการพัฒนาให้เข้ากับศักยภาพ"
+        },
+        {
+          "header": "Prototype",
+          "content": "สร้างต้นแบบเพื่อเก็บประสบการณ์การใช้งานและความคิดเห็นในกลุ่มผู้ทดสอบ"
+        },
+        {
+          "header": "Simulation",
+          "content": "จําลองสถานการณ์ให้เหมือนจริง ก่อนจะลงพื้นที่ทดสอบจริง"
+        },
+        {
+          "header": "UX/UI Design",
+          "content": "ออกแบบประสบการณ์ที่ดีที่สุดเพื่อให้ประทับใจผู้ใช้งาน"
+        },
+        {
+          "header": "เลือกเทคโนโลยีที่เหมาะกับตัวผลงาน",
+          "content": "เพื่อความเร็วการพัฒนาและคุณภาพผลงาน"
+        },
+        {
+          "header": "เข้าร่วมการแข่งโชว์ผลงานให้โลกรู้",
+          "content": "ในระการระดับประเทศขึ้นไปเช่น NSC, YSC, Thailand Game Show, Global Game Jam, The New Gen และอื่น"
+        },
+        {
+          "header": "Agile Techniques",
+          "content": "เทคนิคค่อยๆ พัฒนาทีละส่วนและเก็บรายละเอียดแบบมืออาชีพ"
+        },
+        {
+          "header": "พัฒนาผลงานแล้วนำขึ้น Store",
+          "content": "เก็บรายละเอียดจนสมบูรณ์ เข้าถึงผู้คนทั้งโลกและอาจสร้างรายได้ด้วย"
+        }
+      ]
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/NSC2025.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "👨‍🏫 ฝึกกับผู้เชี่ยวชาญ",
+          "description": "ฝึกกับทีมงานผู้ปั้นน้องๆ ที่ได้เข้ารอบชิง 7 ผลงาน ใน NSC-2024"
+        },
+        {
+          "title": "📂 ผลงาน เข้ารอบ Portfolio",
+          "description": "ผลงานที่มั่นใจเข้ารอบ Port + ฝีมือระดับน้องๆ วิศวะคอมฯ"
+        },
+        {
+          "title": "🏆 เข้าแข่งขันรายการระดับประเทศ",
+          "description": "เข้าร่วมแข่งขันรายการที่เลือกสรร up ประสบการณ์เทพๆ"
+        },
+        {
+          "title": "🎉 ฝึกทำงานเป็นทีม",
+          "description": "ฝึกทำงานเป็นทีม ได้แก้ปัญหาพร้อมเพื่อนๆ"
+        },
+        {
+          "title": "🌟 ทักษะสำคัญ",
+          "description": "ทักษะสำคัญในโลกเทคโนโลยีที่ทำให้น้องได้เปรียบ"
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "แผนการตั้งแต่พื้นฐานที่จำเป็น สร้างความแตกต่างสู่ผลงานสุดยอดของประเทศ พร้อมโปรแกรมการแข่งขันที่น่าสนใจ",
+      "timeline_img": "/assets/npimg.png",
+      "timeline_list": [
+        {
+          "title": "",
+          "topics": [
+            "Event : Game Deep SeeK",
+            "Conceptual Design",
+            "Inspiration",
+            "Story Telling",
+            "Gameplay & Mechanic Design (Game)",
+            "Demo Idea",
+            "*Track 1 : Basic Unity สำหรับผู้เริ่มต้น",
+            "*Track 2 : Basic C# สำหรับสาย Coding"
+          ]
+        },
+        {
+          "title": "",
+          "topics": [
+            "Teamwork",
+            "Storyboard",
+            "Presentation",
+            "Proposal",
+            "*Track 1 : Blender > Modelling, Animation",
+            "*Track 2 : Advanced C#"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "mrCITY",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/mrCITY.PNG",
+        "content": "https://nj.dekhub.com/public/videos/mrCITY.mp4"
+      },
+      {
+        "title": "Beam",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Beam.png",
+        "content": "https://nj.dekhub.com/public/videos/Beam.mp4"
+      },
+      {
+        "title": "Veggie Dash",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Veggie Dash.png",
+        "content": "https://nj.dekhub.com/public/videos/Veggie%20Dash.mp4"
+      },
+      {
+        "title": "ขนมปัง",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Knompang.png",
+        "content": "https://nj.dekhub.com/public/videos/Knompang.mp4"
+      },
+      {
+        "title": "wOof",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/wOof.png",
+        "content": "https://nj.dekhub.com/public/videos/wOof.mp4"
+      },
+      {
+        "title": "Pang",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Pang.png",
+        "content": "https://nj.dekhub.com/public/videos/Pang.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "81102",
+      "no": "811",
+      "course_path":"python",
+      "name": "Python Adventure Camp",
+      "description": "Important basic skills, to be professional",
+      "cover": "https://nj.dekhub.com/public/imgs/header2.png",
+      "price": "990",
+      "discount": "990",
+      "promotion": "",
+      "date": "28,30 ม.ค./4,6 ก.พ.",
+      "definition": "",
+      "time":"17.00-19.00",
+      "book_link": "/apply/811"
+    },
+    "content": {
+      "content_title": "Let's start the Adventure",
+      "content_description": "เรื่องราวเริ่มต้นจากครอบครัวถูกปล้น พ่อแม่ถูกโจรสลัดฆ่าตาย สฟิงค์หนีจากเกาะเล็กๆ ห่างไกล เด็กชายที่เคยมีฝันอยากเป็นโจรสลัด เพราะตัวเองได้ฝึกฝีมือการเดินเรือจากพ่อ กลับมีฝันร้ายและต้องการเก่งกว่านี้เพื่อช่วยคนที่ช่วยเหลือตัวเองไม่ได้ ในโลกแห่งความชั่วร้าย สฟิงค์ต้องผ่านความท้าทายจากสัตว์ร้าย และผู้คนที่อยู่ท่ามกลางการแย่งชิง ท่ามกลางข่าวลือว่ามีสมบัติมีค่าจากเรือที่จมลงไปพร้อมเรือโจรสลัดกลางทะเลแห่งนึง และนั่นคือเป้าหมายการเดินทางครั้งนี้",
+      "content_img": "https://nj.dekhub.com/public/imgs/Python-Detail.png",
+      "content_img_mobile": "https://nj.dekhub.com/public/imgs/Python-Detail.png",
+      "img_description": "น้องๆ จะได้รับภารกิจเพื่อฝึกวิชาในเกาะของตัวเอง ก่อนจะได้เรือออกเดินทางสู่โลกกว้าง การฝึก Python จะเริ่มจากพื้นฐานง่ายๆ ที่มีประโยชน์มากต่อการผจญภัย ค่อยๆ ไต่ระดับสู่การเป็นยอดนักรบ กำจัด monster และค้นหาอาวุธที่สาปสูญพร้อมสมบัติล้ำค่ามากมายในท้องทะเลอันซับซ้อน",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "👨‍🏫 ทักษะที่ฝึกได้ยากจากที่อื่น เช่นการค้นหา ศึกษาความรู้จากแหล่งความรู้ทั่วโลก",
+          "description": ""
+        },
+        {
+          "title": "📂 ได้เปลี่ยนความกลัวเป็นความมั่นใจ แถมสนุกกับการแก้ปัญหาที่ซับซ้อน",
+          "description": ""
+        },
+        {
+          "title": "🏆 แน่ล่ะ น้องจะได้สนุกกับเพื่อนใหม่ๆ ทั้งแข่งและขิง",
+          "description": ""
+        },
+        {
+          "title": "🎉 ที่สำคัญคือน้องจะได้ทำเองทั้งหมดจริงๆ ทำของจริง ใช้ประโยชน์ได้จริง",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "เตรียมพื้นฐานให้พร้อม สร้างความได้เปรียบในเรื่องที่ซับซ้อนก่อนเข้ามหาวิทยาลัย มั่นใจได้ว่าเรียนจบ ทั้งเกษตร จุฬา บางมด ลาดกระบัง เชียงใหม่ ขอนแก่น สงขลานครินทร์ ทั้งวิทยาการคอม และวิศวกรรมคอมพิวเตอร์🎯",
+      "timeline_img": "https://nj.dekhub.com/public/imgs/Python-Map.png",
+      "timeline_list": [
+        {
+          "title": "Day 1",
+          "topics": [
+            "ความสำคัญและชนิดของข้อมูล",
+            "เข้าใจข้อมูลได้ชนิดต่างๆ ได้อย่างถูกต้อง",
+            "ตัวแปร และการใช้งานที่ถูกต้อง",
+            "ประยุกต์แสดงผลข้อมูลชนิดต่างๆ ได้"
+          ]
+        },
+        {
+          "title": "Day 2",
+          "topics": [
+            "เงื่อนไข/Condition ทำให้โปรแกรมฉลาดด้วย if else",
+            "เข้าใจการทำงานของเงื่อนไขต่างๆ",
+            "สร้างเงื่อนไขให้คอมพิวเตอร์ตัดสินใจได้อย่างถูกต้อง",
+            "สร้างเงื่อนไขที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "Day 3",
+          "topics": [
+            "การทำซ้ำ และพื้นฐานอัลกอริทึม / Loop",
+            "เข้าใจการทำงานของและโครงสร้างของ for และ while",
+            "ฝึกสร้าง sequence แสดงค่าข้อมูลต่อเนื่องได้",
+            "ใช้ Loop แก้ปัญหาที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "Day 4",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "App Store",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-4.png",
+        "content": "https://nj.dekhub.com/public/videos/python-4.mp4"
+      },
+      {
+        "title": "Poke",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-3.png",
+        "content": "https://nj.dekhub.com/public/videos/python-3.mp4"
+      },
+      {
+        "title": "เปรม",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-1.png",
+        "content": "https://nj.dekhub.com/public/videos/python-1.mp4"
+      },
+      {
+        "title": "Kabigon",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-2.png",
+        "content": "https://nj.dekhub.com/public/videos/python-2.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "81102",
+      "no": "811",
+      "course_path":"python-2",
+      "name": "Python Adventure Camp (Online)",
+      "description": "Important basic skills, to be professional ",
+      "cover": "https://nj.dekhub.com/public/imgs/Python-5.png",
+      "price": "990",
+      "discount": "990",
+      "promotion": "",
+      "date": "3,7,10,14 ก.พ.",
+      "definition": "",
+      "time":"17.00-19.00",
+      "book_link": "/apply/811"
+    },
+    "content": {
+      "content_title": "Let's start the Adventure",
+      "content_description": "เรื่องราวเริ่มต้นจากครอบครัวถูกปล้น พ่อแม่ถูกโจรสลัดฆ่าตาย สฟิงค์หนีจากเกาะเล็กๆ ห่างไกล เด็กชายที่เคยมีฝันอยากเป็นโจรสลัด เพราะตัวเองได้ฝึกฝีมือการเดินเรือจากพ่อ กลับมีฝันร้ายและต้องการเก่งกว่านี้เพื่อช่วยคนที่ช่วยเหลือตัวเองไม่ได้ ในโลกแห่งความชั่วร้าย สฟิงค์ต้องผ่านความท้าทายจากสัตว์ร้าย และผู้คนที่อยู่ท่ามกลางการแย่งชิง ท่ามกลางข่าวลือว่ามีสมบัติมีค่าจากเรือที่จมลงไปพร้อมเรือโจรสลัดกลางทะเลแห่งนึง และนั่นคือเป้าหมายการเดินทางครั้งนี้",
+      "content_img": "https://nj.dekhub.com/public/videos/Python-Detail.mp4",
+      "content_img_mobile": "https://nj.dekhub.com/public/videos/Python-Detail.mp4",
+      "img_description": "น้องๆ จะได้รับภารกิจเพื่อฝึกวิชาในเกาะของตัวเอง ก่อนจะได้เรือออกเดินทางสู่โลกกว้าง การฝึก Python จะเริ่มจากพื้นฐานง่ายๆ ที่มีประโยชน์มากต่อการผจญภัย ค่อยๆ ไต่ระดับสู่การเป็นยอดนักรบ กำจัด monster และค้นหาอาวุธที่สาปสูญพร้อมสมบัติล้ำค่ามากมายในท้องทะเลอันซับซ้อน",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "👨‍🏫 ทักษะที่ฝึกได้ยากจากที่อื่น เช่นการค้นหา ศึกษาความรู้จากแหล่งความรู้ทั่วโลก",
+          "description": ""
+        },
+        {
+          "title": "📂 ได้เปลี่ยนความกลัวเป็นความมั่นใจ แถมสนุกกับการแก้ปัญหาที่ซับซ้อน",
+          "description": ""
+        },
+        {
+          "title": "🏆 แน่ล่ะ น้องจะได้สนุกกับเพื่อนใหม่ๆ ทั้งแข่งและขิง",
+          "description": ""
+        },
+        {
+          "title": "🎉 ที่สำคัญคือน้องจะได้ทำเองทั้งหมดจริงๆ ทำของจริง ใช้ประโยชน์ได้จริง",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "เตรียมพื้นฐานให้พร้อม สร้างความได้เปรียบในเรื่องที่ซับซ้อนก่อนเข้ามหาวิทยาลัย มั่นใจได้ว่าเรียนจบ ทั้งเกษตร จุฬา บางมด ลาดกระบัง เชียงใหม่ ขอนแก่น สงขลานครินทร์ ทั้งวิทยาการคอม และวิศวกรรมคอมพิวเตอร์🎯",
+      "timeline_img": "https://nj.dekhub.com/public/imgs/Python-Map.png",
+      "timeline_list": [
+        {
+          "title": "Day 1",
+          "topics": [
+            "ความสำคัญและชนิดของข้อมูล",
+            "เข้าใจข้อมูลได้ชนิดต่างๆ ได้อย่างถูกต้อง",
+            "ตัวแปร และการใช้งานที่ถูกต้อง",
+            "ประยุกต์แสดงผลข้อมูลชนิดต่างๆ ได้"
+          ]
+        },
+        {
+          "title": "Day 2",
+          "topics": [
+            "เงื่อนไข/Condition ทำให้โปรแกรมฉลาดด้วย if else",
+            "เข้าใจการทำงานของเงื่อนไขต่างๆ",
+            "สร้างเงื่อนไขให้คอมพิวเตอร์ตัดสินใจได้อย่างถูกต้อง",
+            "สร้างเงื่อนไขที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "Day 3",
+          "topics": [
+            "การทำซ้ำ และพื้นฐานอัลกอริทึม / Loop",
+            "เข้าใจการทำงานของและโครงสร้างของ for และ while",
+            "ฝึกสร้าง sequence แสดงค่าข้อมูลต่อเนื่องได้",
+            "ใช้ Loop แก้ปัญหาที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "Day 4",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "App Store",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-4.png",
+        "content": "https://nj.dekhub.com/public/videos/python-4.mp4"
+      },
+      {
+        "title": "Poke",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-3.png",
+        "content": "https://nj.dekhub.com/public/videos/python-3.mp4"
+      },
+      {
+        "title": "เปรม",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-1.png",
+        "content": "https://nj.dekhub.com/public/videos/python-1.mp4"
+      },
+      {
+        "title": "Kabigon",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-2.png",
+        "content": "https://nj.dekhub.com/public/videos/python-2.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "86101",
+      "no": "861",
+      "course_path":"python-3",
+      "name": "Python Adventure Camp (Onsite)",
+      "description": "Important basic skills, to be professional ",
+      "cover": "https://nj.dekhub.com/public/imgs/PythonOnsite.png",
+      "price": "990",
+      "discount": "990",
+      "promotion": "",
+      "date": "3,7,10,14 ก.พ.",
+      "definition": "",
+      "time":"17.00-19.00",
+      "book_link": "/apply/861"
+    },
+    "content": {
+      "content_title": "Let's start the Adventure",
+      "content_description": "เรื่องราวเริ่มต้นจากครอบครัวถูกปล้น พ่อแม่ถูกโจรสลัดฆ่าตาย สฟิงค์หนีจากเกาะเล็กๆ ห่างไกล เด็กชายที่เคยมีฝันอยากเป็นโจรสลัด เพราะตัวเองได้ฝึกฝีมือการเดินเรือจากพ่อ กลับมีฝันร้ายและต้องการเก่งกว่านี้เพื่อช่วยคนที่ช่วยเหลือตัวเองไม่ได้ ในโลกแห่งความชั่วร้าย สฟิงค์ต้องผ่านความท้าทายจากสัตว์ร้าย และผู้คนที่อยู่ท่ามกลางการแย่งชิง ท่ามกลางข่าวลือว่ามีสมบัติมีค่าจากเรือที่จมลงไปพร้อมเรือโจรสลัดกลางทะเลแห่งนึง และนั่นคือเป้าหมายการเดินทางครั้งนี้",
+      "content_img": "https://nj.dekhub.com/public/videos/Python-Detail.mp4",
+      "content_img_mobile": "https://nj.dekhub.com/public/videos/Python-Detail.mp4",
+      "img_description": "น้องๆ จะได้รับภารกิจเพื่อฝึกวิชาในเกาะของตัวเอง ก่อนจะได้เรือออกเดินทางสู่โลกกว้าง การฝึก Python จะเริ่มจากพื้นฐานง่ายๆ ที่มีประโยชน์มากต่อการผจญภัย ค่อยๆ ไต่ระดับสู่การเป็นยอดนักรบ กำจัด monster และค้นหาอาวุธที่สาปสูญพร้อมสมบัติล้ำค่ามากมายในท้องทะเลอันซับซ้อน",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "👨‍🏫 ทักษะที่ฝึกได้ยากจากที่อื่น เช่นการค้นหา ศึกษาความรู้จากแหล่งความรู้ทั่วโลก",
+          "description": ""
+        },
+        {
+          "title": "📂 ได้เปลี่ยนความกลัวเป็นความมั่นใจ แถมสนุกกับการแก้ปัญหาที่ซับซ้อน",
+          "description": ""
+        },
+        {
+          "title": "🏆 แน่ล่ะ น้องจะได้สนุกกับเพื่อนใหม่ๆ ทั้งแข่งและขิง",
+          "description": ""
+        },
+        {
+          "title": "🎉 ที่สำคัญคือน้องจะได้ทำเองทั้งหมดจริงๆ ทำของจริง ใช้ประโยชน์ได้จริง",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "เตรียมพื้นฐานให้พร้อม สร้างความได้เปรียบในเรื่องที่ซับซ้อนก่อนเข้ามหาวิทยาลัย มั่นใจได้ว่าเรียนจบ ทั้งเกษตร จุฬา บางมด ลาดกระบัง เชียงใหม่ ขอนแก่น สงขลานครินทร์ ทั้งวิทยาการคอม และวิศวกรรมคอมพิวเตอร์🎯",
+      "timeline_img": "https://nj.dekhub.com/public/imgs/Python-Map.png",
+      "timeline_list": [
+        {
+          "title": "Day 1",
+          "topics": [
+            "ความสำคัญและชนิดของข้อมูล",
+            "เข้าใจข้อมูลได้ชนิดต่างๆ ได้อย่างถูกต้อง",
+            "ตัวแปร และการใช้งานที่ถูกต้อง",
+            "ประยุกต์แสดงผลข้อมูลชนิดต่างๆ ได้"
+          ]
+        },
+        {
+          "title": "Day 2",
+          "topics": [
+            "เงื่อนไข/Condition ทำให้โปรแกรมฉลาดด้วย if else",
+            "เข้าใจการทำงานของเงื่อนไขต่างๆ",
+            "สร้างเงื่อนไขให้คอมพิวเตอร์ตัดสินใจได้อย่างถูกต้อง",
+            "สร้างเงื่อนไขที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "Day 3",
+          "topics": [
+            "การทำซ้ำ และพื้นฐานอัลกอริทึม / Loop",
+            "เข้าใจการทำงานของและโครงสร้างของ for และ while",
+            "ฝึกสร้าง sequence แสดงค่าข้อมูลต่อเนื่องได้",
+            "ใช้ Loop แก้ปัญหาที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "Day 4",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "App Store",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-4.png",
+        "content": "https://nj.dekhub.com/public/videos/python-4.mp4"
+      },
+      {
+        "title": "Poke",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-3.png",
+        "content": "https://nj.dekhub.com/public/videos/python-3.mp4"
+      },
+      {
+        "title": "เปรม",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-1.png",
+        "content": "https://nj.dekhub.com/public/videos/python-1.mp4"
+      },
+      {
+        "title": "Kabigon",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/python-2.png",
+        "content": "https://nj.dekhub.com/public/videos/python-2.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "79001",
+      "no": "790",
+      "course_path":"unity",
+      "name": "Unity Hi-Def Render Pipeline(HDRP)",
+      "description": "สร้างเกม เขียนโปรแกรม สู่การสร้างผลงานยื่น Port",
+      "cover": "https://nj.dekhub.com/public/imgs/header3.png",
+      "price": "2490",
+      "discount": "2490",
+      "promotion": "",
+      "date": "4 - 26 ม.ค. 2568 (เฉพาะเสาร์ อาทิตย์)",
+      "definition": "เรียนรู้การสร้างเกมและฉากสมจริงในโลกของกราฟิกขั้นสูง!",
+      "book_link": "/apply/790"
+    },
+    "content": {
+      "content_title": "Intro",
+      "content_description": "เหมาะสำหรับน้องๆ ที่มีความฝันอยากเป็น Game Developer หรือ Game Designer! 🎮✨สำหรับน้องที่ใช้ Unity พอได้ละ อยาก up สู่ความเหมือนจริง กราฟฟิคระดับโปร คอร์สนี้คือคำตอบ! Unity HDRP (High Definition Render Pipeline) ฝึกตั้งแต่พื้นฐาน การจัดแสง วัสดุ ฉาก และบรรยากาศแบบ Realistic ที่จะทำให้ผลงานสมจริงแตกต่างจากงานทั่วไปชัดเจน",
+      "content_img": "https://nj.dekhub.com/public/videos/HDRP.mp4",
+      "content_img_mobile": "https://nj.dekhub.com/public/videos/HDRP.mp4",
+      "img_description": "น้องๆ จะได้รับภารกิจเพื่อฝึกวิชาในเกาะของตัวเอง ก่อนจะได้เรือออกเดินทางสู่โลกกว้าง การฝึก Python จะเริ่มจากพื้นฐานง่ายๆ ที่มีประโยชน์มากต่อการผจญภัย ค่อยๆ ไต่ระดับสู่การเป็นยอดนักรบ กำจัด monster และค้นหาอาวุธที่สาปสูญพร้อมสมบัติล้ำค่ามากมายในท้องทะเลอันซับซ้อน",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "ทักษะการใช้ HDRP ใน Unity เพื่อสร้างกราฟิกแบบ Realistic",
+          "description": ""
+        },
+        {
+          "title": "การจัดแสงและเงา ให้สมจริงในฉาก",
+          "description": ""
+        },
+        {
+          "title": "การสร้าง Material ด้วย PBR เพื่อให้วัตถุดูสมจริง",
+          "description": ""
+        },
+        {
+          "title": "การสร้าง Skybox และปรับท้องฟ้า ในฉาก",
+          "description": ""
+        },
+        {
+          "title": "เทคนิคการจัดฉากและ Environment ให้ดูสวยงามและดึงดูด",
+          "description": ""
+        },
+        {
+          "title": "Project Final ที่นำทุกอย่างมาประยุกต์ใช้",
+          "description": ""
+        },
+        {
+          "title": "ใบรับรองและผลงานใน Portfolio",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "",
+      "timeline_img": "https://nj.dekhub.com/public/imgs/Python-Map.png",
+      "timeline_list": [
+        {
+          "title": "วันที่ 1: พื้นฐาน HDRP และการตั้งค่าโปรเจค",
+          "topics": [
+            "ความสำคัญและชนิดของข้อมูล",
+            "เข้าใจข้อมูลได้ชนิดต่างๆ ได้อย่างถูกต้อง",
+            "ตัวแปร และการใช้งานที่ถูกต้อง",
+            "ประยุกต์แสดงผลข้อมูลชนิดต่างๆ ได้"
+          ]
+        },
+        {
+          "title": "วันที่ 2: ระบบแสงพื้นฐานใน HDRP",
+          "topics": [
+            "เงื่อนไข/Condition ทำให้โปรแกรมฉลาดด้วย if else",
+            "เข้าใจการทำงานของเงื่อนไขต่างๆ",
+            "สร้างเงื่อนไขให้คอมพิวเตอร์ตัดสินใจได้อย่างถูกต้อง",
+            "สร้างเงื่อนไขที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "วันที่ 3: การใช้งาน Material และ Shader ใน HDRP",
+          "topics": [
+            "การทำซ้ำ และพื้นฐานอัลกอริทึม / Loop",
+            "เข้าใจการทำงานของและโครงสร้างของ for และ while",
+            "ฝึกสร้าง sequence แสดงค่าข้อมูลต่อเนื่องได้",
+            "ใช้ Loop แก้ปัญหาที่ซับซ้อนได้"
+          ]
+        },
+        {
+          "title": "วันที่ 4: การใช้งาน Volume และ Light Volume",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        },
+        {
+          "title": "วันที่ 5: การสร้าง Skybox และการใช้ Sky and Fog Volume",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        },
+        {
+          "title": "วันที่ 6: Environment Volume และการตั้งค่า Scene",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        },
+        {
+          "title": "วันที่ 7: การจัดฉากแบบ Realistic และการสร้าง Environment",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        },
+        {
+          "title": "วันที่ 8: การปรับปรุง Scene และการทำ Final Render",
+          "topics": [
+            "ฝึกการประยุกต์ใช้เงื่อนไขกับการทำซ้ำ",
+            "เริ่มใช้ Loop หลายชั้นได้",
+            "บางทีเราอาจจะใช้ Nested Loop ในการแก้ปัญหาเชิงซ้อนได้"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "In",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/In.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/In.mp4"
+      },
+      {
+        "title": "Lolo",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Lolo.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Lolo.mp4"
+      },
+      {
+        "title": "Plum",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Plum.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Plum.mp4"
+      },
+      {
+        "title": "Slime",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Slime.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Slime.mp4"
+      },
+      {
+        "title": "Stang",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Stang.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Strang.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "77501",
+      "no": "775",
+      "course_path":"unity-2",
+      "name": "",
+      "description": "",
+      "cover": "https://nj.dekhub.com/public/imgs/2DToon.png",
+      "price": "4990",
+      "discount": "4990",
+      "promotion": "",
+      "date": "1 - 29 เม.ย.(จันทร์-ศุกร์ เว้นวันพุธ)",
+      "definition": "",
+      "time":"19.00-21.00",
+      "book_link": "/apply/775"
+    },
+    "content": {
+      "content_title": "🎮 เรียนสร้างเกม 2D ด้วย Unity! เริ่มจากพื้นฐาน สู่แนวเกมที่น้องเลือกเอง",
+      "content_description": "คอร์สนี้เหมาะสำหรับผู้เริ่มต้นที่ต้องการเรียนรู้พื้นฐานการพัฒนาเกมด้วย Unity ตั้งแต่ศูนย์! เราจะพาคุณเข้าใจระบบพื้นฐาน เช่น การควบคุมตัวละคร, ฟิสิกส์, UI, ระบบแอนิเมชัน และการจัดการฉาก เมื่อคุณมีพื้นฐานที่มั่นใจแล้ว คุณสามารถเลือกเส้นทางที่สนใจและเจาะลึกแนวเกมสุดฮิต ไม่ว่าจะเป็น Roguelite ที่ท้าทายและเต็มไปด้วยความแปลกใหม่ Visual Novel สำหรับการเล่าเรื่องสุดดราม่า RPG ที่มีระบบเควสและพัฒนาตัวละคร หรือ Point and Click ที่ให้คุณสร้างเกมผจญภัยไขปริศนา",
+      "content_img": "https://nj.dekhub.com/public/videos/GameJam_program.mp4",
+      "content_img_mobile": "https://nj.dekhub.com/public/videos/GameJam_program.mp4",
+      "img_description": "น้องๆ จะได้รับภารกิจเพื่อฝึกวิชาในเกาะของตัวเอง ก่อนจะได้เรือออกเดินทางสู่โลกกว้าง การฝึก Python จะเริ่มจากพื้นฐานง่ายๆ ที่มีประโยชน์มากต่อการผจญภัย ค่อยๆ ไต่ระดับสู่การเป็นยอดนักรบ กำจัด monster และค้นหาอาวุธที่สาปสูญพร้อมสมบัติล้ำค่ามากมายในท้องทะเลอันซับซ้อน",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "✅ ผู้เรียนจะสามารถสร้างเกม 2D ที่มีความหลากหลายได้",
+          "description": ""
+        },
+        {
+          "title": "🎮 มีความเข้าใจเกี่ยวกับการใช้งาน Unity 2D และการเขียน Script เบื้องต้น",
+          "description": ""
+        },
+        {
+          "title": "🌟 มีผลงานเกม 2D ที่สามารถนำไปเล่นได้ เป็นของตัวเอง พร้อมระบบพื้นฐานที่สามารถต่อยอดได้",
+          "description": ""
+        },
+        {
+          "title": "💾 สามารถ Export เกมเป็นไฟล์สำหรับ PC และแชร์ให้คนอื่นเล่นได้",
+          "description": ""
+        },
+        {
+          "title": "เรียนรู้ผ่านโปรเจ็กต์จริง พร้อมแนวทางพัฒนาให้เกมของคุณสมบูรณ์แบบ ไม่ว่าน้องจะอยากสร้างเกมแนวไหน คอร์สนี้จะช่วยให้น้องมีพื้นฐานที่แข็งแกร่ง และสามารถต่อยอดพัฒนาเกมในแบบของตัวเองได้ มาร่วมเป็นนักพัฒนาเกมไปด้วยกัน แล้วสร้างเกมในฝันให้เป็นจริง! 🚀🎮",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "",
+      "timeline_img": "",
+      "timeline_list": [
+        {
+          "title": "🔹 ครั้งที่ 1: ทำความรู้จักกับ Unity และการสร้าง Project",
+          "topics": [
+            "✅ ติดตั้งและตั้งค่า Unity",
+            "✅ องค์ประกอบหลักของ Unity (Scene, GameObject, Components)",
+            "✅ การนำเข้า Asset และการจัดการ Sprite",
+            "✅ Workshop: เริ่มต้นสร้างฉากหลักของเกม"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 2: การควบคุมตัวละครเบื้องต้น",
+          "topics": [
+            "✅ การเขียน C# เบื้องต้นที่จำเป็น",
+            "✅ ระบบ Input และการเคลื่อนที่ (2D Character Controller)",
+            "✅ การทำ Animation ด้วย Animator และ Animation Controller ",
+            "✅ Workshop: เพิ่มตัวละครและระบบควบคุ"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 3: การโต้ตอบกับสิ่งแวดล้อม",
+          "topics": [
+            "✅ การตรวจจับการชน (Colliders & Rigidbody 2D)",
+            "✅ ระบบการกดปุ่ม/เก็บไอเทม/เปิดประตู",
+            "✅ UI เบื้องต้น (Text, Buttons, Dialogue Box)",
+            "✅ Workshop: สร้างระบบโต้ตอบกับ NPC"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 4: ระบบเควส & การเปลี่ยนฉาก",
+          "topics": [
+            "✅ ระบบ Trigger Event และการเก็บเควส",
+            "✅ การเปลี่ยนฉาก (Scene Management) ",
+            "✅ Workshop: เพิ่มภารกิจพื้นฐานให้เกม"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 5: ระบบอินเวนทอรี และเสียงประกอบ",
+          "topics": [
+            "✅ การสร้างและจัดการ Inventory System",
+            "✅ ระบบเก็บไอเทมและใช้งาน",
+            "✅ การเพิ่มเสียงประกอบ (SFX, BGM)",
+            "✅ Workshop: เพิ่มไอเทมที่สามารถเก็บได้"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 6: การบันทึกและโหลดข้อมูล (Save/Load System)",
+          "topics": [
+            "✅ การใช้ PlayerPrefs และ JSON สำหรับบันทึกข้อมูล ",
+            "✅ การโหลดข้อมูลและจัดการ State ของเกม",
+            "✅ Workshop: เพิ่มระบบเซฟเกม"
+          ]
+        },
+        {
+          "title": "🔹 ตัวเลือก 1 Roguelite (ครั้งที่ 7-12)",
+          "topics": [
+            "✅ ระบบ Procedural Level Generation (สร้างฉากแบบสุ่ม)",
+            "✅ ระบบการต่อสู้ (Melee/Ranged Combat)",
+            "✅ ระบบความยากที่เพิ่มขึ้น (Scaling Difficulty) ",
+            "✅ การสร้างศัตรูและ AI เบื้องต้น"
+          ]
+        },
+        {
+          "title": "🔹 ตัวเลือก 2 Visual Novel (ครั้งที่ 7-12)",
+          "topics": [
+            "✅ ระบบแสดงข้อความและตัวเลือก (Dialogue System)",
+            "✅ ระบบ CG และตัวละครแสดงอารมณ์ (Character Expressions)",
+            "✅ การสร้างเส้นทางเนื้อเรื่องแบบแตกแขนง (Branching Storyline) ",
+            "✅ การเซฟและโหลดเนื้อเรื่อง"
+          ]
+        },
+        {
+          "title": "🔹 ตัวเลือก 3 RPG (ครั้งที่ 7-12)",
+          "topics": [
+            "✅ ระบบสกิลและค่าสถานะตัวละคร (Character Stats)",
+            "✅ ระบบต่อสู้ (Turn-Based หรือ Real-Time",
+            "✅ ระบบเควสและ NPC ที่มี Dialogue",
+            "✅ การสร้างระบบร้านค้าและไอเทม"
+          ]
+        },
+        {
+          "title": "🔹 ตัวเลือก 4 Point & Click (ครั้งที่ 7-12)",
+          "topics": [
+            "✅ ระบบการคลิกเพื่อนำทางตัวละคร ",
+            "✅ ระบบเก็บและใช้ไอเทม (Inventory for Puzzles)",
+            "✅ การสร้างฉากที่สามารถคลิกสำรวจได้",
+            "✅ การเชื่อมโยงเงื่อนงำและสร้างปริศนา"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 13: ออกแบบและพัฒนา Final Project",
+          "topics": [
+            "✅ วางแผนโครงสร้างเกม",
+            "✅ การจัดการ Asset และ UI",
+            "✅ การเพิ่มฟีเจอร์เฉพาะของแต่ละแนว"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 14: ปรับปรุงเกม และเพิ่มลูกเล่นพิเศษ",
+          "topics": [
+            "✅ ปรับบาลานซ์เกม และแก้ไขบั๊ก",
+            "✅ เพิ่มแอนิเมชันและเอฟเฟกต์พิเศษ",
+            "✅ ทดสอบระบบและให้ Feedback"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 15: การ Build และ Export เกม",
+          "topics": [
+            "✅ การ Build เกมเป็น .exe หรือ .apk",
+            "✅ การตั้งค่า UI และ Resolution ให้เหมาะกับอุปกรณ์ต่าง ๆ",
+            "✅ การเตรียมไฟล์เกมสำหรับเผยแพร่"
+          ]
+        },
+        {
+          "title": "🔹 ครั้งที่ 16: Showcase & Review Project",
+          "topics": [
+            "✅ นักเรียนพรีเซนต์ผลงานของตัวเอง",
+            "✅ รับฟีดแบ็กจากเพื่อนร่วมคลาสและผู้สอน ",
+            "✅ แนะนำแนวทางการพัฒนาเกมต่อไป"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "In",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/In.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/In.mp4"
+      },
+      {
+        "title": "Lolo",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Lolo.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Lolo.mp4"
+      },
+      {
+        "title": "Plum",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Plum.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Plum.mp4"
+      },
+      {
+        "title": "Slime",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Slime.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Slime.mp4"
+      },
+      {
+        "title": "Stang",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Stang.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Strang.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "77102",
+      "no": "771",
+      "course_path":"unity-3",
+      "name": "",
+      "description": "",
+      "cover": "https://nj.dekhub.com/public/imgs/CGP.png",
+      "price": "2490",
+      "discount": "2490",
+      "promotion": "",
+      "date": "4-28 มี.ค. (อังคาร, ศุกร์)",
+      "time":"19.00-21.00",
+      "definition": "",
+      "book_link": "/apply/771"
+    },
+    "content": {
+      "content_title": "ไม่น่าเบื่ออีกต่อไป ไม่ต้องยาก และไม่นาน 🎮",
+      "content_description": "เขียนโปรแกรมโคตรสนุก แถมได้เอาไปใช้ประโยชน์ได้กว้างขวาง สู่ความได้เปรียบในการต่อยอดสู่ระดับ Object Oriented แล้วยังได้ยังดึงศักยภาพที่ซ่อนอยู่ในตัวน้องออกมาพัฒนาได้เร็ว เหมือนพี่ๆ ทีม mrCITY",
+      "content_img": "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/HamsterTownMobile.mp4",
+      "content_img_mobile": "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/HamsterTownMobile.mp4",
+      "img_description": "",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "💡 วิธีคิดของภาษา C#",
+          "description": ""
+        },
+        {
+          "title": "🕹️ คำสั่งเท่าที่จำเป็น",
+          "description": ""
+        },
+        {
+          "title": "🦾 ทักษะการเรียนรู้ด้วยตนเอง",
+          "description": ""
+        },
+        {
+          "title": "🛠️ การเช็คการทำงานของโปรแกรม",
+          "description": ""
+        },
+        {
+          "title": "📜 ฝึกแก้ bug และอ่าน error",
+          "description": ""
+        },
+        {
+          "title": "🖥️ Algorithm พื้นฐาน",
+          "description": ""
+        },
+        {
+          "title": "💾 การประยุกต์ใช้กับการสร้างเกม",
+          "description": ""
+        },
+        {
+          "title": "🏆 mini Project",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "",
+      "timeline_img": "https://nj.dekhub.com/public/imgs/Python-Map.png",
+      "timeline_list": [
+        {
+          "title": "Day 1: ติดตั้งโปรแกรม Unity และ Visual studio",
+          "topics": [
+            "โครงสร้างพื้นฐานภาษา C#",
+            "ฝึกการดูดความรู้จากผู้รู้มากมายบน net กันก่อน",
+            "ตัวแปร 🍙 และฟังชั่น",
+            "มาสร้าง Objects บน 3D Space กัน"
+          ]
+        },
+        {
+          "title": "Day 2: ฝึกเขียนโปรแกรมแบบมีสไตล์",
+          "topics": [
+            "การทำซ้ำ!? แบบไม่ต้องใช้ for"
+          ]
+        },
+        {
+          "title": "Day 3: ให้โปรแกรมเราสมาร์ทด้วยดีไหม?",
+          "topics": [
+            "ใส่ Logic พื้นฐาน"
+          ]
+        },
+        {
+          "title": "Day 4: เล่นท่าพลิกแพลงบ้าง",
+          "topics": [
+            "ระบบ Function ใน Unity",
+            "มาลองปรับเกมเราให้หลากหลาย",
+            "ฝึกใช้ประโยชน์กับพื้นที่จริง"
+          ]
+        },
+        {
+          "title": "Day 5: 🚀 มิติแห่งจินตนาการ",
+          "topics": [
+            "Algorithm ที่สำคัญ",
+            "การจัดการ Object หลายมิติ",
+            "ใส่ความน่ารักเข้าไปอีกหน่อย"
+          ]
+        },
+        {
+          "title": "Day 6: ฝึกออกแบบเกมเท่ๆ",
+          "topics": [
+            "🎭 Game Concept",
+            "Storytelling",
+            "Storyboard"
+          ]
+        },
+        {
+          "title": "Day 7: สร้างเกมแบบไม่ต้องสร้าง",
+          "topics": [
+            "Object Preparation",
+            "Composition"
+          ]
+        },
+        {
+          "title": "Day 8: ฝึกนำเสนอผลงาน",
+          "topics": [
+            "Game Testing",
+            "Presentation",
+            "Final Optimization 🌀"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "In",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/In.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/In.mp4"
+      },
+      {
+        "title": "Lolo",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Lolo.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Lolo.mp4"
+      },
+      {
+        "title": "Plum",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Plum.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Plum.mp4"
+      },
+      {
+        "title": "Slime",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Slime.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Slime.mp4"
+      },
+      {
+        "title": "Stang",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/unity/imgs/Stang.png",
+        "content": "https://nj.dekhub.com/public/unity/videos/Strang.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "60107",
+      "no": "601",
+      "course_path":"roblox",
+      "name": "Roblox Creater Camp",
+      "description": "",
+      "cover": "https://nj.dekhub.com/public/imgs/roblox.png",
+      "price": "990",
+      "discount": "990",
+      "promotion": "",
+      "date": "1,2,8,9 มี.ค.(เสาร์และอาทิตย์)",
+      "time": "18.00 - 20.00",
+      "definition": "",
+      "book_link": "/apply/601"
+    },
+    "content": {
+      "content_title": "Roblox Level 1",
+      "content_description": "เน้นสร้างทักษะที่จำเป็นสำหรับเด็ก จากที่เคยเล่นเกม Roblox มามากมาย เริ่มฝึกสร้างจินตนาการให้เป็นความจริงด้วย Roblox Studio น้องจะได้สนุกกับเพื่อนๆ และพี่ๆ ที่รู้ใจ น้องจะได้พัฒนาอย่างก้าวกระโดดด้วยกิจกรรมและภารกิจที่ท้าทาย",
+      "content_img": "",
+      "content_img_mobile": "",
+      "img_description": "",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "🎮 เกมที่ออกแบบและสร้างขึ้นเอง",
+          "description": ""
+        },
+        {
+          "title": "🌟 ทักษะการเขียนโค้ดเบื้องต้น",
+          "description": ""
+        },
+        {
+          "title": "✨ ความมั่นใจในการใช้ความคิดสร้างสรรค์",
+          "description": ""
+        },
+        {
+          "title": "👨‍👩‍👧‍👦 เส้นทางการต่อยอดสู่การเป็นนักพัฒนา (developer)",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "",
+      "timeline_img": "",
+      "timeline_list": [
+        {
+          "title": "Day 1",
+          "topics": [
+            "เรียนรู้พื้นฐานการใช้งานโปรแกรม Roblox Studio",
+            "ฝึกใช้เครื่องมือสำคัญ: Select, Move, Rotate, Scale เพื่อจัดวางและปรับขนาดโมเดล",
+            "เข้าใจ Properties ในการปรับแต่งวัตถุอย่างง่าย",
+            "🎨 Workshop: ออกแบบโมเดลแรกของตัวเองตามหัวข้อที่กำหนด"
+          ]
+        },
+        {
+          "title": "Day 2",
+          "topics": [
+            "ฝึกใช้งาน Negate และ Union เพื่อสร้างโมเดลที่ซับซ้อน",
+            "รวม Part ต่าง ๆ ให้เป็นหนึ่งเดียว พร้อมเรียนรู้เทคนิคสร้างชิ้นงาน 3D",
+            "วิธี Group โมเดลและ Save ลง Roblox Studio",
+            "🏗️ Workshop: ออกแบบฉากและเพิ่มโมเดลที่สร้างไว้"
+          ]
+        },
+        {
+          "title": "Day 3",
+          "topics": [
+            "ปรับแต่งแสง สี และเอฟเฟกต์ในเกม เช่น Smoke, Sparkle, Particle Emitter",
+            "เริ่มต้นเรียนรู้การเขียน Script เบื้องต้น เพื่อสร้างเกม Interactive",
+            "สร้างวัตถุที่เคลื่อนไหวและเปลี่ยนสีด้วยการเขียน Script",
+            "ใช้ Event เช่น Touched เพื่อสร้างปฏิสัมพันธ์ระหว่างผู้เล่นกับวัตถุในเกม",
+            "🌟 Workshop: สร้างฉากในเกมพร้อมธีมที่เลือก"
+          ]
+        },
+        {
+          "title": "Day 4",
+          "topics": [
+            "เก็บรายละเอียดชิ้นงานให้สมบูรณ์",
+            "นำเกมของตัวเองขึ้น เว็บไซต์ Roblox พร้อมแชร์ให้เพื่อน ๆ เล่น",
+            "นำเสนอไอเดียและผลงานของตัวเองต่อกลุ่ม",
+            "🎮 ลองเล่นเกมของเพื่อน ๆ เพื่อเพิ่มแรงบันดาลใจ!"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "Dark Obby",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/DarkObby.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/DarkObby.mp4"
+      },
+      {
+        "title": "FPS",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/Fps.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/Fps.mp4"
+      },
+      {
+        "title": "อิมรอน",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/Imron.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/Imron.mp4"
+      },
+      {
+        "title": "ตะวัน",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/Tawan.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/Tawan.mp4"
+      }
+    ]
+  },
+  {
+    "courseDetail": {
+      "id": "",
+      "no": "",
+      "course_path":"roblox-2",
+      "name": "",
+      "description": "",
+      "cover": "https://nj.dekhub.com/public/imgs/roblox.png",
+      "price": "1990",
+      "discount": "1990",
+      "promotion": "",
+      "date": "18 ม.ค.-9 ก.พ. (เสาร์, อาทิตย์)",
+      "time":"19.00-21.00",
+      "definition": "",
+      "book_link": "/apply/931"
+    },
+    "content": {
+      "content_title": "",
+      "content_description": "Roblox คือแพลตฟอร์มเกมออนไลน์และเครื่องมือสร้างเกม (Game Creation Platform) ที่เปิดโอกาสให้ผู้ใช้งานสามารถเล่นเกมและสร้างเกมของตัวเองได้ โดยพัฒนาและให้บริการโดยบริษัท Roblox Corporation และ Roblox ไม่ใช่แค่แพลตฟอร์มเกม แต่เป็นเครื่องมือที่ช่วยเด็กพัฒนาทักษะที่จำเป็น",
+      "content_img": "",
+      "content_img_mobile": "",
+      "img_description": "",
+      "content_detail": []
+    },
+    "get": {
+      "get_video": "https://nj.dekhub.com/public/videos/PHCMap.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "🎮 เกมที่ออกแบบและสร้างขึ้นเอง",
+          "description": ""
+        },
+        {
+          "title": "🌟 ทักษะการเขียนโค้ดเบื้องต้น",
+          "description": ""
+        },
+        {
+          "title": "✨ ความมั่นใจในการใช้ความคิดสร้างสรรค์",
+          "description": ""
+        },
+        {
+          "title": "👨‍👩‍👧‍👦 เส้นทางการต่อยอดสู่การเป็นนักพัฒนา (developer)",
+          "description": ""
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "",
+      "timeline_img": "https://nj.dekhub.com/public/imgs/Python-Map.png",
+      "timeline_list": [
+        {
+          "title": "Week 1: Idea & Ice Breaking",
+          "topics": [
+            "ทำความรู้จักกับเพื่อนๆ",
+            "แสดงความคิดเห็นเกี่ยวกัเกมต่างๆ"
+          ]
+        },
+        {
+          "title": "Week 2: Design & Story Board",
+          "topics": [
+            "Disign เกมที่อยากจะสร้าง",
+            "Simplify"
+          ]
+        },
+        {
+          "title": "Week 3: Development",
+          "topics": [
+            "สร้าง DEMO",
+            "ปรับปรุงตาม comment"
+          ]
+        },
+        {
+          "title": "Week 4: DEMO & Present",
+          "topics": [
+            "สร้าง DEMO ให้เสร็จ",
+            "Present"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "Dark Obby",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/DarkObby.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/DarkObby.mp4"
+      },
+      {
+        "title": "FPS",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/Fps.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/Fps.mp4"
+      },
+      {
+        "title": "อิมรอน",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/Imron.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/Imron.mp4"
+      },
+      {
+        "title": "ตะวัน",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/roblox/imgs/Tawan.png",
+        "content": "https://nj.dekhub.com/public/roblox/videos/Tawan.mp4"
+      }
+    ]
+  }
+]

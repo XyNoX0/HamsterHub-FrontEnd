@@ -1,0 +1,21 @@
+.line-header {
+    color: black;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.LineImg {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+}
+.line-text {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .LineImg {
+        width: 130px;
+        height: 40px;
+    }
+}

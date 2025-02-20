@@ -1,0 +1,9 @@
+.space {
+    background-color: var(--off-white);
+    padding: 20px;
+}
+
+.space-2 {
+    background-color: var(--off-white);
+    padding: 10px;
+}

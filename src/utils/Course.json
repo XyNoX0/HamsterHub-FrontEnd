@@ -1,0 +1,71 @@
+[
+    {
+        "course": "python",
+        "gallery": [
+            {
+                "title": "App Store",
+                "description": null,
+                "image": "https://nj.dekhub.com/public/imgs/python-4.png",
+                "content": "https://nj.dekhub.com/public/videos/python-4.mp4"
+            },
+            {
+                "title": "Poke",
+                "description": null,
+                "image": "https://nj.dekhub.com/public/imgs/python-3.png",
+                "content": "https://nj.dekhub.com/public/videos/python-3.mp4"
+            },
+            {
+                "title": "เปรม",
+                "description": null,
+                "image": "https://nj.dekhub.com/public/imgs/python-1.png",
+                "content": "https://nj.dekhub.com/public/videos/python-1.mp4"
+            },
+            {
+                "title": "Kabigon",
+                "description": null,
+                "image": "https://nj.dekhub.com/public/imgs/python-2.png",
+                "content": "https://nj.dekhub.com/public/videos/python-2.mp4"
+            }
+        ],
+        "content": {
+            "content_title": "Let's start the Adventure",
+            "content_description": "เรื่องราวเริ่มต้นจากครอบครัวถูกปล้น พ่อแม่ถูกโจรสลัดฆ่าตาย สฟิงค์หนีจากเกาะเล็กๆ ห่างไกล เด็กชายที่เคยมีฝันอยากเป็นโจรสลัด เพราะตัวเองได้ฝึกฝีมือการเดินเรือจากพ่อ กลับมีฝันร้ายและต้องการเก่งกว่านี้เพื่อช่วยคนที่ช่วยเหลือตัวเองไม่ได้ ในโลกแห่งความชั่วร้าย สฟิงค์ต้องผ่านความท้าทายจากสัตว์ร้าย และผู้คนที่อยู่ท่ามกลางการแย่งชิง ท่ามกลางข่าวลือว่ามีสมบัติมีค่าจากเรือที่จมลงไปพร้อมเรือโจรสลัดกลางทะเลแห่งนึง และนั่นคือเป้าหมายการเดินทางครั้งนี้",
+            "content_img": "https://nj.dekhub.com/public/imgs/Python-Detail.png",
+            "content_img_mobile": "https://nj.dekhub.com/public/imgs/Python-Detail.png",
+            "img_description": "น้องๆ จะได้รับภารกิจเพื่อฝึกวิชาในเกาะของตัวเอง ก่อนจะได้เรือออกเดินทางสู่โลกกว้าง การฝึก Python จะเริ่มจากพื้นฐานง่ายๆ ที่มีประโยชน์มากต่อการผจญภัย ค่อยๆ ไต่ระดับสู่การเป็นยอดนักรบ กำจัด monster และค้นหาอาวุธที่สาปสูญพร้อมสมบัติล้ำค่ามากมายในท้องทะเลอันซับซ้อน",
+            "content_detail": []
+        },
+        "slide": [
+            {
+                "title": "Python Adventure Camp (Online)",
+                "description":"Important basic skills, to be professional",
+                "type": "image",
+                "content": "https://nj.dekhub.com/public/imgs/Python-5.png",
+                "image": "https://nj.dekhub.com/public/imgs/Python-5.png",
+                "placeholder": "",
+                "apply_link": "/apply/811",
+                "detail_link": "/course/811"            
+            },
+            {
+                "title": "Python Adventure Camp (Onsite)",
+                "description":"Important basic skills, to be professional",
+                "type": "image",
+                "content": "https://nj.dekhub.com/public/imgs/PythonOnsite.png",
+                "image": "https://nj.dekhub.com/public/imgs/PythonOnsite.png",
+                "placeholder": "",
+                "apply_link": "/apply/861",
+                "detail_link": "/course/861"
+            },
+            {
+                "title": "Python Super Pro. Pack",
+                "description": "everything you need for an expert",
+                "type": "image",
+                "content": "https://nj.dekhub.com/public/imgs/header2.png",
+                "image": "https://nj.dekhub.com/public/imgs/header2.png",
+                "placeholder": "",
+                "apply_link": "/apply/851",
+                "detail_link": "/course/851"
+            }
+        ]
+    }
+]

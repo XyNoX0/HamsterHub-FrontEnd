@@ -1,0 +1,102 @@
+.Detail {
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.summary {
+    margin: 22px auto;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #8ca4ba;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.summary-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.summary-header {
+    color: #dc4a44;
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.summary-title {
+    align-self: flex-start;
+    font-size: 25px;
+}
+
+.course-data {
+    text-align: right;
+}
+
+.price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: red;
+}
+
+.price-text {
+    font-size: 25px;
+}
+
+.subject {
+    font-size: 30px;
+}
+
+.date {
+    font-size: 25px;
+}
+
+.time {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .Detail {
+        width: 100vw;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .subject {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
+
+    .time {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .Detail {
+        width: 50vw;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0 15px;
+    }
+}

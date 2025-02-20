@@ -1,0 +1,190 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--off-white);
+  margin: 0;
+  padding: 0;
+}
+
+input::placeholder {
+  font-size: 0.5rem;
+}
+
+.Hams {
+  width: 80px;
+  height: 40px;
+}
+
+/* Container styles */
+.min-h-screen {
+  min-height: 100vh;
+  margin-top: 5%;
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+/* Form wrapper */
+
+.bg-white {
+  background-color: var(--off-white);
+}
+
+.rounded-md {
+  border-radius: 8px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+/* Form Header */
+.text-2xl {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.font-semibold {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+w .text-black {
+  color: #000000;
+}
+
+/* Input Fields */
+.w-full {
+  width: 75%;
+}
+
+.h-full {
+  height: 45px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.border {
+  border: 1px solid #d1d5db;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+/* Submit Button */
+.bg-blue-500 {
+  background-color: #ffffff;
+  width: 20%;
+  padding: 7px;
+  color: #3b82f6;
+  border: 1px solid #acaeb1;
+  display: block;
+  margin: auto;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.rounded-lg {
+  border-radius: 40px;
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.75);
+}
+
+.focus\:ring-blue-400:focus {
+  border-color: #60a5fa;
+}
+
+.focus\:ring-opacity-75:focus {
+  opacity: 0.75;
+}
+
+/* Spacing */
+.space-y-3>*+* {
+  margin-top: 12px;
+}
+
+.shadow-md {
+  margin: auto;
+  position: relative;
+  width: 70vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .text-2xl {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .min-h-screen {
+    min-height: 100vh;
+    display: flex;
+    margin-top: 10%;
+    text-align: center;
+    background-color: var(--off-white);
+  }
+
+  .w-full {
+    width: 90%;
+  }
+
+  .bg-blue-500 {
+    background-color: #ffffff;
+    width: 30%;
+    padding: 10px;
+    color: #3b82f6;
+    border: 1px solid #acaeb1;
+    margin-top: 40px;
+  }
+
+  .shadow-md {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    background-color: var(--off-white);
+    border-radius: 20px;
+  }
+
+  input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .Hams {
+    width: 15vw;
+    height: 4vh;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .shadow-md {
+    margin: auto;
+    position: relative;
+    width: 90vw;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+}

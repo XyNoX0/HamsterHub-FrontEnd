@@ -1,0 +1,145 @@
+.course-content {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    background: var(--off-white);
+    overflow: hidden;
+
+    color: var(--dark-gray);
+    position: relative;
+
+
+}
+
+.content-text {
+    display: block;
+    width: 80%;
+
+
+}
+
+#content-img-mobile {
+    display: none;
+}
+
+.course-item {
+
+
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    h5 {
+        color: var(--gray);
+    }
+
+    p {
+        color: var(--gray);
+    }
+
+    ul {
+        list-style: none;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+
+        text-align: left;
+
+
+    }
+
+    ul li:nth-child(odd):last-child {
+        grid-column: span 2;
+        /* Make the last odd item span both columns */
+        width: 100%;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+    li {
+
+        padding: 1rem;
+        width: 100%;
+
+
+    }
+
+}
+
+.course-img {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    color: var(--gray);
+    background: var(--off-white);
+    padding-top:20px;
+
+    video,img {
+        width: 80%;
+        max-width: 1000px;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #content-img-desktop {
+        display: none;
+    }
+
+    #content-img-mobile {
+        display: block;
+    }
+
+    .course-content {
+        padding: 0;
+    }
+
+    .course-img {
+        width: 100%;
+    }
+
+    .content-text {
+
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .course-item {
+        width: 80%;
+
+        ul {
+            width: 100%;
+        }
+    }
+
+
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Charmonman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+  --navy: #16325b;
+  --blue: #3894ff;
+  --dark-blue: #1b77ee;
+  --yellow: #ffdc50;
+  --off-white: #faf3f1;
+  --red: #dc4a44;
+  --gray: #323232;
+  --dark-gray: #111111;
+  --light-gray: #646464;
+  --blue-transparent: rgba(127, 127, 127, 0.5);
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Noto Sans Thai", sans-serif;
+  
+}
+body{
+  background-color: var(--off-white);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--off-white); 
+  }
+}
+p{
+  font-size: 0.7rem;
+  font-weight: 400;
+
+}
+h1 {
+  font-weight: 700;
+}
+h2{
+  font-weight: 600;
+}
+h3 {
+  font-weight: 600;
+}
+h4{
+  font-weight: 500;
+}
+h5{
+  font-weight: 400;
+}
+h6{
+  font-weight: 100;
+}
+.app {
+  justify-content: center;
+  align-items: center;
+  scroll-snap-type: y mandatory;
+  color: var(--dark-gray);
+
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.icon-img {
+  width: 1rem;
+  height: auto;
+}
+.blue {
+  color: var(--blue);
+}
+.red {
+  color: var(--red);
+}
+.navy {
+  color: var(--navy);
+}
+.off-white {
+  color: var(--off-white);
+}
+.gray {
+  color: var(--gray);
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes scaleIn{
+  0%{
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes opacityIn{
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+
+  }
+}
+
