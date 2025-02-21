@@ -8,6 +8,7 @@ const nextConfig = {
           { protocol: 'https', hostname: 'img.freepik.com' },
           { protocol: 'https', hostname: 'www.apple.com' },
           { protocol: 'https', hostname: 'placehold.co' },
+          
       ],
   },
 };

@@ -71,24 +71,7 @@
   opacity: 0;
   animation: scaleIn  0.8s 0.1s forwards;
 }
-.course-header {
-  position: absolute;
-  width: auto;
-  padding: 2rem 0 0 0 ;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  top: 0;
-  background-color: rgba(80, 80, 80, 0.4);
-  backdrop-filter: blur(20px);
-  width: 100%;
-  z-index: 8;
 
-  p{
-    font-size: 0.5rem;
-    margin: 0.1rem;
-  }
-}
 
 .course-text {
   display: flex;
