@@ -42,19 +42,6 @@
     object-fit: cover;
   }
 }
-.course-hero-img::after {
-  content: "";
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  background: rgb(0, 0, 0, 0.4);
-
-  animation: sizeInCourse  1s 0.4s forwards;
- 
-}
 
 .course-overlay {
   position: absolute;

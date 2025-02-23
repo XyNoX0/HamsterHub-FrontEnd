@@ -8,7 +8,7 @@
     padding: 1rem;
     gap: 1rem;
     opacity: 0;
-    animation: opacityIn 0.8s 1.4s forwards;
+    animation: opacityIn 0.8s 1s forwards;
 }
 
 .nsc-video-desktop {

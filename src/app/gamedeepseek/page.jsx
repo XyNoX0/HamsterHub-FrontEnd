@@ -9,7 +9,7 @@ import CourseDetail from "./components/CourseDetail"
 function GameDeepSeek() {
 
   return (
-    <div>
+    <div className="gamedeepseek"> 
       <Navbar />
       <CourseHero />
       <CourseDetail />
