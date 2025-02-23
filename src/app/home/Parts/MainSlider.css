@@ -51,6 +51,22 @@
   flex-shrink: 0;
 
 }
+.container .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 40%
+
+  );
+  pointer-events: none;
+}
+
 
 .container .slide-content {
   width: 100vw;
@@ -77,21 +93,7 @@
   position: relative; /* Add this */
 }
 
-.container .slide::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.1) 32%
 
-  );
-  pointer-events: none;
-}
 
 .container .text-overlay {
   color: #fff;
@@ -101,7 +103,7 @@
   flex-direction: column;
   gap: 10px;
   z-index: 2;
-  text-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
   
   width: 80%;
 
@@ -110,6 +112,7 @@
 
   h1{
     font-weight: 600;
+
   }
 }
 .slide-description {
@@ -183,6 +186,8 @@
   padding: 0.2rem;
   width: 5rem;
   font-weight: 600;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+
 }
 
 .slide-more:hover {
@@ -206,6 +211,7 @@
   width: 5rem;
   margin-left: 15px;
   border: var(--dark-blue) solid 1px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .slide-book:hover {
