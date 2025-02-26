@@ -10,7 +10,9 @@ const nextConfig = {
           { protocol: 'https', hostname: 'placehold.co' },
           { protocol: 'https', hostname: 'i.pinimg.com' },
           { protocol: 'https', hostname: 'cdn.sanity.io' },
-          
+          { protocol: 'https', hostname: 'staticg.sportskeeda.com' },
+          { protocol: 'https', hostname: 'assetstorev1-prd-cdn.unity3d.com' },
+          { protocol: 'https', hostname: 'mfranc.com' },
       ],
   },
 };

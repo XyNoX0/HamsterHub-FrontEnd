@@ -10,14 +10,9 @@ function CourseDetail() {
         <h1>
           จากเกมเมอร์ <br /> สู่เกมเมคเกอร์
         </h1>
-        <p>พลิกวิธีคิด เปลี่ยนโลกเกม</p>
+        <h4>พลิกวิธีคิด เปลี่ยนโลกเกม</h4>
       </div>
 
-      <div className="course-detail-video">
-        <video autoPlay loop muted>
-          <source src="https://nj.dekhub.com/public/videos/GDS.mov" />
-        </video>
-      </div>
       <br />
       <div className="course-detail-text">
         <p>
@@ -55,20 +50,22 @@ function CourseDetail() {
       <br />
       <div className="course-detail-asset">
         <div className="course-detail-header-2">
-            <span>
-          <h1>GAME ASSET</h1>
-          <p>องค์ประกอบต่าง ๆ ที่ใช้ในการสร้างเกม
-          ซึ่งรวมถึงไฟล์หรือข้อมูลที่จำเป็นสำหรับพัฒนา</p>
+          <span>
+            <h1>GAME ASSET</h1>
+            <p>
+              องค์ประกอบต่าง ๆ ที่ใช้ในการสร้างเกม <br />
+              ซึ่งรวมถึงไฟล์หรือข้อมูลที่จำเป็นสำหรับพัฒนา
+            </p>
           </span>
         </div>
-        <p className="space"></p>
+
         <div className="course-detail-text-2">
           <li>
             <p>
               <span className="bold">องค์ประกอบ</span>
             </p>
             <Image
-              src="https://i.pinimg.com/474x/8c/71/58/8c71585dab5d9c39242bd3e80f3418f8.jpg"
+              src="https://assetstorev1-prd-cdn.unity3d.com/key-image/421988f6-a827-428b-86d4-9b815f15cdce.jpg"
               alt="Asset"
               width={500}
               height={500}
@@ -90,7 +87,7 @@ function CourseDetail() {
               <span className="bold">เสียง</span>
             </p>
             <Image
-              src="https://i.pinimg.com/474x/8c/71/58/8c71585dab5d9c39242bd3e80f3418f8.jpg"
+              src="https://assetstorev1-prd-cdn.unity3d.com/key-image/a61eb300-679b-4bab-9942-7001aa280e16.jpg"
               alt="Asset"
               width={500}
               height={500}
@@ -101,7 +98,7 @@ function CourseDetail() {
               <span className="bold">ข้อมูล</span>
             </p>
             <Image
-              src="https://i.pinimg.com/474x/8c/71/58/8c71585dab5d9c39242bd3e80f3418f8.jpg"
+              src="https://assetstorev1-prd-cdn.unity3d.com/key-image/52a96e98-c514-4f51-9fbd-2a2075ab4a23.jpg"
               alt="Asset"
               width={500}
               height={500}
@@ -112,91 +109,99 @@ function CourseDetail() {
               <span className="bold">โค้ด</span>
             </p>
             <Image
-              src="https://i.pinimg.com/474x/8c/71/58/8c71585dab5d9c39242bd3e80f3418f8.jpg"
+              src="https://mfranc.com/images/code_review.jpeg"
               alt="Asset"
               width={500}
               height={500}
             />
           </li>
-       
         </div>
         <div className="course-detail-header-2">
-        <p>
-          ผู้พัฒนาสามารถ<span className="bold">ทำเงิน</span>จาก{" "}
-          <span className="bold">Asset</span> ได้มากมาย{" "}
-          <a href="https://assetstore.unity.com/">ดูรายละเอียดเพิ่มเติม</a>
-        </p>
+          <p>
+            ผู้พัฒนาสามารถ<span className="bold">ทำเงิน</span>จาก{" "}
+            <span className="bold">Asset</span> ได้มากมาย <br />
+            <a href="https://assetstore.unity.com/">ดูรายละเอียดเพิ่มเติม</a>
+          </p>
         </div>
       </div>
       <div className="course-detail-how">
-        <div className="course-detail-header-3">
-          <h1>HOW?</h1>
-        </div>
-        <p className="space-2"></p>
-        <div className="course-detail-text-3">
-          <p>
-            เวลาเล่นเกม
-            <span className="bold">
-              ผู้เล่นมักรู้แค่ว่าเกมนี้
-              <br />
-              สนุก หรือ ไม่สนุก
-            </span>
-            <br />
-            แต่ก็อธิบายไม่ค่อยได้ว่าทำไม...
-          </p>
-          <br />
-          <p>
-            แล้วเคยสงสัยมั้ยว่า
-            <span className="bold">
-              ผู้สร้างเกมคิดอะไรอยู่?
-              <br />
-              ทำไม
-            </span>
-            เขาถึง
-            <span className="bold">ออกแบบเกมแบบนี้?</span>
-            <br />
-            <span className="bold">ความสนุกที่เรารู้สึก</span>
-            มันถูก
-            <span className="bold">สร้างขึ้นมาได้ยังไง?</span>
-          </p>
-          <br />
-          <p>
-            เราจะมา
-            <span className="bold">เจาะลึก</span>
-            ไปจนถึงเบื้องหลัง
-            <br />
-            <span className="bold">
-              การสร้างเกมตั้งแต่การออกแบบ
-              <br />
-              Gameplay, กลไก, เรื่องราว
-              <br />
-            </span>
-            ไปจนถึง จิตวิทยาผู้เล่น
-            <br />
-            เพื่อให้เราเข้าใจว่า
-            <span className="bold">อะไรที่ทำให้เกมสนุก</span>
-          </p>
-          <br />
-          <p>
-            <span className="bold">
-              และที่สำคัญ...
-              <br />
-              เราจะคิดเกมที่สนุกกว่าเดิมได้ยังไง!?
-            </span>
-          </p>
-        </div>
-      </div>
-      <p className="space-2"></p>
       <div className="course-detail-video-2">
-        <iframe
-          src={clip}
-          className="Header-Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+          <iframe
+            src={clip}
+            className="Header-Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="deepseek-how">
+      
+            <div className="course-detail-header-3">
+              <h1>HOW?</h1>
+            </div>
+            <div className="course-detail-text-3">
+              <p>
+                เวลาเล่นเกม
+                <span className="bold">
+                  ผู้เล่นมักรู้แค่ว่าเกมนี้
+                  <br />
+                  สนุก หรือ ไม่สนุก
+                </span>
+                <br />
+                แต่ก็อธิบายไม่ค่อยได้ว่าทำไม...
+              </p>
+              <br />
+              <p>
+                แล้วเคยสงสัยมั้ยว่า
+                <span className="bold">
+                  ผู้สร้างเกมคิดอะไรอยู่?
+                  <br />
+                  ทำไม
+                </span>
+                เขาถึง
+                <span className="bold">ออกแบบเกมแบบนี้?</span>
+                <br />
+                <span className="bold">ความสนุกที่เรารู้สึก</span>
+                มันถูก
+                <span className="bold">สร้างขึ้นมาได้ยังไง?</span>
+              </p>
+              <br />
+              <p>
+                เราจะมา
+                <span className="bold">เจาะลึก</span>
+                ไปจนถึงเบื้องหลัง
+                <br />
+                <span className="bold">
+                  การสร้างเกมตั้งแต่การออกแบบ
+                  <br />
+                  Gameplay, กลไก, เรื่องราว
+                  <br />
+                </span>
+                ไปจนถึง จิตวิทยาผู้เล่น
+                <br />
+                เพื่อให้เราเข้าใจว่า
+                <span className="bold">อะไรที่ทำให้เกมสนุก</span>
+              </p>
+              <br />
+              <p>
+                <span className="bold">
+                  และที่สำคัญ...
+                  <br />
+                  เราจะคิดเกมที่สนุกกว่าเดิมได้ยังไง!?
+                </span>
+              </p>
+            </div>
+      
+        </div>
       </div>
-      <br />
+  <Image
+          src="https://staticg.sportskeeda.com/editor/2022/07/89cef-16566325661680-1920.jpg"
+          alt="gamedeepseek"
+          className="timeline-img"
+          width={1980}
+          height={1000}
+          priority
+        />
       <div className="course-detail-timeline">
         <div className="course-detail-header-2">
           <h1>TIMELINE</h1>
