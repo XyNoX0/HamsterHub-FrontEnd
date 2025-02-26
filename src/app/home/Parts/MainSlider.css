@@ -243,19 +243,6 @@
   .slide-description {
     width: 100%;
   }
-  .container .slide::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      to bottom,
-      rgb(90, 90, 90) 0%,
-      rgba(121, 121, 121, 0.2) 50%
-    );
-    pointer-events: none;
-  }
+
  
 }

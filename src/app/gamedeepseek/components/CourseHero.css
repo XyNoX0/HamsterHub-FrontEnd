@@ -7,7 +7,8 @@
   overflow: hidden;
   color: white;
   background: rgb(236, 235, 235);
-  height:auto;
+
+
   
 
   h1 {
@@ -108,9 +109,9 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-
+  padding: 2rem 0 0 0;
   z-index: 8;
-  background: rgb(236, 235, 235);
+  background: var(--off-white);
   opacity: 0;
 
   animation: opacityIn  0.8s 0.8s forwards;
@@ -177,7 +178,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .img-desktop{
     display: none;
   }

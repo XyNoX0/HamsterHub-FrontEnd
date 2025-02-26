@@ -10,7 +10,7 @@ function CourseHero() {
         <Image src="https://nj.dekhub.com/public/imgs/GDSBannerDesktop.png" className="img-desktop" alt="" width={1920} height={1080} priority />
         <Image src="https://nj.dekhub.com/public/imgs/GDSBannerMobile.png" className="img-mobile" alt="" width={1920} height={1080} priority />
       </div>
-      <p className="space"></p>
+   
       <div className="course-hero-buttom">
         <div className="course-price">
           <p>10-14 มี.ค.</p>
