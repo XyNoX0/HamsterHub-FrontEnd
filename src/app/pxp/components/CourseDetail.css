@@ -1,0 +1,168 @@
+.pxp-detail-container {
+  background: white;
+}
+
+.pxp-video{
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+.pxp-video-mobile{
+ display: none;
+}
+
+
+.pxp-detail-timeline {
+  background: none;
+  width: 100vw;
+
+  .timeline-title {
+    width: max-content;
+    margin: auto;
+
+    h3 {
+      color: #7da7d2;
+      font-size: 4rem;
+    }
+  }
+
+  .timeline-img {
+    width: max-content;
+    margin: auto;
+
+    img, video {
+      width: 80vw;
+      height: auto;
+    }
+  }
+
+  .timeline-img-2 {
+    width: max-content;
+    margin: auto;
+
+    img, video {
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  .timeline-detail {
+    width: 80vw;
+    height: auto;
+    padding: 2% 3%;
+    background-color: #dddddd;
+    border-radius: 70px;
+    margin: auto;
+
+    h3 {
+      font-size: 2rem;
+      color: #1d1148;
+    }
+
+    p {
+      color: #1d1148;
+    }
+
+    .text-1 {
+      font-size: 1.2rem;
+    }
+
+    .text-2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.space{
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .space{
+    padding: 10px;
+  }
+  .pxp-video{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+  .pxp-video-desktop{
+    display: block;
+   }
+   .pxp-video-mobile{
+    display: none;
+   }
+  .pxp-detail-timeline {
+    background: none;
+    width: 100vw;
+  
+    .timeline-title {
+      width: max-content;
+      margin: auto;
+  
+      h3 {
+        color: #7da7d2;
+        font-size: 2.5rem;
+      }
+    }
+  
+    .timeline-img {
+      width: max-content;
+      margin: auto;
+  
+      img {
+        width: 97vw;
+        height: auto;
+      }
+    }
+
+    .timeline-img-2 {
+      width: max-content;
+      margin: auto;
+  
+      img, video {
+        width: 97vw;
+        height: auto;
+      }
+    }
+  
+    .timeline-detail {
+      width: 90vw;
+      height: auto;
+      padding: 2% 3%;
+      background-color: #dddddd;
+      border-radius: 15px;
+      margin: auto;
+  
+      h3 {
+        font-size: 1.3rem;
+        color: #1d1148;
+      }
+  
+      p {
+        color: #1d1148;
+      }
+  
+      .text-1 {
+        font-size: 0.8rem;
+      }
+  
+      .text-2 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

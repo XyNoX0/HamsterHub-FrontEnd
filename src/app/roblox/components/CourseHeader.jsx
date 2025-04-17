@@ -3,8 +3,8 @@ import "./CourseHeader.css";
 import Image from "next/image";
 
 function CourseHeader() {
-    const HeaderImgDesktop = "https://nj.dekhub.com/public/roblox/imgs/Roblox-Header.png"
-    const HeaderImgMobile = "https://nj.dekhub.com/public/roblox/imgs/RobloxMobile.png"
+    const HeaderImgDesktop = "https://nj.dekhub.com/public/roblox/imgs/Roblox-Header-Desktop.png"
+    const HeaderImgMobile = "https://nj.dekhub.com/public/roblox/imgs/Roblox-Header-Mobile.png"
     return (
         <div className="Unity-Header">
             <div className="Header-Roblox-Image">
@@ -14,8 +14,9 @@ function CourseHeader() {
             <div className="Header">
                 <h2>Roblox สำคัญอย่างไร</h2>
             </div>
+            <p className="space-2"></p>
             <div className="Header-Detail">
-                <p>Roblox มีความสำคัญสำหรับเด็กเล็กในหลายแง่มุม เพราะมันไม่ใช่แค่เกม แต่ยังเป็นเครื่องมือการเรียนรู้และพัฒนาทักษะต่าง ๆ ได้อย่างดี</p>
+                <p className="Header-Detail-Text">Roblox มีความสำคัญสำหรับเด็กเล็กในหลายแง่มุม เพราะมันไม่ใช่แค่เกม แต่ยังเป็นเครื่องมือการเรียนรู้และพัฒนาทักษะต่าง ๆ ได้อย่างดี</p>
                 <div className="Header-Detail-Box">
                     <p>1. การพัฒนาความคิดสร้างสรรค์</p>
                     <p>2. การพัฒนาทักษะด้านเทคโนโลยี</p>

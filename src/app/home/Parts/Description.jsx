@@ -38,14 +38,14 @@ function Description() {
               playsInline
               className="nsc-video-desktop"
             >
-              <source src="https://nj.dekhub.com/public/videos/NSC2025.mp4" type="video/mp4" />
+              <source src="https://nj.dekhub.com/public/videos/PXS69.mp4" type="video/mp4" />
             </video>
             <video
               controls
               playsInline
               className="nsc-video-mobile"
             >
-              <source src="https://nj.dekhub.com/public/videos/NSC2025.mp4" type="video/mp4" />
+              <source src="https://nj.dekhub.com/public/videos/PXS69.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

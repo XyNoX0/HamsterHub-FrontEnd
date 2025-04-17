@@ -50,7 +50,7 @@
   left: 0;
   right: 0;
 
-  background: rgb(0, 0, 0, 0.4);
+  /* background: rgb(0, 0, 0, 0.4); */
 
   animation: sizeInCourse  1s 0.4s forwards;
  

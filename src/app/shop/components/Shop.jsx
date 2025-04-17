@@ -17,19 +17,19 @@ const items = [
       },
       {
         title: "Mechanical Keyboard",
-        subtitle: "440",
+        subtitle: "420",
         image: "https://nj.dekhub.com/public/imgs/Shop/Gadgets/Keyboard_Mechanical.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/Gadgets/Keyboard_Mechanical.png",
       },
       {
         title: "Powerbank 66W",
-        subtitle: "400",
+        subtitle: "445",
         image: "https://nj.dekhub.com/public/imgs/Shop/Gadgets/Powerbank_66W.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/Gadgets/Powerbank_66W.png",
       },
       {
         title: "True Wireless Earbuds",
-        subtitle: "149",
+        subtitle: "148",
         image: "https://nj.dekhub.com/public/imgs/Shop/Gadgets/True_Wireless_Earbuds.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/Gadgets/True_Wireless_Earbuds.png",
       }
@@ -41,7 +41,7 @@ const items = [
     shopItems: [
       {
         title: "Aseprite",
-        subtitle: "169",
+        subtitle: "167",
         image: "https://nj.dekhub.com/public/imgs/Shop/Software/Aseprite.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/Software/Aseprite.png",
       },
@@ -53,7 +53,7 @@ const items = [
       },
       {
         title: "Wallpaper Engine",
-        subtitle: "59",
+        subtitle: "57",
         image: "https://nj.dekhub.com/public/imgs/Shop/Software/Wallpaper_Engine.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/Software/Wallpaper_Engine.png",
       }
@@ -65,7 +65,7 @@ const items = [
     shopItems: [
       {
         title: "Aura Studio Speaker",
-        subtitle: "400",
+        subtitle: "418",
         image: "https://nj.dekhub.com/public/imgs/Shop/ArtStyle/Aura_Studio_Speaker.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/ArtStyle/Aura_Studio_Speaker.png",
       },
@@ -77,13 +77,13 @@ const items = [
       },
       {
         title: "Duck Lamp",
-        subtitle: "190",
+        subtitle: "196",
         image: "https://nj.dekhub.com/public/imgs/Shop/ArtStyle/Duck_Lamp.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/ArtStyle/Duck_Lamp.png",
       },
       {
         title: "LED Mousepad",
-        subtitle: "149",
+        subtitle: "143",
         image: "https://nj.dekhub.com/public/imgs/Shop/ArtStyle/LED_Mouse_Pad.png",
         content: "https://nj.dekhub.com/public/imgs/Shop/ArtStyle/LED_Mouse_Pad.png",
       },

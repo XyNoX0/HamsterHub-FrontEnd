@@ -8,7 +8,7 @@ export default function Profile({ params }) {
     if (code == "ecwx") {
       window.location.href = "https://nj.dekhub.com/web";
     } else {
-      return null;
+      window.location.href = "https://nj.dekhub.com/web";
     }
   }, [code == "ecwx"]);
   return null;

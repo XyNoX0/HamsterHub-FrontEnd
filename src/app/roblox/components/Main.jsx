@@ -38,7 +38,8 @@ function Main() {
 
     const course = courseData.find((item) => item.courseDetail.course_path === "roblox");
     const course2 = courseData.find((item) => item.courseDetail.course_path === "roblox-2");
-
+    const course3 = courseData.find((item) => item.courseDetail.course_path === "roblox-3");
+    console.log("course3",course3)
     // If no course is found, show an error or fallback
     // if (!course) {
     //   return (
@@ -51,8 +52,12 @@ function Main() {
     // }
 
     return (
-        <div >
+        <div>
             <CourseHeader />
+            {/* <CourseHero courseData={course3.courseDetail} />
+            <CourseContent content={course3.content} />
+            <CourseOutline timeline={course3.timeline} />
+            <p className="space"></p> */}
             <CourseHero courseData={course.courseDetail} />
             <CourseContent content={course.content} />
             <CourseIndex />

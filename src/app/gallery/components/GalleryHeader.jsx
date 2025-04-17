@@ -5,7 +5,7 @@ function GalleryHeader() {
   return (
     <div className="galleryHeader">
       <video
-        src="/assets/Gallery1.mp4"
+        src="/assets/Gallery.mp4"
         className="galleryHeader-desktop"
         autoPlay
         muted
@@ -13,7 +13,7 @@ function GalleryHeader() {
         disablePictureInPicture
       ></video>
       <video
-        src="/assets/Gallery-mobile.mp4"
+        src="/assets/Gallery-Mobile.mp4"
         className="galleryHeader-mobile"
         autoPlay
         muted

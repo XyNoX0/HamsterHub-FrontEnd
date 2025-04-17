@@ -26,6 +26,9 @@
         width: 85%;
         font-size: 0.7rem;
     }
+    .Header-Detail-Text{
+        width: max-content;
+    }
 }
 
 .space {
@@ -51,7 +54,7 @@
     padding: 0.7rem;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 70%;
 }
 
 .Detail-Box {
@@ -61,9 +64,19 @@
 }
 
 .Header-Detail-Box2 {
+    text-align: center;
     padding: 0.7rem;
     width: 50%;
+    height: auto;
     display: inline-block;
+    h3 {
+        width: max-content;
+        margin-left: 30%;
+    }
+    p{
+        text-align: left;
+        margin-left: 40%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -72,6 +85,11 @@
     }
     .Img-mobile {
         display: block;
+    }
+    .Header-Detail{
+        .Header-Detail-Text {
+            width: 90%;
+        }
     }
     .Header-Roblox-Image {
         width: 100vw;
@@ -91,11 +109,25 @@
         width: 100%;
         margin: auto;
     }
+
+    .Header-Detail-Box {
+        padding: 0.7rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
     
     .Header-Detail-Box2 {
         padding: 0.7rem;
         width: 95%;
-        margin-left: 20px;
         display: inline-block;
+        h3 {
+            width: max-content;
+            margin-left: 20%;
+        }
+        p{
+            text-align: left;
+            margin-left: 25%;
+        }
     }
 }

@@ -48,7 +48,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(0, 0, 0, 0.4);
+  /* background: rgb(0, 0, 0, 0.4); */
   animation: sizeInCourse 1s 0.4s forwards;
 }
 
@@ -166,7 +166,17 @@
   text-align: center;
 }
 
+.img-mobile{
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
+  .img-desktop{
+    display: none;
+  }
+  .img-mobile{
+    display: block;
+  }
   .course-hero {
     hr {
       width: 100%;

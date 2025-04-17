@@ -38,28 +38,40 @@ function MainSlider() {
     //   image: "https://nj.dekhub.com/public/imgs/header3.png",
     //   link: "#",
     // },
+    
     {
-      title: "NSC Software Project",
-      description: "ฝึกออกแบบและนำเสนอผลงานสำหรับเข้าแข่งขันรายการระดับประเทศ",
+      title: "Make Game with AI (ราคาพิเศษครบรอบ 4 ปี)",
+      description: "",
       type: "image",
-      content_desktop: "https://nj.dekhub.com/public/imgs/NSCBannerDesktop.png",
-      content_mobile: "https://nj.dekhub.com/public/imgs/NSCBannerMobile.png",
-      image: "https://nj.dekhub.com/public/imgs/NSCTN.png",
+      content_desktop: "https://nj.dekhub.com/public/imgs/AIGame/AIGame-2_DT.png",
+      content_mobile: "https://nj.dekhub.com/public/imgs/AIGame/AIGame-2_MB.png",
+      image: "https://nj.dekhub.com/public/imgs/AIGame/AI_Robot.png",
       placeholder: "",
-      link: "/nsc",
-      book: "/apply/935",
+      link: "/gameai",
+      book: "/apply/820",
     },
     {
-      title: "game Deep SeeK",
-      description: "สนุกยิ่งกว่าเล่น คือการ Hack ลึกถึงองค์ประกอบของการสร้างเกม",
+      title: "กิจกรรมพิเศษ 'ตึงจัดเต็ม' สู่ Port69",
+      description: "ได้สร้างสิ่งที่ชอบ เป็นผลงานเข้าม.ดัง 🌟รอบที่ 3",
       type: "image",
-      content_desktop: "https://nj.dekhub.com/public/imgs/GDS.png",
-      content_mobile: "https://nj.dekhub.com/public/imgs/GDS.png",
-      image: "https://nj.dekhub.com/public/imgs/GDSTN-2.png",
+      content_desktop: "https://nj.dekhub.com/public/imgs/PortDT.png",
+      content_mobile: "https://nj.dekhub.com/public/imgs/PortMB.png",
+      image: "https://nj.dekhub.com/public/imgs/port69_TN.png",
       placeholder: "",
-      link: "/gamedeepseek",
-      book: "/apply/121",
+      link: "/port69",
+      book: "/apply/125",
     },
+    // {
+    //   title: "NSC Software Project S2",
+    //   description: "ฝึกออกแบบและนำเสนอผลงานสำหรับเข้าแข่งขันรายการระดับประเทศ",
+    //   type: "image",
+    //   content_desktop: "https://nj.dekhub.com/public/imgs/NSCBannerDesktop.png",
+    //   content_mobile: "https://nj.dekhub.com/public/imgs/NSCBannerMobile.png",
+    //   image: "https://nj.dekhub.com/public/imgs/NSCTN.png",
+    //   placeholder: "",
+    //   link: "/nsc",
+    //   book: "/apply/935",
+    // },
     {
       title: "mrCITY & veggie dash",
       description: '🏆 2nd & 3rd NSC Winners\n"Great success comes from small steps"',
@@ -179,7 +191,7 @@ function MainSlider() {
 
                 )}
               </div>
-              <div className="text-overlay">
+              <div className="home-text-overlay">
                 <h1>{slide.title}</h1>
                 <div className="slide-description">
                   {slide.description.split("\n").map((line, i) => (

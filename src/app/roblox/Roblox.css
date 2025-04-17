@@ -61,7 +61,12 @@
 }
 
 .space {
+    padding: 20px;
+    background-color: var(--off-white);
+}
+.space-2 {
     padding: 10px;
+    background-color: var(--off-white);
 }
 
 @media screen and (max-width: 600px) {

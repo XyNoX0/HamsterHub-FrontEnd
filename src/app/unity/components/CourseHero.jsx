@@ -9,7 +9,7 @@ function CourseHero({ courseData }) {
     <div className="course-hero">
       <div className="course-hero-img">
         <Image src={cover} alt={name} width={1920} height={1080} priority />
-        <div className="course-header">
+        {/* <div className="course-header">
           <p>
             {promotion}
           </p>
@@ -19,7 +19,7 @@ function CourseHero({ courseData }) {
             <h1>{name}</h1>
             <p>{description}</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="course-hero-buttom">
         <div className="course-price">

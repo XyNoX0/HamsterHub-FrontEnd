@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { SiPython, SiUnity, SiRoblox } from "react-icons/si";
 import { getCourses } from "@/utils/api";
@@ -6,8 +7,26 @@ import Link from "next/link"; // Import Link from next/link
 import "./Navbar.css";
 import Image from "next/image";
 
-export default async function Navbar() {
-  const LinkData = await getCourses(); // Renaming Link to LinkData to avoid confusion with next/link
+export default function Navbar() {
+  const [LinkData, setLinkData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const LinkCourseData = await getCourses();
+        setLinkData(LinkCourseData);
+      } catch (error) {
+        console.error("Error fetching course data:", error);
+      }
+    };
+    fetchData();
+  }, [getCourses]);
+
+  if (!LinkData) {
+    return
+  }
+
+  // const LinkData = await getCourses();
   return (
     <div className="navbar">
       <ul>
@@ -61,6 +80,12 @@ export default async function Navbar() {
                 <hr />
               </Link>
             ))}
+            <Link href="/gallery">
+              <h3 className="about">Gallery</h3>
+            </Link>
+            <Link href="/about">
+              <h3 className="about">About us</h3>
+            </Link>
           </div>
         </div>
       </ul>

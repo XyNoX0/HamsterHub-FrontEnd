@@ -173,6 +173,13 @@
 .hamburger-checkbox:checked ~ .dropdown-menu .dropdown-item {
     opacity: 1;
 }
+
+.about{
+    color: var(--blue);
+}
+.about:hover{
+    color: #ffdc5c;
+}
 @media screen and (max-width: 1000px) {
     
     .nav-wrapper {

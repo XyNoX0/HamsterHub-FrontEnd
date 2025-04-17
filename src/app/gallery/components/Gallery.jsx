@@ -6,6 +6,34 @@ import Image from "next/image";
 const items = [
   
   {
+    title: "Global Game Jam 2025",
+    description:
+      "",
+    galleryItems: [
+      {
+        title: "Bubbling through the sky",
+        subtitle: "",
+        image:
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/BBTG.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/BBTG.mov",
+      },
+      {
+        title: "The Ocean",
+        subtitle: "",
+        image:
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GGJ2025.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GGJ2025.mp4",
+      },
+      {
+        title: "Bastard baby",
+        subtitle: "",
+        image:
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/BastardBaby.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/BastardBaby.mov",
+      },
+    ],
+  },
+  {
     title: "Desktop Game",
     description:
       "Hamster Game Dev. created indy simple games based on their styles and funny gameplay.",

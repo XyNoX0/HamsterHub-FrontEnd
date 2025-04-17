@@ -35,16 +35,7 @@ function Post() {
     //       text: "พัฒนาโครงการตามหลัก Software Engineering",
     //     },
     //   ],
-    // },
-    {
-      img: "https://nj.dekhub.com/public/imgs/GDS.png",
-      title: "game Deep SeeK",
-      subtitle: "into the depth of the most popular games ",
-      about: "/gamedeepseek",
-      link: "/apply/121",
-      position: "top",
-      detail: [],
-    },
+    // }, 
     {
       img: "https://nj.dekhub.com/public/imgs/3DToon-1.png",
       title: "Unity",

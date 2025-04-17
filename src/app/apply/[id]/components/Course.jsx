@@ -42,7 +42,7 @@ function CourseApply({ items }) {
                 <div className="course-detail">
                     {/* <p className="course-tag">{courseData.tag}</p> */}
                     <h2 className="course-subject">{courseData.subject}</h2>
-                    <h5 className="course-price"><b>฿{courseData.price}</b></h5>
+                    <h5 className="course-price"><b>{courseData.price}฿</b></h5>
                     <h5 className="course-day">เริ่ม {courseData.startdate} ⏰{courseData.time}</h5>
                 </div>
             </div>
