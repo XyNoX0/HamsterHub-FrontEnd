@@ -1,0 +1,290 @@
+.tech-detail-container {
+  background: white;
+}
+
+.tech-detail-header {
+  .header-title {
+    width: max-content;
+    margin: auto;
+
+    h3 {
+      color: #7da7d2;
+      font-size: 4rem;
+    }
+  }
+
+  .header-img {
+    width: max-content;
+    margin: auto;
+
+    img,
+    video {
+      width: 100vw;
+      height: auto;
+    }
+  }
+}
+
+
+.tech-detail-timeline {
+  background: none;
+  width: 100vw;
+
+  .timeline-title {
+    width: max-content;
+    margin: auto;
+
+    h3 {
+      color: #7da7d2;
+      font-size: 4rem;
+    }
+  }
+
+  .timeline-title-python {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+
+    h3 {
+      color: #031c41;
+      font-size: 4rem;
+    }
+  }
+
+  .timeline-img {
+    width: max-content;
+    margin: auto;
+
+    img,
+    video {
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  .timeline-detail {
+    width: 80vw;
+    height: auto;
+    padding: 2% 3%;
+    background-color: #add1ec;
+    border-radius: 70px;
+    margin: auto;
+
+    h3 {
+      font-size: 2rem;
+      color: #1d1148;
+    }
+
+    p {
+      color: #1d1148;
+    }
+
+    .text-2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.tech-detail-timeline-2 {
+  background: #031c41;
+  width: 100vw;
+
+  .timeline-title {
+    width: max-content;
+    margin: auto;
+
+    h3 {
+      color: #7da7d2;
+      font-size: 4rem;
+    }
+  }
+
+  .timeline-title-unity {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+
+    h3 {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      text-shadow:
+        0 0 10px #7da7d2,
+        0 0 20px #7da7d2,
+        0 0 40px #7da7d2,
+        0 0 80px #7da7d2;
+      font-size: 4rem;
+    }
+  }
+
+  .timeline-img {
+    width: max-content;
+    margin: auto;
+
+    img,
+    video {
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  .timeline-detail {
+    width: 80vw;
+    height: auto;
+    padding: 2% 3%;
+    background-color: #ffffff;
+    border-radius: 70px;
+    margin: auto;
+
+    h3 {
+      font-size: 2rem;
+      color: #1d1148;
+    }
+
+    p {
+      color: #1d1148;
+    }
+
+    .text-2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.space {
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .space {
+    padding: 10px;
+  }
+
+  .tech-video-desktop {
+    display: block;
+  }
+
+  .tech-video-mobile {
+    display: none;
+  }
+
+  .tech-detail-header {
+    .header-title {
+      h3 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .tech-detail-timeline {
+    background: none;
+    width: 100vw;
+
+    .timeline-title {
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .timeline-title-python {
+      gap: 10px;
+
+      h3 {
+        color: #031c41;
+        font-size: 1.3rem;
+      }
+    }
+
+    .timeline-img {
+      width: max-content;
+      margin: auto;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+
+    .timeline-detail {
+      width: 90vw;
+      height: auto;
+      padding: 2% 3%;
+      background-color: #add1ec;
+      border-radius: 15px;
+      margin: auto;
+
+      h3 {
+        font-size: 1.3rem;
+        color: #1d1148;
+      }
+
+      p {
+        color: #1d1148;
+      }
+
+      .text-1 {
+        font-size: 0.8rem;
+      }
+
+      .text-2 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .tech-detail-timeline-2 {
+    width: 100vw;
+
+    .timeline-title {
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .timeline-title-unity {
+      gap: 10px;
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    .timeline-img {
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+
+    .timeline-detail {
+      width: 90vw;
+      height: auto;
+      padding: 2% 3%;
+      background-color: #ffffff;
+      border-radius: 15px;
+      margin: auto;
+
+      h3 {
+        font-size: 1.3rem;
+        color: #1d1148;
+      }
+
+      p {
+        color: #1d1148;
+      }
+
+      .text-1 {
+        font-size: 0.8rem;
+      }
+
+      .text-2 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

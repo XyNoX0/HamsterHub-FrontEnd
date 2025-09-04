@@ -1,27 +1,31 @@
-.galleryHeader{
-  width: 100%;
+.galleryHeader {
+  /* width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: top;
   justify-content: top;
   animation: sizeInGallery 1s 1.6s forwards;
-  padding-top: 2rem;
-
+  padding-top: 2rem; */
 }
-.galleryHeader video,.galleryHeader img{
+
+.galleryHeader video,
+.galleryHeader img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 @keyframes sizeInGallery {
   0% {
     height: 100vh;
   }
+
   100% {
     height: 90vh;
   }
 }
+
 .galleryHeader-header {
   display: grid;
   width: 100%;
@@ -31,30 +35,135 @@
   background-color: var(--off-white);
   text-align: center;
   box-shadow: 10px 0 10px hsla(0, 0%, 0%, 0.5);
-  z-index: 4;
 
   h2 {
     font-size: 0.6rem;
     font-weight: 300;
   }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 5%;
+    gap: 1rem;
+
+    .box-img {
+      width: 15%;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .box-text {
+      width: 40%;
+      text-align: left;
+
+      h1 {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+
+    .box-video {
+      width: 30%;
+      height: 100%;
+
+      video {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+      }
+    }
+  }
 }
+
 .galleryHeader-mobile {
   display: none;
 }
+
 @media screen and (max-width: 600px) {
+  .galleryHeader-header {
+    display: grid;
+    width: 100%;
+    padding: 0.2rem 2rem;
+    color: var(--dark-gray);
+    height: auto;
+    background-color: var(--off-white);
+    text-align: center;
+    box-shadow: 10px 0 10px hsla(0, 0%, 0%, 0.5);
+
+    h2 {
+      font-size: 0.6rem;
+      font-weight: 300;
+    }
+
+    .box {
+      display: block;
+      text-align: center;
+      .box-img {
+        width: 60%;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      .box-text {
+        width: 80%;
+        text-align: left;
+        margin: auto;
+
+        h1 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+      }
+
+      .box-video {
+        width: 90%;
+        height: auto;
+        margin: auto;
+
+        video {
+          width: 100%;
+          height: auto;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+
   .galleryHeader-desktop {
     display: none;
   }
+
   .galleryHeader-mobile {
     display: flex;
+  }
+
+  @keyframes sizeInGallery {
+    0% {
+      height: 100vh;
     }
-    @keyframes sizeInGallery {
-      0% {
-        height: 100vh;
-      }
-      100% {
-        height: 100vh;
-      }
+
+    100% {
+      height: 100vh;
     }
-    
+  }
+
 }

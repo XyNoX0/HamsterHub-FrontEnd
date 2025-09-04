@@ -13,7 +13,7 @@ function CourseHero() {
       </div>
       <div className="course-hero-buttom">
         <div className="course-price">
-          <p>26-27 เม.ษ.</p>
+          <p>7-8 มิ.ย.</p>
           <p>เรียนเวลา 14:00-21:00</p>
         </div>
         <hr />
@@ -25,7 +25,7 @@ function CourseHero() {
       <div className="course-hero-buttom-mobile">
         <div className="course-price">
           <div className="course-price-mobile-wrapper">
-            <p>26-27 เม.ษ.</p>
+            <p>7-8 มิ.ย.</p>
             <p>เรียนเวลา 14:00-21:00</p>
           </div>
           <hr />

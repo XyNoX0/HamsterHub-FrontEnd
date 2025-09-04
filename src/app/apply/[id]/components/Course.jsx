@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import "./Course.css";
-import { getCourseData } from "../../../../utils/api";
+import { getCourseData } from "@/utils/api";
 import Image from "next/image";
 
 function CourseApply({ items }) {

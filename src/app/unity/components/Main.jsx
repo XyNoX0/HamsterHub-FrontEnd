@@ -58,11 +58,11 @@ function Main() {
             <CourseGet get={course.get} />
             <CourseOutline timeline={course.timeline} />
             <CourseTag courseData={course.courseDetail} />
-            <CourseHero courseData={course2.courseDetail} />
+            {/* <CourseHero courseData={course2.courseDetail} />
             <CourseContent content={course2.content} courseDetail={course2.courseDetail} />
             <CourseGet get={course2.get} />
             <CourseOutline timeline={course2.timeline} />
-            <CourseTag courseData={course2.courseDetail} />
+            <CourseTag courseData={course2.courseDetail} /> */}
             <div className="course-hero-buttom-mobile">
                 <h3 style={{ color: "black" }}>Project Gallery</h3>
             </div>

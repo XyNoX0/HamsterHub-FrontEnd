@@ -178,7 +178,39 @@
     color: var(--blue);
 }
 .about:hover{
+    font-size: 1.2rem;
     color: #ffdc5c;
+}
+.login{
+    background: none;
+    color: var(--blue);
+    font-size: 1.17rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.login:hover{
+    font-size: 1.2rem;
+    color: #ffdc5c;
+}
+
+hr{
+    opacity: .2;
+}
+
+.login-container {
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    img:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
 }
 @media screen and (max-width: 1000px) {
     

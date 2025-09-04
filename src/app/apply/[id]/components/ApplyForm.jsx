@@ -39,7 +39,7 @@ function ApplyForm({ items }) {
 
   }, [id]);
 
-  const router = useRouter(); // Initialize router
+  const router = useRouter(); 
 
   const handleChange = (e) => {
     setFormData({
@@ -49,7 +49,7 @@ function ApplyForm({ items }) {
   };
 
   const handleSubmit = async  (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     // console.log("courseData",courseData)
     formData["id"] = courseData.id
     formData["no"] = courseData.no

@@ -19,7 +19,7 @@ function CourseHero() {
         <hr />
         <div className="course-links">
           <h3>
-          <h3><span className="discount-line">12990฿</span> 9,990฿</h3>
+          <h3>12990฿</h3>
           </h3>
           <Link href="/apply/936/">Book</Link>
           </div>
@@ -34,7 +34,7 @@ function CourseHero() {
         </div>
         <div className="course-links">
           <h3>
-          <h3><span className="discount-line">12990฿</span> 9,990฿</h3>
+          <h3>12990฿</h3>
           </h3>
           <Link href="/apply/936/">Book</Link>
           </div>

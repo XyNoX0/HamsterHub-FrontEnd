@@ -13,13 +13,13 @@ function CourseHero() {
 
       <div className="course-hero-buttom">
         <div className="course-price">
-          <p>16 เม.ย. - 9 พ.ค. 68 (พุธ, ศุกร์)</p>
+          <p>6 - 28 ก.ย. (เสาร์, อาทิตย์)</p>
           <p>เรียนเวลา 19:00-21:00</p>
         </div>
         <hr />
         <div className="course-links">
           <h3>
-            <span className="discount-line">2990฿</span> 1990฿
+            2490฿
           </h3>
           <Link href="/apply/820/">Book</Link>
         </div>
@@ -27,14 +27,14 @@ function CourseHero() {
       <div className="course-hero-buttom-mobile">
         <div className="course-price">
           <div className="course-price-mobile-wrapper">
-            <p>16 เม.ย. - 9 พ.ค. 68 (พุธ, ศุกร์)</p>
+            <p>6 - 28 ก.ย. (เสาร์, อาทิตย์)</p>
             <p>เรียนเวลา 19:00-21:00</p>
           </div>
           <hr />
         </div>
         <div className="course-links">
           <h3>
-            <span className="discount-line">2990฿</span> 1990฿
+            2490฿
           </h3>
           <Link href="/apply/820/">Book</Link>
         </div>

@@ -10,6 +10,17 @@ import Image from "next/image";
 export default function Navbar() {
   const [LinkData, setLinkData] = useState(null);
 
+  const loginWithDiscord = () => {
+    const params = new URLSearchParams({
+      client_id: "1380043089862987846",
+      redirect_uri: 'http://localhost:3000/api/auth/callback',
+      response_type: 'code',
+      scope: 'identify email',
+    });
+    window.location.href = `https://discord.com/api/oauth2/authorize?${params}`;
+  };
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -47,7 +58,6 @@ export default function Navbar() {
             <Link href="/python">
               <SiPython className="nav-icon" />
             </Link>
-
             <Link href="/unity">
               <SiUnity className="nav-icon" />
             </Link>
@@ -65,12 +75,10 @@ export default function Navbar() {
             className="hamburger-checkbox"
           />
           <div className="dropdown-menu">
-
             <h1 className="blue">Courses</h1>
             {LinkData.map((item, index) => (
               <Link
                 href={`/course/${item.no}`}
-                // href={`#`}
                 key={index}
                 className="dropdown-item"
               >
@@ -83,9 +91,25 @@ export default function Navbar() {
             <Link href="/gallery">
               <h3 className="about">Gallery</h3>
             </Link>
-            <Link href="/about">
-              <h3 className="about">About us</h3>
-            </Link>
+            <hr />
+            <div className="login-container">
+              <Image
+                src="/assets/Hams_Icon.png"
+                width={200}
+                height={200}
+                alt="Hamster Logo"
+                className="hamster-logo"
+                priority
+                onClick={loginWithDiscord}
+              />
+              <Link href="/about">
+                <h3 className="about">About us</h3>
+              </Link>
+            </div>
+
+            <hr />
+            {/* <button onClick={loginWithDiscord} className="login">Member Sign in</button> */}
+            <hr />
           </div>
         </div>
       </ul>

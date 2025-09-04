@@ -13,12 +13,12 @@ function CourseHero({ courseData }) {
         <div className="course-header">
           <p>{promotion}</p>
         </div>
-        <div className="course-overlay">
+        {/* <div className="course-overlay">
           <div className="course-text">
             <h1>{name}</h1>
             <p>{description}</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="course-hero-buttom">
         <div className="course-price">

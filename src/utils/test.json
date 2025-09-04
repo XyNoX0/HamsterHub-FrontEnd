@@ -211,6 +211,237 @@
       }
     ]
   },
+   {
+    "courseDetail": {
+      "id": "",
+      "no": "",
+      "course_path":"bsep",
+      "name": "",
+      "description": "พัฒนาผลงานสู่การแข่งระดับประเทศใน 9 เดือน",
+      "cover": "https://nj.dekhub.com/public/imgs/bsepDT.png",
+      "price": "19,990",
+      "discount":"19,990",
+      "promotion": "ภายใน 15 ธันวาคมนี้ใช้รหัสผู้แนะนำ \"2025\" ได้ราคาพิเศษ",
+      "date": "9 ม.ค. 68 - 22 ก.ย. 68 (จันทร์, พฤหัส)",
+      "time":"19:00-21:00",
+      "definition": "\"ความสนุก\" เป็นสำคัญและต่อเนื่อง ทะลายขีดจำกัดของน้องพัฒนาทักษะสู่ผลงานระดับประเทศ",
+      "book_link": "/apply/942"
+    },
+    "content": {
+      "content_title": "กระบวนการพัฒนาโปรเจค",
+      "content_description": "กระบวนการพัฒนาโปรเจค ใช้หลัก Software Engineering ผนวกเข้ากับประสบการณ์ออกแบบ ส่งมอบโครงการซอฟต์แวร์ขนาดใหญ่ให้บริษัทชั้นนำหลายแห่ง Simplify จนเหลือกระบวนการที่ง่าย แล้วพัฒนาโครงการให้น้องๆ จนได้ผลดีขึ้นมากในปีนี้",
+      "content_img": "/assets/NSC3.png",
+      "content_img_mobile": "/assets/NSC-mobile.png",
+      "img_description": "เริ่มด้วยความสนุก ออกแบบเป้าหมายร่วมกัน พัฒนาเส้นทางพัฒนาสู่การยกระดับผลงานสู่ระดับ Pro ด้วยการคุมคุณภาพทุกขั้นตอน แล้วนำไปใช้ประโยชน์ได้จริง",
+      "content_detail": [
+        {
+          "header": "Conceptual Design",
+          "content": "ออกแบบแนวคิดที่แตกต่าง หรือมีประโยชน์ชัดเจน นำไปสู่ชัยชนะร่วมกับผู้เชี่ยวชาญ"
+        },
+        {
+          "header": "Personal Coach",
+          "content": "เจาะลึกถึงจุดอ่อนและจุดแข็งของทีมงานทุกคน และปรับแนวการพัฒนาให้เข้ากับศักยภาพ"
+        },
+        {
+          "header": "Prototype",
+          "content": "สร้างต้นแบบเพื่อเก็บประสบการณ์การใช้งานและความคิดเห็นในกลุ่มผู้ทดสอบ"
+        },
+        {
+          "header": "Simulation",
+          "content": "จําลองสถานการณ์ให้เหมือนจริง ก่อนจะลงพื้นที่ทดสอบจริง"
+        },
+        {
+          "header": "UX/UI Design",
+          "content": "ออกแบบประสบการณ์ที่ดีที่สุดเพื่อให้ประทับใจผู้ใช้งาน"
+        },
+        {
+          "header": "เลือกเทคโนโลยีที่เหมาะกับตัวผลงาน",
+          "content": "เพื่อความเร็วการพัฒนาและคุณภาพผลงาน"
+        },
+        {
+          "header": "เข้าร่วมการแข่งโชว์ผลงานให้โลกรู้",
+          "content": "ในระการระดับประเทศขึ้นไปเช่น NSC, YSC, Thailand Game Show, Global Game Jam, The New Gen และอื่น"
+        },
+        {
+          "header": "Agile Techniques",
+          "content": "เทคนิคค่อยๆ พัฒนาทีละส่วนและเก็บรายละเอียดแบบมืออาชีพ"
+        },
+        {
+          "header": "พัฒนาผลงานแล้วนำขึ้น Store",
+          "content": "เก็บรายละเอียดจนสมบูรณ์ เข้าถึงผู้คนทั้งโลกและอาจสร้างรายได้ด้วย"
+        }
+      ]
+    },
+    "get": {
+      "get_video": "/assets/WhoWeAre.mp4",
+      "get_title": "🎁 สิ่งที่ได้รับ",
+      "get_list": [
+        {
+          "title": "👨‍🏫 ฝึกกับผู้เชี่ยวชาญ",
+          "description": "ฝึกกับทีมงานผู้ปั้นน้องๆ ที่ได้เข้ารอบชิง 7 ผลงาน ใน NSC-2024"
+        },
+        {
+          "title": "📂 ผลงาน เข้ารอบ Portfolio",
+          "description": "ผลงานที่มั่นใจเข้ารอบ Port + ฝีมือระดับน้องๆ วิศวะคอมฯ"
+        },
+        {
+          "title": "🏆 เข้าแข่งขันรายการระดับประเทศ",
+          "description": "เข้าร่วมแข่งขันรายการที่เลือกสรร up ประสบการณ์เทพๆ"
+        },
+        {
+          "title": "🎉 ฝึกทำงานเป็นทีม",
+          "description": "ฝึกทำงานเป็นทีม ได้แก้ปัญหาพร้อมเพื่อนๆ"
+        },
+        {
+          "title": "🌟 ทักษะสำคัญ",
+          "description": "ทักษะสำคัญในโลกเทคโนโลยีที่ทำให้น้องได้เปรียบ"
+        }
+      ]
+    },
+    "timeline": {
+      "timeline_title": "Timeline",
+      "timeline_description": "แผนการตั้งแต่พื้นฐานจำเป็น สร้างความแตกต่างสู่ผลงานสุดยอดของประเทศใน 9 เดือน พร้อมโปรแกรมการแข่งขันที่น่าสนใจทั้งปี 2025",
+      "timeline_img": "/assets/npimg.png",
+      "timeline_list": [
+        {
+          "title": "Day 1-2: Business Goal Setup",
+          "topics": [
+            "- Market Survey & Best Practices",
+            "- การสร้างรายได้",
+            "- ขายแนวไหนดี"
+          ]
+        },
+        {
+          "title": "Track 1: Day 3-8: Data Science",
+          "topics": [
+            "- สถิติ",
+            "- วิธีการรวบรวมข้อมูล",
+            "- แนวทางการวิเคราะห์ และจัดการข้อมูลขนาดใหญ่",
+            "- การคาดการณ์อนาคต",
+            "- การนำเสนอข้อมูลอย่างสร้างสรรต์",
+            "- การใช้งาน AI ร่วมวิเคราะห์ จัดการข้อมูล และคาดการณ์แนวโน้ม"
+          ]
+        },
+        {
+          "title": "Track 2: Day 3-8: Advanced Gaming Features",
+          "topics": [
+            "- Advanced Terrain",
+            "- Advanced Lighting & Shader",
+            "- Advanced Visual Effect",
+            "- การออกแบบ AI ผู้ช่วยขั้นสูง เพื่อช่วยเขียน code และสร้าง Asset ในแบบของเรา",
+            "- Optimization"
+          ]
+        },
+        {
+          "title": "Track 3: Day 3-8: Advanced Web Construction",
+          "topics": [
+            "- Back End",
+            "- การวางโครงสร้างเพื่อรองรับการทำเว็บใช้จริง",
+            "- การใช้งาน AI ช่วยในการสร้าง Web ให้เร็วและได้ดั่งใจ",
+            "- Security & Optimization"
+          ]
+        },
+        {
+          "title": "Day 9-12: Project Development",
+          "topics": [
+            "- สร้างโปรเจ๊คอย่างมีแบบแผน",
+            "- การแบ่งอย่างงานมีประสิทธิภาพ",
+            "- การพัฒนางานอย่างมีระบบ โดยใช้ AI เป็นผู้ช่วย"
+          ]
+        },
+        {
+          "title": "Day 13: Into the real world",
+          "topics": [
+            "- ธุรกิจที่มีรากฐานจาก Technology Projects",
+            "- วิเคราะห์เจาะลึกถึงสิ่งที่ลูกค้าได้รับจากผลงานเหล่านั้น"
+          ]
+        },
+        {
+          "title": "Day 14-18: User Experience",
+          "topics": [
+            "- ทดลองให้กลุ่มเป้าหมายใช้งานจริง",
+            "- ปรับ UI/UX ให้สอดคล้องกับการใช้งาน",
+            "- ทดสอบความพึงพอใจ"
+          ]
+        },
+        {
+          "title": "Day 19-20: Presentation",
+          "topics": [
+            "- ฝึกนำเสนอให้ลูกค้าสนใจ",
+            "- ฝึกการทำ Infographic"
+          ]
+        },
+        {
+          "title": "Day 21: World Best Marketing Strategies",
+          "topics": [
+            "- กลยุทธ์การตลาดเทคโนโลยีระดับโลก",
+            "- การออกแบบการขาย Project"
+          ]
+        },
+        {
+          "title": "Day 22-25: Real Project Deployment",
+          "topics": [
+            "- Mobile App Store & Stream Deployment",
+            "- Code Optimization",
+            "- Network & Performance Monitoring"
+          ]
+        },
+        {
+          "title": "Day 26-28: Beta Testing",
+          "topics": [
+            "- ทดสอบความประทับใจในการใช้งานกับกลุ่มผู้ใช้จริง",
+            "- เก็บ bug และปรับขั้นตอนสุดท้าย"
+          ]
+        },
+        {
+          "title": "Day 29-30: Project Launch",
+          "topics": [
+            "- Social Marketing",
+            "- Project Completion",
+            "- Portfolio Summary"
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "mrCITY",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/mrCITY.PNG",
+        "content": "https://nj.dekhub.com/public/videos/mrCITY.mp4"
+      },
+      {
+        "title": "Beam",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Beam.png",
+        "content": "https://nj.dekhub.com/public/videos/Beam.mp4"
+      },
+      {
+        "title": "Veggie Dash",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Veggie Dash.png",
+        "content": "https://nj.dekhub.com/public/videos/Veggie%20Dash.mp4"
+      },
+      {
+        "title": "ขนมปัง",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Knompang.png",
+        "content": "https://nj.dekhub.com/public/videos/Knompang.mp4"
+      },
+      {
+        "title": "wOof",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/wOof.png",
+        "content": "https://nj.dekhub.com/public/videos/wOof.mp4"
+      },
+      {
+        "title": "Pang",
+        "description": null,
+        "image": "https://nj.dekhub.com/public/imgs/Pang.png",
+        "content": "https://nj.dekhub.com/public/videos/Pang.mp4"
+      }
+    ]
+  },
   {
     "courseDetail": {
       "id": "93501",

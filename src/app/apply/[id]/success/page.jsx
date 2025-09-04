@@ -16,7 +16,7 @@ export default function Success({ params }) {
         <CourseApply items={id} />
         <Detail items={id}/>
         <Line />
-        <Payment />
+        <Payment courseId={id}/>
         <Footer />
       </div>
     );

@@ -15,7 +15,7 @@ function Rov() {
         />
         <div className="rov-banner-text">
           <h1>ROV Tournament</h1>
-          <h4>29-30 มีนาคม 2568</h4>
+          <h4>7-8 มิ.ย. 2568</h4>
         </div>
       </div>
       <div className="rov-text">

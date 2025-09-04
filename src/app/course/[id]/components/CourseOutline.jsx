@@ -23,7 +23,6 @@ function CourseOutline({ timeline }) {
            {timeline_description}
           </p>
         </div>
-
         {timeline_list.map((month, index) => (
           <div
             key={index}
@@ -32,8 +31,6 @@ function CourseOutline({ timeline }) {
             {month.title.split("\n").map((line, i) => (
             <h3 key={i}>{line}</h3> 
           ))}
-           
-
             <ul>
               {month.topics.map((topic, idx) => (
                 <li key={idx}>
@@ -43,13 +40,6 @@ function CourseOutline({ timeline }) {
             </ul>
           </div>
         ))}
-
-        <div className="button-container">
-          <label htmlFor="timeline-checkbox" className="checkbox-label">
-            <FaChevronDown id="down" />
-            <FaChevronUp id="up" />
-          </label>
-        </div>
         <div className="line"></div>
       </div>
     </div>

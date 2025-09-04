@@ -32,7 +32,7 @@ function Description() {
             <p><br /></p>
             กิจกรรมพิเศษ <Link className="event-btn" href="https://hamsterhub.co/gamedeepseek">สมัคร game Deep SeeK</Link>
           </h2> */}
-          <div>
+          {/* <div>
             <video
               controls
               playsInline
@@ -47,7 +47,7 @@ function Description() {
             >
               <source src="https://nj.dekhub.com/public/videos/PXS69.mp4" type="video/mp4" />
             </video>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

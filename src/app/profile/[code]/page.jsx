@@ -12,6 +12,5 @@ export default function Profile({ params }) {
     }
   }, [code == "ecwx"]);
   return null;
-
 };
 
