@@ -1,0 +1,32 @@
+.course-tag {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  background: white;
+  height: auto;
+  border: var(--gray);
+  
+
+  h1 {
+    line-height: 1;
+   
+  }
+
+  p {
+    line-height: 1.4;
+
+   
+  }
+  hr {
+    border: 1px solid #ccc;
+    margin: 0.2rem;
+    width: 80%;
+  }
+}
+.course-price hr{
+  width: 100%;
+}

@@ -1,0 +1,255 @@
+.about-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.about-card {
+  background-color: var(--color-light);
+  border-radius: 22px;
+  padding: 20px 18px 22px;
+  border: 2px solid color-mix(in srgb, var(--color-sea) 22%, transparent);
+  box-shadow: var(--shadow-card);
+}
+.about-card--me {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .about-card { padding: 24px 24px 26px; }
+}
+
+.about-cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed color-mix(in srgb, var(--color-sea) 30%, transparent);
+}
+.about-cardTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.about-cardTitleGroup--me {
+  flex: 1 1 auto;
+}
+.about-headerIcon {
+  height: 26px;
+  width: 26px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 0 rgba(11, 35, 51, 0.18));
+}
+.about-headerIcon-sun {
+  color: var(--color-sun-on-light);
+  fill: var(--color-sun);
+}
+.about-headerIcon-mint {
+  color: var(--color-mint-on-light);
+  fill: var(--color-mint);
+}
+.about-cardTitle {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 3.2vw, 28px);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: var(--color-sea-deep);
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.about-bodyText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-on-light);
+  white-space: pre-wrap;
+}
+
+.about-editActions {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .about-editActions {
+    top: 18px;
+    right: 18px;
+    gap: 8px;
+  }
+}
+
+.about-iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 2px solid color-mix(in srgb, var(--color-sea) 22%, transparent);
+  background: color-mix(in srgb, var(--color-light) 95%, white);
+  color: var(--color-sea-deep);
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(11, 35, 51, 0.06), 0 4px 12px -4px rgba(11, 35, 51, 0.10);
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease,
+              box-shadow 180ms ease, transform 120ms cubic-bezier(0.2, 0.8, 0.3, 1.4);
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .about-iconButton {
+    width: 38px;
+    height: 38px;
+  }
+}
+.about-iconButton:hover:not(:disabled) {
+  color: var(--color-sea);
+  background: color-mix(in srgb, var(--color-sea) 8%, white);
+  border-color: color-mix(in srgb, var(--color-sea) 45%, transparent);
+  box-shadow: 0 3px 0 rgba(11, 35, 51, 0.10), 0 6px 18px -6px rgba(29, 135, 193, 0.22);
+  transform: translateY(-1px) scale(1.06);
+}
+.about-iconButton--edit:hover:not(:disabled) {
+  color: var(--color-mint-on-light);
+  background: color-mix(in srgb, var(--color-mint) 12%, white);
+  border-color: color-mix(in srgb, var(--color-mint) 45%, transparent);
+  box-shadow: 0 3px 0 rgba(11, 35, 51, 0.08), 0 6px 18px -6px rgba(125, 216, 168, 0.28);
+}
+.about-iconButton--save:hover:not(:disabled) {
+  color: var(--color-mint-on-light);
+  background: color-mix(in srgb, var(--color-mint) 12%, white);
+  border-color: color-mix(in srgb, var(--color-mint) 45%, transparent);
+}
+.about-iconButton--cancel:hover:not(:disabled) {
+  color: #c42b1c;
+  background: color-mix(in srgb, #c42b1c 8%, white);
+  border-color: color-mix(in srgb, #c42b1c 35%, transparent);
+}
+.about-iconButton:active:not(:disabled) {
+  transform: translateY(0) scale(0.96);
+}
+.about-iconButton:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+.about-iconButton svg,
+.about-spin {
+  width: 17px;
+  height: 17px;
+  pointer-events: none;
+}
+.about-spin {
+  animation: about-spin 900ms linear infinite;
+}
+
+.about-editor {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 150px;
+  border: 2px solid color-mix(in srgb, var(--color-sea) 24%, transparent);
+  border-radius: 16px;
+  padding: 14px 16px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-on-light);
+  background: color-mix(in srgb, var(--color-light) 86%, white);
+  outline: none;
+}
+.about-editor:focus {
+  border-color: var(--color-sea);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-sea) 12%, transparent);
+}
+.about-error {
+  margin: 10px 0 0;
+  color: #c42b1c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@keyframes about-spin {
+  to { transform: rotate(360deg); }
+}
+
+.about-skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-skillRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.about-skillName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-on-light-strong);
+}
+.about-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.about-starSlot {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+.about-starBg,
+.about-starFill {
+  position: absolute;
+  inset: 0;
+  width: 18px;
+  height: 18px;
+}
+.about-starBg {
+  color: color-mix(in srgb, var(--text-on-light-strong) 18%, transparent);
+}
+.about-starFill {
+  color: var(--color-sun-on-light);
+  fill: var(--color-sun);
+}
+.about-starFillHalf {
+  clip-path: inset(0 50% 0 0);
+}
+
+/* ── Full Juice: skills stars pop-in ──
+   Each star starts tiny + transparent; when the skills card enters view it
+   pops to full size with a staggered per-star delay (set inline via
+   --star-delay). Overshoot easing gives a "ding!" feeling. Gated by
+   prefers-reduced-motion. */
+.about-starSlot {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 420ms cubic-bezier(0.2, 0.8, 0.3, 1.4),
+              opacity 260ms ease-out;
+  transition-delay: var(--star-delay, 0ms);
+}
+.about-card--skills-revealed .about-starSlot {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-starSlot {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
+}

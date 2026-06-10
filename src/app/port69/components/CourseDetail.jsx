@@ -7,8 +7,8 @@ function CourseDetail() {
     <div className="course-detail-container">
       <div className="course-port-1">
         <div className="course-detail-img">
-          <Image src="https://nj.dekhub.com/public/imgs/port-1.png" className="img-desktop" width={1300} height={800} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/port-1.png" className="img-mobile" width={350} height={250} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/port-1.png" className="img-desktop" width={1300} height={800} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/port-1.png" className="img-mobile" width={350} height={250} priority alt="" />
         </div>
         <div className="course-detail-text">
           <p>
@@ -43,8 +43,8 @@ function CourseDetail() {
           </div>
           <br />
           <div className="course-detail-img-2">
-            <Image src="https://nj.dekhub.com/public/imgs/port-2.png" className="img-desktop" width={2000} height={1000} priority />
-            <Image src="https://nj.dekhub.com/public/imgs/port-2.png" className="img-mobile" width={400} height={300} priority />
+            <Image src="https://nj.dekhub.com/public/imgs/port-2.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+            <Image src="https://nj.dekhub.com/public/imgs/port-2.png" className="img-mobile" width={400} height={300} priority alt="" />
           </div>
           <br />
           <div className="timeline-detail">
@@ -65,8 +65,8 @@ function CourseDetail() {
           </div>
           <br />
           <div className="course-detail-img-2">
-            <Image src="https://nj.dekhub.com/public/imgs/port-3.png" className="img-desktop" width={2000} height={1000} priority />
-            <Image src="https://nj.dekhub.com/public/imgs/port-3.png" className="img-mobile" width={400} height={300} priority />
+            <Image src="https://nj.dekhub.com/public/imgs/port-3.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+            <Image src="https://nj.dekhub.com/public/imgs/port-3.png" className="img-mobile" width={400} height={300} priority alt="" />
           </div>
           <br />
           <div className="timeline-detail">
@@ -104,7 +104,7 @@ function CourseDetail() {
               className="img-desktop"
               width={700}
               height={700}
-              priority />
+              priority/>
             <Image
               src="https://nj.dekhub.com/public/videos/port-4.gif"
               alt="Animated GIF"
@@ -118,8 +118,8 @@ function CourseDetail() {
       <br />
       <div className="course-detail-2">
         <div className="course-detail-img-4">
-          <Image src="https://nj.dekhub.com/public/imgs/port-6.png" className="img-desktop" width={600} height={400} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/port-6.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/port-6.png" className="img-desktop" width={600} height={400} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/port-6.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <div className="course-detail-text-2">
           <p>
@@ -130,8 +130,8 @@ function CourseDetail() {
       </div>
       <br />
       <div className="course-detail-img-3">
-        <Image src="https://nj.dekhub.com/public/imgs/port-5.png" className="img-desktop" width={2000} height={1000} priority />
-        <Image src="https://nj.dekhub.com/public/imgs/port-5.png" className="img-mobile" width={450} height={400} priority />
+        <Image src="https://nj.dekhub.com/public/imgs/port-5.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+        <Image src="https://nj.dekhub.com/public/imgs/port-5.png" className="img-mobile" width={450} height={400} priority alt="" />
       </div>
       <div className="course-port-3">
         <br />
@@ -141,8 +141,8 @@ function CourseDetail() {
         <br />
         <div className="course-detail-2">
           <div className="course-detail-img-4">
-            <Image src="https://nj.dekhub.com/public/imgs/port-7.png" className="img-desktop" width={600} height={400} priority />
-            <Image src="https://nj.dekhub.com/public/imgs/port-7.png" className="img-mobile" width={400} height={300} priority />
+            <Image src="https://nj.dekhub.com/public/imgs/port-7.png" className="img-desktop" width={600} height={400} priority alt="" />
+            <Image src="https://nj.dekhub.com/public/imgs/port-7.png" className="img-mobile" width={400} height={300} priority alt="" />
           </div>
           <div className="course-detail-text-2">
             <p>
@@ -159,8 +159,8 @@ function CourseDetail() {
         <br />
         <div className="course-detail-2">
           <div className="course-detail-img-4">
-            <Image src="https://nj.dekhub.com/public/imgs/port-8.png" className="img-desktop" width={600} height={400} priority />
-            <Image src="https://nj.dekhub.com/public/imgs/port-8.png" className="img-mobile" width={400} height={300} priority />
+            <Image src="https://nj.dekhub.com/public/imgs/port-8.png" className="img-desktop" width={600} height={400} priority alt="" />
+            <Image src="https://nj.dekhub.com/public/imgs/port-8.png" className="img-mobile" width={400} height={300} priority alt="" />
           </div>
           <div className="course-detail-text-2">
             <p>

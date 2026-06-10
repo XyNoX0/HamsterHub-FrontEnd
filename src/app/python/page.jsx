@@ -3,13 +3,13 @@ import "./Python.css";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Main from "./components/Main";
+import Detail from "./components/Detail.jsx";
 
 async function Page() {
   return (
     <div >
       <Navbar />
-      <Main />
+      <Detail />
       <Footer />
     </div>
   );

@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "895194181314691072",
+  "slug": "sranyu-amthim",
+  "name": "ศรัณยู อ่ำทิม",
+  "username": "C",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ ศรัณยู อ่ำทิม · ชื่อเล่น C — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/sranyu-amthim.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "unity",
+      "tone": "color"
+    }
+  ]
+}

@@ -13,8 +13,8 @@ function CourseDetail() {
         <h4>เตรียมพบการแข่งขัน RoV Hamster Cup 2025 ปลายเดือนมีนาคมนี้ พร้อมเพื่อนๆ ชาว Hamster Hub !</h4>
       </div>
       <div style={{ width: "max-content", margin: "auto", height: "auto" }}>
-        <Image src="https://nj.dekhub.com/public/imgs/ROVPoster.png" className="img-desktop" width={1200} height={700} priority />
-        <Image src="https://nj.dekhub.com/public/imgs/ROVPoster.png" className="img-mobile" width={350} height={250} priority />
+        <Image src="https://nj.dekhub.com/public/imgs/ROVPoster.png" className="img-desktop" width={1200} height={700} priority alt="" />
+        <Image src="https://nj.dekhub.com/public/imgs/ROVPoster.png" className="img-mobile" width={350} height={250} priority alt="" />
       </div>
       <br />
       <div className="course-detail-text">

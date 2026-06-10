@@ -1,0 +1,66 @@
+{
+  "id": "micro-immersive-sim",
+  "title": "Micro Immersive Sim",
+  "description": "เราเป็นนักวิทยาศาสตร์บนยานอวกาศที่โดน Ai ที่เกิดมีความรู้สึกนึกคิดจากสสารปริศนาที่สามารถควบคุมพลังงานของดวงอาทิตย์ได้ที่มนุษย์นำมาใช้พัฒนา Ai ตัวนี้ และ มีนักวิทยาศาสตร์บนยานอวกาศไปสั่งให้ Ai ทำให้โลกสงบสุขแต่ Ai ตัวนั้นตีความออกมาว่าต้นเหตุที่แท้จริงของความวุ่นวาย จริงๆแล้วคือตัวมนุษย์เสียเอง มันเลยคิดขึ้นมาว่า \" ถ้ามนุษย์สูญสิ้นดับสลายหายไป \" โลกก็คงจะบังเกิดความสงบสุขที่แท้จริงขึ้นมา",
+  "teamName": "มิตรภาพลาบมะม่วง",
+  "posterSrc": "/godang/games/micro-immersive-sim/poster.png",
+  "iconSrc": "/godang/games/micro-immersive-sim/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1-dvsye-A2gdhRu83XigT2hZXcTWj2JRL",
+  "gameUrl": "https://soguy.itch.io/micro-immersive-sim",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "ปภังกร กรอบสนิท",
+      "username": "ปาล์ม",
+      "profileSrc": "/godang/members/palm.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "palm"
+    },
+    {
+      "name": "นาย ฟาฮัส ทรงนาศึก",
+      "username": "กาย",
+      "profileSrc": "/godang/members/guy.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "guy"
+    },
+    {
+      "name": "สุวิจักขณ์ จันทร์จุงจิตต์",
+      "username": "เพชร",
+      "profileSrc": "/godang/members/phet.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "phet"
+    },
+    {
+      "name": "จักรกฤษณ์ คูศิริสิน",
+      "username": "เจ",
+      "profileSrc": "/godang/members/jay.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "jay"
+    },
+    {
+      "name": "วรณัฐ มุ่งวิริยะ",
+      "username": "ไอซ์",
+      "profileSrc": "/godang/members/ice.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "ice"
+    }
+  ]
+}

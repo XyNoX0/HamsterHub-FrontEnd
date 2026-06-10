@@ -1,0 +1,48 @@
+{
+  "id": "a3omega",
+  "title": "A3Omega",
+  "description": "A3OMEGA is a fast-paced Roguelike Action Game where you fight against blazing enemies consumed by fire.\n\n🔥 Game Concept\nIn A3OMEGA, you must survive against waves of enemies known as \"Flame Humans\" — beings whose bodies are burned and fused with magma.\n\nCan you survive the flames?",
+  "teamName": "AΩβ",
+  "posterSrc": "/godang/games/a3omega/icon.png",
+  "iconSrc": "/godang/games/a3omega/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1sMGWcdo9PQnyn9k6lJStBK0rHTWzk3ox",
+  "gameUrl": "https://tammastudio.itch.io/a3omega",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "ธิติวุฒิ ศรจันทร์",
+      "username": "มาร์ค",
+      "profileSrc": "/godang/members/marc.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "marc"
+    },
+    {
+      "name": "Thanakrit Chatrum",
+      "username": "Sen",
+      "profileSrc": "/godang/members/sen.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "sen"
+    },
+    {
+      "name": "ภูวนารถ มุ่งสมัคร",
+      "username": "ออโต้",
+      "profileSrc": "/godang/members/auto.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "auto"
+    }
+  ]
+}

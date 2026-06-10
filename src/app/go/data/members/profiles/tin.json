@@ -1,0 +1,19 @@
+{
+  "description": "Auto-generated profile from games registry. Customize this file to override defaults.",
+  "slug": "tin",
+  "name": "Tin Wongkrajang",
+  "username": "Tin",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี เราชื่อ Tin เป็นหนึ่งในคนสร้างสรรค์เกมที่ HamsterHub.",
+  "profileSrc": "/godang/members/tin.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    }
+  ]
+}

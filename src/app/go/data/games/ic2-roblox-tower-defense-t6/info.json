@@ -1,0 +1,66 @@
+{
+  "id": "ic2-roblox-tower-defense-t6",
+  "title": "Tower defense",
+  "description": "Tower defense",
+  "teamName": "Team 6",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "https://www.roblox.com/games/74224153091745/tower-defense",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 4,
+    "fun": 3
+  },
+  "teamMembers": [
+    {
+      "slug": "chea",
+      "name": "กิตติภพ แสนปัก",
+      "username": "เจ้า",
+      "profileSrc": "/godang/members/chea.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "jay-00",
+      "name": "Hassakorn Chawsamtong",
+      "username": "Jay",
+      "profileSrc": "/godang/members/jay-00.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "omthraphy-om",
+      "name": "วสุรมย์ เพชรศนี",
+      "username": "ออมทรัพย์(ออม)",
+      "profileSrc": "/godang/members/omthraphy-om.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "thik",
+      "name": "ภัสสร์ ชัยดรุณ",
+      "username": "ทิก",
+      "profileSrc": "/godang/members/thik.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "vinny",
+      "name": "Naveevin Supattayakun",
+      "username": "Vinny",
+      "profileSrc": "/godang/members/vinny.png",
+      "roles": [
+        "Roblox"
+      ]
+    }
+  ]
+}

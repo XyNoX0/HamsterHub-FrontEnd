@@ -8,8 +8,8 @@ import Payment from './components/Payment'
 
 
 
-export default function Success({ params }) {
-  var id = params.id
+export default async function Success({ params }) {
+    const { id } = await params;
     return (
       <div>
         <Navbar />

@@ -1,0 +1,107 @@
+.pro-mainSection {
+  position: relative;
+  width: 100%;
+  padding: 60px 20px 56px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pro-mainSection::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-sun) 35%, transparent) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+.pro-mainSection > * { position: relative; z-index: 1; }
+@media (min-width: 768px) {
+  .pro-mainSection { padding: 72px 32px 72px; }
+}
+@media (min-width: 1024px) {
+  .pro-mainSection { padding: 84px 48px 88px; }
+}
+
+.pro-mainGrid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+}
+@media (min-width: 1024px) {
+  .pro-mainGrid {
+    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+    gap: 28px;
+    align-items: stretch;
+  }
+}
+
+.pro-mainLeft {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.pro-mainRight {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.pro-bottomSection {
+  width: 100%;
+  padding: 56px 20px 80px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .pro-bottomSection { padding: 72px 32px 96px; }
+}
+@media (min-width: 1024px) {
+  .pro-bottomSection { padding: 88px 48px 120px; }
+}
+
+.pro-bottomGrid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+}
+@media (min-width: 768px) {
+  .pro-bottomGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+.pro-horizon {
+  position: relative;
+  margin: 36px auto 0;
+  max-width: 720px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pro-horizon::before {
+  content: '';
+  position: absolute;
+  inset: 50% 0 auto 0;
+  height: 0;
+  border-top: 1px dashed color-mix(in srgb, var(--color-sun) 60%, transparent);
+}
+.pro-horizonSpark {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-sea-medium);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-sun);
+}

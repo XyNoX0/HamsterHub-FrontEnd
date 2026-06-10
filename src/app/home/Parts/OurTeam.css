@@ -1,0 +1,208 @@
+.our-team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+.our-team-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.our-team-scene {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    overflow: hidden;
+    background: url('/assets/Placeholder.png') center bottom / cover no-repeat;
+    border-radius: 20px;
+}
+
+.ot-grass-back,
+.ot-grass-front {
+    display: none;
+}
+
+.ot-characters {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.ot-member {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ot-member:hover .ot-avatar {
+    transform: scale(1.1);
+}
+
+.ot-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.2rem;
+}
+
+.ot-avatar {
+    width: 110px;
+    height: 110px;
+    transition: transform 0.3s ease;
+}
+
+/* Floating animation keyframes */
+@keyframes float1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float2 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-14px);
+    }
+}
+
+@keyframes float3 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Position each character + assign floating animation */
+.tm-pub {
+    left: 5%;
+    bottom: 22%;
+    animation: float1 3s ease-in-out infinite;
+}
+
+.tm-focus {
+    left: 22%;
+    bottom: 40%;
+    animation: float2 3.5s ease-in-out infinite 0.5s;
+}
+
+.tm-pukkerr {
+    left: 42%;
+    bottom: 15%;
+    animation: float3 2.8s ease-in-out infinite 1s;
+}
+
+.tm-maymay {
+    left: 60%;
+    bottom: 35%;
+    animation: float1 3.2s ease-in-out infinite 0.3s;
+}
+
+.tm-patrick {
+    right: 8%;
+    bottom: 25%;
+    animation: float2 3.8s ease-in-out infinite 0.8s;
+}
+
+@media screen and (max-width: 899px) {
+    .our-team-scene {
+        height: 280px;
+    }
+
+    .ot-avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .ot-name {
+        font-size: 0.65rem;
+    }
+
+    .tm-pub {
+        left: 3%;
+        bottom: 20%;
+    }
+
+    .tm-focus {
+        left: 18%;
+        bottom: 38%;
+    }
+
+    .tm-pukkerr {
+        left: 38%;
+        bottom: 12%;
+    }
+
+    .tm-maymay {
+        left: 56%;
+        bottom: 30%;
+    }
+
+    .tm-patrick {
+        right: 5%;
+        bottom: 22%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .our-team-scene {
+        height: 240px;
+    }
+
+    .ot-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tm-pub {
+        left: 2%;
+        bottom: 18%;
+    }
+
+    .tm-focus {
+        left: 15%;
+        bottom: 35%;
+    }
+
+    .tm-pukkerr {
+        left: 35%;
+        bottom: 10%;
+    }
+
+    .tm-maymay {
+        left: 55%;
+        bottom: 28%;
+    }
+
+    .tm-patrick {
+        right: 3%;
+        bottom: 20%;
+    }
+}

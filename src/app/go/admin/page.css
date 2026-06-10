@@ -1,0 +1,1630 @@
+/* Admin Dashboard — scoped audit tool styles */
+
+.adm-root {
+  padding: 32px clamp(20px, 4vw, 48px) 64px;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: var(--font-prompt), system-ui, sans-serif;
+}
+
+.adm-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+}
+.adm-eyebrow {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-dang);
+}
+.adm-title {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text-on-light-strong);
+  margin: 0;
+  line-height: 1.1;
+}
+.adm-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-on-light-muted);
+  line-height: 1.6;
+}
+
+.adm-section {
+  margin-bottom: 48px;
+}
+.adm-sectionTitle {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-on-light-strong);
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.adm-issueCount {
+  font-family: var(--font-prompt), sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-on-light-muted);
+}
+
+.adm-subsection {
+  margin-top: 24px;
+}
+.adm-subTitle {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-on-light);
+  margin: 0 0 10px;
+}
+
+/* Summary cards */
+.adm-summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+.adm-summaryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background-color: var(--color-light-soft);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}
+.adm-summaryCard--alert {
+  background-color: color-mix(in srgb, var(--color-dang) 8%, var(--color-light-soft));
+  border-color: color-mix(in srgb, var(--color-dang) 22%, transparent);
+}
+.adm-summaryNum {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--text-on-light-strong);
+  line-height: 1;
+}
+.adm-summaryCard--alert .adm-summaryNum {
+  color: var(--color-dang);
+}
+.adm-summaryLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+}
+
+/* Tables */
+.adm-tableWrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  background-color: var(--color-light);
+}
+.adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.adm-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-light-soft);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-on-light);
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  white-space: nowrap;
+}
+.adm-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  color: var(--text-on-light-strong);
+  vertical-align: middle;
+}
+.adm-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.adm-table tbody tr:hover td {
+  background-color: color-mix(in srgb, var(--color-sun) 6%, transparent);
+}
+.adm-table code {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+  color: var(--text-on-light);
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.adm-num {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.adm-note {
+  font-size: 12px;
+  color: var(--text-on-light-muted);
+  font-style: italic;
+}
+
+/* Status badges */
+.adm-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.adm-badge--ok {
+  background-color: color-mix(in srgb, #2F7B5A 14%, transparent);
+  color: #2F7B5A;
+}
+.adm-badge--warn {
+  background-color: color-mix(in srgb, var(--color-sun) 22%, transparent);
+  color: #8A4A22;
+}
+.adm-badge--miss {
+  background-color: color-mix(in srgb, var(--color-dang) 14%, transparent);
+  color: var(--color-dang);
+}
+
+/* All clear */
+.adm-allClear {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background-color: color-mix(in srgb, #2F7B5A 10%, var(--color-light-soft));
+  border: 1px solid color-mix(in srgb, #2F7B5A 28%, transparent);
+  color: #2F7B5A;
+  font-weight: 600;
+}
+.adm-allClearIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #2F7B5A;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* ── Edit button ─────────────────────────────────────────────── */
+.adm-editBtn {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 18%, transparent);
+  background-color: var(--color-light);
+  color: var(--text-on-light-strong);
+  cursor: pointer;
+  transition: background-color 120ms, border-color 120ms, transform 120ms;
+}
+.adm-editBtn:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-sun) 20%, var(--color-light));
+  border-color: var(--color-sun-on-light);
+  transform: translateY(-1px);
+}
+.adm-editBtn:active:not(:disabled) { transform: translateY(0); }
+.adm-editBtn--disabled,
+.adm-editBtn:disabled {
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 4%, transparent);
+  color: var(--text-on-light-muted);
+  cursor: not-allowed;
+  border-color: color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+}
+
+/* ── Modal ──────────────────────────────────────────────────── */
+.adm-modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 20px;
+  background-color: rgba(11, 35, 51, 0.58);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  overflow-y: auto;
+}
+.adm-modalCard {
+  width: 100%;
+  max-width: 720px;
+  background-color: var(--color-light);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px -20px rgba(11, 35, 51, 0.45);
+  overflow: hidden;
+}
+.adm-modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+}
+.adm-modalTitle {
+  margin: 0;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text-on-light-strong);
+}
+.adm-modalClose {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  color: var(--text-on-light-strong);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 120ms;
+}
+.adm-modalClose:hover {
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 14%, transparent);
+}
+
+/* ── Form ───────────────────────────────────────────────────── */
+.adm-modalForm {
+  padding: 20px 24px 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.adm-formField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.adm-formField--span2 { grid-column: 1 / -1; }
+.adm-formLabel {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+}
+.adm-input,
+.adm-textarea {
+  font-family: var(--font-prompt), system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text-on-light-strong);
+  background-color: var(--color-light-soft);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  border-radius: 8px;
+  padding: 8px 10px;
+  outline: none;
+  transition: border-color 120ms, box-shadow 120ms;
+  width: 100%;
+  box-sizing: border-box;
+}
+.adm-input:focus,
+.adm-textarea:focus {
+  border-color: var(--color-sun-on-light);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-sun) 25%, transparent);
+}
+.adm-textarea {
+  resize: vertical;
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.adm-input--num { max-width: 100px; }
+
+.adm-statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.adm-skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+.adm-statSub {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.adm-statSub > span {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+}
+.adm-statSub .adm-input { max-width: 100%; }
+
+.adm-formFoot {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 12px;
+  margin-top: 4px;
+  border-top: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}
+.adm-formError {
+  font-size: 12px;
+  color: var(--color-dang);
+  font-weight: 600;
+}
+.adm-formActions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.adm-btn {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 120ms, transform 120ms, opacity 120ms;
+}
+.adm-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.adm-btn--primary {
+  background-color: var(--color-dang);
+  color: #fff;
+}
+.adm-btn--primary:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-dang) 80%, #000);
+}
+.adm-btn--ghost {
+  background-color: transparent;
+  color: var(--text-on-light-strong);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 18%, transparent);
+}
+.adm-btn--ghost:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+}
+
+@media (max-width: 640px) {
+  .adm-modalForm { grid-template-columns: 1fr; }
+  .adm-statsGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Unified dev-console additions ──────────────────────────── */
+
+.adm-headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.adm-inlineCode {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.adm-quickChips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.adm-quickChip {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background-color: var(--color-light-soft);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 120ms, border-color 120ms, background-color 120ms;
+  min-width: 110px;
+}
+.adm-quickChip:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-sun-on-light);
+  background-color: color-mix(in srgb, var(--color-sun) 10%, var(--color-light-soft));
+}
+.adm-quickChipLabel {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text-on-light-strong);
+}
+.adm-quickChipPath {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 11px;
+  color: var(--color-dang);
+}
+
+.adm-summarySub {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-on-light-muted);
+  margin-left: 2px;
+}
+
+/* Health dot ─────────────────────────────────────────────── */
+.adm-healthDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cfd6dc;
+}
+.adm-healthDot--ok {
+  background-color: #2F7B5A;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #2F7B5A 18%, transparent);
+}
+.adm-healthDot--warn {
+  background-color: var(--color-sun);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-sun) 22%, transparent);
+}
+.adm-healthDot--miss {
+  background-color: var(--color-dang);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-dang) 22%, transparent);
+}
+
+.adm-mono {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+}
+.adm-dimText {
+  color: var(--text-on-light-muted);
+  font-style: italic;
+}
+
+/* Row actions (view + edit pair) ─────────────────────────── */
+.adm-rowActions {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.adm-viewBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 14%, transparent);
+  background-color: var(--color-light);
+  color: var(--text-on-light-strong);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 120ms, border-color 120ms, background-color 120ms;
+}
+.adm-viewBtn:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-sea-on-light, #2A6F8E);
+  background-color: color-mix(in srgb, var(--color-sea, #3A98BA) 10%, var(--color-light));
+}
+
+/* Component States cards ─────────────────────────────────── */
+.adm-componentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+.adm-componentCard {
+  padding: 16px 18px;
+  border-radius: 12px;
+  background-color: var(--color-light-soft);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adm-componentName {
+  margin: 0;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-on-light-strong);
+}
+.adm-componentBlurb {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-on-light-muted);
+}
+.adm-permRow {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.adm-permChip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: var(--color-light);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 14%, transparent);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-on-light-strong);
+  text-decoration: none;
+  transition: border-color 120ms, background-color 120ms, transform 120ms;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.adm-permChip:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-sun-on-light);
+  background-color: color-mix(in srgb, var(--color-sun) 10%, var(--color-light));
+}
+
+.adm-footer {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .adm-headerRow {
+    align-items: flex-start;
+  }
+  .adm-quickChips {
+    width: 100%;
+  }
+  .adm-quickChip {
+    flex: 1 1 0;
+  }
+}
+
+/* ── Section header (title + Create button) ────────────────── */
+.adm-sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 16px;
+  flex-wrap: wrap;
+}
+.adm-sectionHeader .adm-sectionTitle {
+  margin: 0;
+}
+
+.adm-createBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: 1px dashed color-mix(in srgb, var(--color-dang) 50%, transparent);
+  background-color: transparent;
+  color: var(--color-dang);
+  cursor: pointer;
+  transition: background-color 120ms, border-color 120ms, transform 120ms;
+}
+.adm-createBtn:hover {
+  background-color: color-mix(in srgb, var(--color-dang) 8%, transparent);
+  border-style: solid;
+  transform: translateY(-1px);
+}
+
+/* ── Input + Uploader row inside a Field ───────────────────── */
+.adm-inputWithUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adm-uploader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.adm-uploaderPreview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+}
+.adm-uploaderPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.adm-uploaderBtn {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 16%, transparent);
+  background-color: var(--color-light);
+  color: var(--text-on-light-strong);
+  cursor: pointer;
+  transition: background-color 120ms, border-color 120ms;
+}
+.adm-uploaderBtn:hover {
+  background-color: color-mix(in srgb, var(--color-sea, #3A98BA) 10%, var(--color-light));
+  border-color: var(--color-sea-on-light, #2A6F8E);
+}
+.adm-uploaderBtn--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.adm-uploaderBtn--disabled:hover {
+  background-color: var(--color-light);
+  border-color: color-mix(in srgb, var(--text-on-light-strong) 16%, transparent);
+}
+.adm-uploaderInput {
+  display: none;
+}
+.adm-uploaderError {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-dang);
+}
+.adm-uploaderHint {
+  font-size: 11px;
+  color: var(--text-on-light-muted);
+  font-style: italic;
+}
+
+/* ── Team members editor ──────────────────────────────────── */
+.adm-tmEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.adm-tmList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.adm-tmEmpty {
+  font-size: 12px;
+  color: var(--text-on-light-muted);
+  font-style: italic;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 4%, transparent);
+}
+.adm-tmChip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) 140px auto;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background-color: var(--color-light-soft);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+}
+.adm-tmAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+}
+.adm-tmAvatar--empty {
+  display: inline-block;
+}
+.adm-tmName {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.adm-tmName > * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.adm-tmName {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-on-light-strong);
+}
+.adm-tmSlug {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-on-light-muted);
+}
+.adm-tmRole {
+  font-size: 12px;
+}
+.adm-tmRemove {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-dang);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.adm-tmRemove:hover {
+  background-color: color-mix(in srgb, var(--color-dang) 12%, transparent);
+}
+.adm-tmPicker {
+  position: relative;
+}
+.adm-tmQuery {
+  width: 100%;
+}
+.adm-tmResults {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: var(--color-light);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 14%, transparent);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px -10px rgba(11, 35, 51, 0.25);
+  max-height: 280px;
+  overflow-y: auto;
+}
+.adm-tmResult {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+.adm-tmResult:hover {
+  background-color: color-mix(in srgb, var(--color-sun) 12%, transparent);
+}
+
+/* ── Achievements editor ──────────────────────────────────── */
+.adm-achEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.adm-achList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.adm-achChip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: var(--color-light-soft);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+}
+.adm-achText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.adm-achText > * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.adm-achText strong {
+  font-size: 13px;
+  color: var(--text-on-light-strong);
+}
+.adm-achSub {
+  font-size: 12px;
+  color: var(--text-on-light-muted);
+}
+.adm-achId {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 10px;
+  color: var(--text-on-light-muted);
+}
+
+.adm-achKind {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.adm-achKind--top {
+  background-color: color-mix(in srgb, var(--color-sun) 22%, transparent);
+  color: #8A4A22;
+}
+.adm-achKind--team {
+  background-color: color-mix(in srgb, var(--color-sea, #3A98BA) 18%, transparent);
+  color: var(--color-sea-on-light, #2A6F8E);
+}
+.adm-achKind--fast {
+  background-color: color-mix(in srgb, var(--color-dang) 14%, transparent);
+  color: var(--color-dang);
+}
+.adm-achKind--custom {
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  color: var(--text-on-light);
+}
+
+.adm-achActions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.adm-achActions > select {
+  flex: 1;
+}
+.adm-achToggle {
+  white-space: nowrap;
+}
+
+.adm-achCustom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) auto auto;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 4%, transparent);
+}
+
+.adm-btn--danger {
+  color: var(--color-dang);
+  border-color: color-mix(in srgb, var(--color-dang) 40%, transparent);
+}
+.adm-btn--danger:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-dang) 10%, transparent);
+}
+
+@media (max-width: 720px) {
+  .adm-achCustom {
+    grid-template-columns: 1fr 1fr;
+  }
+  .adm-achChip {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+/* ── Jam Wizard ───────────────────────────────────────────── */
+.adm-jamBtn {
+  align-self: center;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+.adm-modalCard--wide {
+  max-width: 880px;
+}
+
+.adm-stepBar {
+  list-style: none;
+  margin: 0;
+  padding: 14px 24px;
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  background-color: var(--color-light-soft);
+}
+.adm-stepBar li {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+  position: relative;
+}
+.adm-stepBar li.is-active {
+  color: var(--color-dang);
+}
+.adm-stepBar li.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  height: 2px;
+  background-color: var(--color-dang);
+}
+
+.adm-wizardStep {
+  padding: 20px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.adm-wizardNote {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-on-light);
+}
+.adm-wizardCreated {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: color-mix(in srgb, #2F7B5A 8%, var(--color-light-soft));
+  border: 1px solid color-mix(in srgb, #2F7B5A 22%, transparent);
+}
+.adm-wizardChips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.adm-wizardChips code {
+  display: inline-block;
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, #2F7B5A 14%, transparent);
+  color: #2F7B5A;
+}
+.adm-wizardSummary {
+  align-items: stretch;
+}
+
+/* ── Header actions / search / sort (Phase 6) ───────────────── */
+.adm-headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.adm-searchInput {
+  min-width: 220px;
+}
+.adm-sortBtn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.adm-sortBtn:hover {
+  color: #2F7B5A;
+}
+.adm-tableEmpty {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  padding: 18px 12px;
+}
+
+/* ── Tools bar (Phase 7) ────────────────────────────────────── */
+.adm-quickChip--action {
+  appearance: none;
+  border: 1px dashed color-mix(in srgb, #2F7B5A 40%, transparent);
+  background: color-mix(in srgb, #2F7B5A 6%, transparent);
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+.adm-quickChip--action:hover:not(:disabled) {
+  border-style: solid;
+  background: color-mix(in srgb, #2F7B5A 12%, transparent);
+}
+.adm-quickChip--action:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+.adm-toolsLog {
+  margin: 0;
+  padding: 12px;
+  max-height: 360px;
+  overflow: auto;
+  background: #111;
+  color: #d4d4d4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ── User upload sheet visibility ───────────────────────────── */
+.adm-sheetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.adm-sheetToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border: 1.5px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  border-radius: 8px;
+  background: var(--color-light-soft);
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.adm-sheetToggle--on {
+  border-color: color-mix(in srgb, var(--color-sea) 52%, transparent);
+  background: color-mix(in srgb, var(--color-sea-soft) 58%, var(--color-light-soft));
+}
+.adm-sheetToggleMain {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+  cursor: pointer;
+}
+.adm-sheetToggle input {
+  margin-top: 2px;
+  accent-color: var(--color-sea);
+}
+.adm-sheetToggle span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.adm-sheetToggle strong {
+  font-size: 13px;
+  line-height: 1.25;
+  color: var(--text-on-light-strong);
+}
+.adm-sheetToggle code {
+  font-size: 11px;
+  color: var(--text-on-light-muted);
+  white-space: normal;
+  word-break: break-word;
+}
+.adm-sheetToggle small {
+  font-size: 11px;
+  color: var(--text-on-light-muted);
+}
+.adm-sheetAction {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+/* ── Go Manage operations redesign ─────────────────────────── */
+.adm-root {
+  max-width: 1480px;
+  padding-top: 24px;
+}
+
+.adm-shellHeader {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(360px, auto);
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 18px;
+  padding: 0 0 18px;
+}
+
+.adm-shellHeader .adm-title {
+  font-size: clamp(34px, 4vw, 56px);
+  letter-spacing: 0;
+}
+
+.adm-shellHeader .adm-subtitle {
+  max-width: 680px;
+  font-size: 15px;
+}
+
+.adm-kicker {
+  display: inline-flex;
+  margin-bottom: 6px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2F7B5A;
+}
+
+.adm-opsIntro {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff, color-mix(in srgb, var(--color-sea-soft) 42%, #ffffff));
+}
+
+.adm-opsIntro h2 {
+  margin: 0;
+  max-width: 860px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: clamp(20px, 2vw, 30px);
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: var(--text-on-light-strong);
+}
+
+.adm-opsMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(116px, 1fr));
+  gap: 8px;
+}
+
+.adm-opsMetrics span,
+.adm-configStats span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 58px;
+  justify-content: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 9%, transparent);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-on-light-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.adm-opsMetrics strong,
+.adm-configStats strong {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--text-on-light-strong);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.adm-displaySummary {
+  margin-top: 28px;
+}
+
+.adm-displayLinks {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.adm-summaryGrid {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.adm-summaryCard {
+  border-radius: 8px;
+}
+
+.adm-summaryCard--wide {
+  grid-column: span 2;
+}
+
+.adm-configPanel {
+  margin-bottom: 26px;
+  padding: 18px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 16px 34px -28px rgba(11, 35, 51, 0.32);
+}
+
+.adm-configHead {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) auto;
+  gap: 18px;
+  align-items: start;
+  padding-bottom: 14px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}
+
+.adm-configPanel .adm-sectionTitle {
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 24px;
+}
+
+.adm-configLead {
+  margin: 8px 0 0;
+  max-width: 760px;
+  color: var(--text-on-light-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.adm-configLead code {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  color: var(--text-on-light-strong);
+}
+
+.adm-configStats {
+  display: grid;
+  grid-template-columns: repeat(3, 104px);
+  gap: 8px;
+}
+
+.adm-configToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+
+.adm-configSearch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: min(360px, 100%);
+  flex: 1 1 360px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  background: var(--color-light-soft);
+  color: var(--text-on-light-muted);
+}
+
+.adm-configSearch input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  color: var(--text-on-light-strong);
+}
+
+.adm-configSearch input::placeholder {
+  color: var(--text-on-light-muted);
+}
+
+.adm-sheetList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adm-sheetToggle {
+  display: grid;
+  grid-template-columns: minmax(240px, 1.6fr) minmax(180px, 0.9fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--color-light-soft);
+}
+
+.adm-sheetToggle--on {
+  border-color: color-mix(in srgb, #2F7B5A 42%, transparent);
+  background: color-mix(in srgb, #2F7B5A 6%, #ffffff);
+}
+
+.adm-sheetToggle--changed {
+  box-shadow: inset 3px 0 0 var(--color-sun);
+}
+
+.adm-sheetToggleMain {
+  align-items: center;
+}
+
+.adm-sheetToggleMain input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.adm-switchTrack {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text-on-light-strong) 18%, transparent);
+  transition: background-color 140ms ease;
+}
+
+.adm-switchTrack::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: transform 140ms ease;
+}
+
+.adm-sheetToggleMain input:checked + .adm-switchTrack {
+  background: #2F7B5A;
+}
+
+.adm-sheetToggleMain input:checked + .adm-switchTrack::after {
+  transform: translateX(18px);
+}
+
+.adm-sheetToggle strong {
+  font-size: 14px;
+}
+
+.adm-sheetMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.adm-sheetMeta code {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+  color: var(--text-on-light-strong);
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+  padding: 4px 6px;
+  border-radius: 4px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.adm-sheetMeta span {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  font-size: 11px;
+  color: var(--text-on-light-muted);
+}
+
+.adm-statusPill {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 72px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.adm-sheetToggle .adm-statusPill {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.adm-statusPill--open {
+  background: color-mix(in srgb, #2F7B5A 14%, transparent);
+  color: #2F7B5A;
+}
+
+.adm-statusPill--closed {
+  background: color-mix(in srgb, var(--text-on-light-strong) 9%, transparent);
+  color: var(--text-on-light-muted);
+}
+
+.adm-saveMessage {
+  margin: 12px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2F7B5A;
+}
+
+.adm-emptyState {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px dashed color-mix(in srgb, var(--text-on-light-strong) 18%, transparent);
+  color: var(--text-on-light-muted);
+  background: var(--color-light-soft);
+  font-size: 13px;
+}
+
+.adm-authShell {
+  min-height: calc(100vh - 96px);
+  display: grid;
+  place-items: center;
+  padding: 40px 0;
+}
+
+.adm-authCard {
+  width: min(100%, 560px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 28px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 18px 45px -34px rgba(11, 35, 51, 0.42);
+}
+
+.adm-authIcon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: color-mix(in srgb, #2F7B5A 10%, #fff);
+  color: #2F7B5A;
+}
+
+.adm-authCard h1 {
+  margin: 0;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.12;
+  letter-spacing: 0;
+  color: var(--text-on-light-strong);
+}
+
+.adm-authCard p {
+  margin: 0;
+  color: var(--text-on-light-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.adm-authMeta strong {
+  color: var(--text-on-light-strong);
+}
+
+.adm-authButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.adm-spin {
+  animation: adm-spin 800ms linear infinite;
+}
+
+@keyframes adm-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 980px) {
+  .adm-shellHeader,
+  .adm-opsIntro,
+  .adm-configHead {
+    grid-template-columns: 1fr;
+  }
+
+  .adm-opsMetrics,
+  .adm-configStats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .adm-sheetToggle {
+    grid-template-columns: 1fr auto;
+  }
+
+  .adm-sheetMeta {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .adm-root {
+    padding-inline: 14px;
+  }
+
+  .adm-opsMetrics,
+  .adm-configStats {
+    grid-template-columns: 1fr;
+  }
+
+  .adm-sheetToggle {
+    grid-template-columns: 1fr;
+  }
+
+  .adm-statusPill,
+  .adm-sheetAction {
+    justify-self: start;
+  }
+
+  .adm-summaryCard--wide {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "escape-rolling",
+  "title": "Escape Rolling",
+  "description": "เล่นเป็นลูกชิ้นสุดน่ารัก ที่ต้องหลบหนีออกจากหม้อสุกี้แสนร้อน อย่าคิดว่าว่ายน้ำซุปหล่ะ เพราะมันจะร้อนจนฆ่าคุณได้ทั้งเป็น! คุณจะต้องใช้กะหล่ำปลีเป็นเรือ ใช้ RPG กำจัดศัตรู ลูกชิ้นเนรคุณ! X_X",
+  "teamName": "Dark Phantom",
+  "posterSrc": "/godang/games/escape-rolling/poster.png",
+  "iconSrc": "/godang/games/escape-rolling/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1c1CsjW5NIKlvn9Om-wWlZOqnikNpPfJX",
+  "gameUrl": "https://krongthumdev.itch.io/escape-rolling",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 3,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "name": "Krongthum Fonghem",
+      "username": "Troy",
+      "profileSrc": "/godang/members/troy.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "troy"
+    },
+    {
+      "name": "Natthaphon Maliwan",
+      "username": "Fan",
+      "profileSrc": "/godang/members/fan.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "fan"
+    },
+    {
+      "name": "นายวิทวัส แซ่ลิ้ม",
+      "username": "ไบร์ท",
+      "profileSrc": "/godang/members/bright.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "bright"
+    },
+    {
+      "name": "พชรพล จิรธารานนท์",
+      "username": "เป๊ป",
+      "profileSrc": "/godang/members/pep.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "pep"
+    },
+    {
+      "name": "Sorawat Ketsatit",
+      "username": "Canon",
+      "profileSrc": "/godang/members/canon.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "canon"
+    }
+  ]
+}

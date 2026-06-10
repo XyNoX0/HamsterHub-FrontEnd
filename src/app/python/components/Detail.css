@@ -1,0 +1,90 @@
+.img-mobile {
+    display: none;
+}
+.mobile-space{
+    display: none;
+}
+
+.Python {
+    background-color: white;
+}
+
+.Main-img {
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.Detail-img {
+    width: 100%;
+
+    .img-row {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        width: 100%;
+        height: auto;
+
+        .left {
+            width: 35%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.Footer-img {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .mobile-space {
+        display: block;
+    }
+
+    .Detail-img {
+        .img-row {
+            display: block;
+
+            .left {
+                width: 90%;
+                margin: auto;
+            }
+
+            .right {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}

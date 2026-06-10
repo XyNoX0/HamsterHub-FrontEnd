@@ -1,0 +1,57 @@
+{
+  "id": "caliente",
+  "title": "Caliente",
+  "description": "Story \nThe story is about the daily life of Shin a man who mad at his life",
+  "teamName": "สัมตำไก่ทอด",
+  "posterSrc": "/godang/games/caliente/poster.png",
+  "iconSrc": "/godang/games/caliente/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=10PSahvjeFFzBSX8MOpxt_n1NJt-17im7",
+  "gameUrl": "https://kaigaikaima.itch.io/caliente",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "นาย รัฐศาสตร์  ลาโซ",
+      "username": "นาย",
+      "profileSrc": "/godang/members/nai.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "nai"
+    },
+    {
+      "name": "Natthakan",
+      "username": "Eung",
+      "profileSrc": "/godang/members/eung.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "eung"
+    },
+    {
+      "name": "Witsarut Amatanont",
+      "username": "Nay",
+      "profileSrc": "/godang/members/nay.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "nay"
+    },
+    {
+      "name": "Pannawit​",
+      "username": "Latte",
+      "profileSrc": "/godang/members/latte.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "latte"
+    }
+  ]
+}

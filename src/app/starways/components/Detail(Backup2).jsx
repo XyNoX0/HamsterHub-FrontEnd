@@ -48,8 +48,8 @@ function Detail() {
     <div className="starway">
       <div className="starway-header">
         <div className="starway-header-img">
-          <Image src="https://nj.dekhub.com/public/imgs/Starway/StarwayBannerDT.png" className="img-desktop" width={1920} height={1080} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Starway/StarwayBannerMB.png" className="img-mobile" width={1920} height={1080} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Starway/StarwayBannerDT.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Starway/StarwayBannerMB.png" className="img-mobile" width={1920} height={1080} priority alt="" />
         </div>
         <div className="starway-hero-buttom">
           <div className="starway-price">
@@ -85,8 +85,8 @@ function Detail() {
           <p>แต่ไม่ได้ใจร้าย เพราะ<span className="text-white">มีพี่ๆ expert คอยช่วย</span> เพื่อสร้างผลงานเทพๆ ให้สำเร็จตามเป้าหมาย</p>
         </div>
         <div className="prob-1">
-          <Image src="https://nj.dekhub.com/public/imgs/Starways/prob-1.png" className="img-desktop" width={1920} height={500} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Starways/prob-1.png" className="img-mobile" width={500} height={350} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Starways/prob-1.png" className="img-desktop" width={1920} height={500} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Starways/prob-1.png" className="img-mobile" width={500} height={350} priority alt="" />
         </div>
         <div className="video-container">
           <video
@@ -144,12 +144,12 @@ function Detail() {
               </div>
               <div className="img-container">
                 <a href="/starter2">
-                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-unity.png" className="img-desktop" width={1920} height={500} priority />
-                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-unity.png" className="img-mobile" width={500} height={350} priority />
+                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-unity.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-unity.png" className="img-mobile" width={500} height={350} priority alt="" />
                 </a>
                 <a href="/starter1">
-                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-python.png" className="img-desktop" width={1920} height={500} priority />
-                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-python.png" className="img-mobile" width={500} height={350} priority />
+                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-python.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                  <Image src="https://nj.dekhub.com/public/imgs/Starways/tk-python.png" className="img-mobile" width={500} height={350} priority alt="" />
                 </a>
               </div>
             </div>
@@ -167,8 +167,8 @@ function Detail() {
                 </div>
               </div>
               <div className="img-container">
-                <Image src="https://nj.dekhub.com/public/imgs/Starways/two.png" className="img-desktop" width={1920} height={500} priority />
-                <Image src="https://nj.dekhub.com/public/imgs/Starways/twoMB.png" className="img-mobile" width={500} height={350} priority />
+                <Image src="https://nj.dekhub.com/public/imgs/Starways/two.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                <Image src="https://nj.dekhub.com/public/imgs/Starways/twoMB.png" className="img-mobile" width={500} height={350} priority alt="" />
               </div>
             </div>
             <br />
@@ -198,8 +198,8 @@ function Detail() {
                     ></video>
                   </div>
                   {/* <div className="img-container">
-                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-desktop" width={1920} height={500} priority />
-                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-mobile" width={500} height={350} priority />
+                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-mobile" width={500} height={350} priority alt="" />
                   </div> */}
                   <div className="text-more" >
                     <p>Unity Skills</p>
@@ -232,8 +232,8 @@ function Detail() {
                     ></video>
                   </div>
                   {/* <div className="img-container">
-                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-desktop" width={1920} height={500} priority />
-                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-mobile" width={500} height={350} priority />
+                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                    <Image src="https://nj.dekhub.com/public/imgs/Starways/three.png" className="img-mobile" width={500} height={350} priority alt="" />
                   </div> */}
                   <div className="text-more" >
                     <p>Python Skills</p>
@@ -278,8 +278,8 @@ function Detail() {
                     <h1>สอนยังไง?</h1>
                   </div>
                   <div className="img-container">
-                    <Image src="https://nj.dekhub.com/public/imgs/Starways/four.png" className="img-desktop" width={1920} height={500} priority />
-                    <Image src="https://nj.dekhub.com/public/imgs/Starways/fourMB.png" className="img-mobile" width={500} height={350} priority />
+                    <Image src="https://nj.dekhub.com/public/imgs/Starways/four.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                    <Image src="https://nj.dekhub.com/public/imgs/Starways/fourMB.png" className="img-mobile" width={500} height={350} priority alt="" />
                   </div>
                   <div className="detail">
                     <h2>NPC</h2>
@@ -326,8 +326,8 @@ function Detail() {
                 <div className="detail">
                   <div className="box">
                     <div className="img-container">
-                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-1.png" className="img-desktop" width={1920} height={500} priority />
-                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-1.png" className="img-mobile" width={500} height={350} priority />
+                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-1.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-1.png" className="img-mobile" width={500} height={350} priority alt="" />
                     </div>
                     <div className="text">
                       <h2>Make Money with Tiktok</h2>
@@ -336,8 +336,8 @@ function Detail() {
                   </div>
                   <div className="box">
                     <div className="img-container">
-                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-2.png" className="img-desktop" width={1920} height={500} priority />
-                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-2.png" className="img-mobile" width={500} height={350} priority />
+                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-2.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-2.png" className="img-mobile" width={500} height={350} priority alt="" />
                     </div>
                     <div className="text">
                       <h2>VI’NNER of NSC-2020</h2>
@@ -346,8 +346,8 @@ function Detail() {
                   </div>
                   <div className="box">
                     <div className="img-container">
-                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-3.png" className="img-desktop" width={1920} height={500} priority />
-                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-3.png" className="img-mobile" width={500} height={350} priority />
+                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-3.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                      <Image src="https://nj.dekhub.com/public/imgs/Starways/five-3.png" className="img-mobile" width={500} height={350} priority alt="" />
                     </div>
                     <div className="text">
                       <h2>Big Talk about AI</h2>
@@ -364,8 +364,8 @@ function Detail() {
                   <div className="box">
                     <div className="img-container">
                       <a href="/unity">
-                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-4.png" className="img-desktop" width={1920} height={500} priority />
-                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-4.png" className="img-mobile" width={500} height={350} priority />
+                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-4.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-4.png" className="img-mobile" width={500} height={350} priority alt="" />
                       </a>
                     </div>
                     <div className="text">
@@ -376,8 +376,8 @@ function Detail() {
                   <div className="box">
                     <div className="img-container">
                       <a href="/python">
-                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-5.png" className="img-desktop" width={1920} height={500} priority />
-                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-5.png" className="img-mobile" width={500} height={350} priority />
+                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-5.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                        <Image src="https://nj.dekhub.com/public/imgs/Starways/five-5.png" className="img-mobile" width={500} height={350} priority alt="" />
                       </a>
                     </div>
                     <div className="text">
@@ -423,8 +423,8 @@ function Detail() {
                 <h1>สรุปคือ...อะไร?</h1>
               </div>
               <div className="img-container">
-                <Image src="https://nj.dekhub.com/public/imgs/Starways/four.png" className="img-desktop" width={1920} height={500} priority />
-                <Image src="https://nj.dekhub.com/public/imgs/Starways/four.png" className="img-mobile" width={500} height={350} priority />
+                <Image src="https://nj.dekhub.com/public/imgs/Starways/four.png" className="img-desktop" width={1920} height={500} priority alt="" />
+                <Image src="https://nj.dekhub.com/public/imgs/Starways/four.png" className="img-mobile" width={500} height={350} priority alt="" />
               </div>
             </div>
             <br />

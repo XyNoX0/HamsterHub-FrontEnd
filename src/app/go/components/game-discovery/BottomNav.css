@@ -1,0 +1,102 @@
+.bottomnav-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  height: auto;
+  min-height: 72px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid var(--color-border);
+  background-color: color-mix(in srgb, var(--color-cream) 80%, transparent);
+  padding: 8px 8px calc(8px + env(safe-area-inset-bottom));
+  backdrop-filter: blur(16px);
+}
+@media (min-width: 1024px) {
+  .bottomnav-nav {
+    display: none;
+  }
+}
+.bottomnav-navBtn {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: transform 150ms;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.bottomnav-navBtn:active {
+  transform: scale(0.95);
+}
+.bottomnav-iconWrapper {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: all 150ms;
+}
+.bottomnav-iconWrapperActive {
+  background-color: var(--color-on-bg-text);
+  color: var(--color-go);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.bottomnav-iconWrapperInactive {
+  background-color: transparent;
+  color: var(--color-on-bg-text);
+  opacity: 0.6;
+}
+.bottomnav-iconInner {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 2px solid;
+}
+.bottomnav-iconInnerActive {
+  border-color: var(--color-go);
+}
+.bottomnav-iconInnerInactive {
+  border-color: currentColor;
+}
+.bottomnav-icon {
+  height: 16px;
+  width: 16px;
+}
+.bottomnav-iconActive {
+  fill: currentColor;
+  color: inherit;
+}
+.bottomnav-iconInactive {
+  color: inherit;
+}
+.bottomnav-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 150ms;
+}
+.bottomnav-labelActive {
+  color: var(--color-on-bg-text);
+  font-weight: 900;
+}
+.bottomnav-labelInactive {
+  color: var(--color-on-bg-text);
+  opacity: 0.6;
+}

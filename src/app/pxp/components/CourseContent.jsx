@@ -47,10 +47,10 @@ function CourseContent({ }) {
   return (
     <div className="course-content">
       <div className="content-text">
-        <Image src={pxp8} className="img-desktop" width={2000} height={1000} priority />
-        <Image src={pxp8} className="img-mobile" width={400} height={300} priority />
-        <Image src={pxp9} className="img-desktop" width={2000} height={1000} priority />
-        <Image src={pxp9} className="img-mobile" width={400} height={300} priority />
+        <Image src={pxp8} className="img-desktop" width={2000} height={1000} priority alt="" />
+        <Image src={pxp8} className="img-mobile" width={400} height={300} priority alt="" />
+        <Image src={pxp9} className="img-desktop" width={2000} height={1000} priority alt="" />
+        <Image src={pxp9} className="img-mobile" width={400} height={300} priority alt="" />
         {/* <h3>โครงการพัฒนาผลงานเพื่อเข้ารอบ Port มหาวิทยาลัยระดับท็อป</h3>
         <p>
           🌟 เน้นสอนพื้นฐานเฉพาะที่จำเป็นสำหรับพัฒนาผลงาน ☯ให้ความสำคัญกับการออกแบบผลงานที่แตกต่าง☯<br />&quot;เน้นใช้ประโยชน์ หรือเล่นได้สนุกจริง&quot;

@@ -1,0 +1,66 @@
+{
+  "id": "ic2-roblox-hamster-swarm-t3",
+  "title": "Hamster Swarm",
+  "description": "Hamster Swarm",
+  "teamName": "Team 3",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "https://www.roblox.com/games/98672938222185/Hamster-Swarm",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 5,
+    "completeness": 4,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "ban",
+      "name": "ริฎวาน เพ็ชร์นูร์",
+      "username": "บั้น",
+      "profileSrc": "/godang/members/ban.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "khaofang",
+      "name": "THANIDA DITTASRIPON",
+      "username": "Khaofang",
+      "profileSrc": "/godang/members/khaofang.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "nikh",
+      "name": "รวิพล ปิ่นทอง",
+      "username": "นิค",
+      "profileSrc": "/godang/members/nikh.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "om",
+      "name": "วรวิช ธูปจีน",
+      "username": "โอม",
+      "profileSrc": "/godang/members/om.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "rut",
+      "name": "Pawarut",
+      "username": "rut",
+      "profileSrc": "/godang/members/rut.png",
+      "roles": [
+        "Roblox"
+      ]
+    }
+  ]
+}

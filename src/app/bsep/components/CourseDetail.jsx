@@ -10,8 +10,8 @@ function AiGameDeatail() {
           <h3><b>TIMELINE</b></h3>
         </div>
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-1.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-1.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-1.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-1.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -32,8 +32,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-2.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-2.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-2.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-2.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -54,8 +54,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-3.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-3.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-3.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-3.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -76,8 +76,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-4.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-4.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-4.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-4.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -98,8 +98,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-5.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-5.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-5.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-5.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -120,8 +120,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-6.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-6.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-6.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-6.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -145,8 +145,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img-2">
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-7.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-7.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-7.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/pxp/pxp-7.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
       </div>

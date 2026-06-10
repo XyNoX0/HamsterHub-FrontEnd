@@ -37,17 +37,7 @@
         },
         "slide": [
             {
-                "title": "Python Adventure Camp (Online)",
-                "description":"Important basic skills, to be professional",
-                "type": "image",
-                "content": "https://nj.dekhub.com/public/imgs/PythonBannerDesktop.png",
-                "image": "https://nj.dekhub.com/public/imgs/PythonBannerDesktop.png",
-                "placeholder": "",
-                "apply_link": "/apply/811",
-                "detail_link": "/course/811"            
-            },
-            {
-                "title": "Python Super Pro. Pack",
+                "title": "Python Pro. Pack",
                 "description": "everything you need for an expert",
                 "type": "image",
                 "content": "https://nj.dekhub.com/public/imgs/header2.png",

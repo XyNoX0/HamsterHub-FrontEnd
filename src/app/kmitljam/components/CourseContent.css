@@ -1,0 +1,121 @@
+.course-content {
+    width: 100%;
+    background-color: #04041f;
+    img, video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.content-text {
+    display: block;
+    width: 80%;
+}
+
+.course-img {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        object-fit: cover;
+
+    }
+}
+
+#content-img-mobile {
+    display: none;
+}
+
+.course-item {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    h5 {
+        color: var(--gray);
+    }
+
+    p {
+        color: var(--gray);
+    }
+
+    ul {
+        list-style: none;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+
+        text-align: left;
+
+
+    }
+
+    ul li:nth-child(odd):last-child {
+        grid-column: span 2;
+        /* Make the last odd item span both columns */
+        width: 100%;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+    li {
+
+        padding: 1rem;
+        width: 100%;
+
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #content-img-desktop {
+        display: none;
+    }
+
+    #content-img-mobile {
+        display: block;
+    }
+
+    .course-content {
+        padding: 0;
+    }
+
+    .course-img {
+        width: 80%;
+    }
+
+    .content-text {
+
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .course-item {
+        width: 80%;
+
+        ul {
+            width: 100%;
+        }
+    }
+
+
+}

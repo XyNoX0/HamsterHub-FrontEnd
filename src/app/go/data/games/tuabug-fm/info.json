@@ -1,0 +1,57 @@
+{
+  "id": "tuabug-fm",
+  "title": "Escape from the sun factory",
+  "description": "artwork ok, no gameplay in clip",
+  "teamName": "ตัวบัคFM",
+  "posterSrc": "/godang/games/tuabug-fm/poster.png",
+  "iconSrc": "/godang/games/tuabug-fm/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1zyX0GV9f9fJpK6LiUebgt0Cv-igIpyOz",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "Tin Wongkrajang",
+      "username": "Tin",
+      "profileSrc": "/godang/members/tin.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "tin"
+    },
+    {
+      "name": "วัชรากร ทองเหลือง",
+      "username": "ต้นกล้า",
+      "profileSrc": "/godang/members/tonkla.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "tonkla"
+    },
+    {
+      "name": "Wibhu Upatumphun",
+      "username": "Pooh",
+      "profileSrc": "/godang/members/pooh.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "pooh"
+    },
+    {
+      "name": "ธีรชาติ เดชานันทศิลป์",
+      "username": "ปัณณ์",
+      "profileSrc": "/godang/members/pann.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "pann"
+    }
+  ]
+}

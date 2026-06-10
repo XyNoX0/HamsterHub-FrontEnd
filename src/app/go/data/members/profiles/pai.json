@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "801090127614181407",
+  "slug": "pai",
+  "name": "Natthajak pholphiboonsoonthorn",
+  "username": "pai",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ Natthajak pholphiboonsoonthorn · ชื่อเล่น pai — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/pai.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "web",
+      "tone": "color"
+    }
+  ]
+}

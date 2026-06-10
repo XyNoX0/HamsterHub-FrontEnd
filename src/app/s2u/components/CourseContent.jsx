@@ -6,20 +6,29 @@ function CourseContent() {
 
   return (
     <div className="course-content">
-      <div className="content-text">
-        <h3>😵 เราเหมาะกับสายไหน? ควรเข้าคณะไหน?</h3>
-        <p>
-          คำถามยอดฮิตของเด็กม.ปลาย เข้าได้แล้ว จะเรียนได้ไหม?<br />
-          จบแล้วจะทำงานอะไร เราจะชอบไหม?<br /><br />
-
-          👉 ทดสอบศักยภาพของตัวเรา ผ่านกระบวนการด้านวิศวกรรม⚙️และการแก้ปัญหา<br />
-          รู้ผลภายใน 6 ชั่วโมง ด้วยประสบการณ์ทดสอบเด็กกว่า 10,000 คนใน 10 ปีที่ผ่านมา<br /><br />
-
-          ไอดิน 1st Winner จาก NSC-2025 ที่เริ่มเอาจริงทำผลงานตอนม.6 เข้า Hamster Hub ไฟติดสร้างผลงานระดับเทพ และเพื่อนๆ ที่คว้ารางวัลได้โควต้าเรียกสัมภาษณ์ เพึ่งเริ่มต้นจาก 0 เมื่อเดือนเมษาที่ผ่านมา!!<br /><br />
-
-          🔎 น้องจะได้ทดสอบศักยภาพในทักษะสำคัญที่จำเป็นยิ่งยวด เข้าใจว่าตัวเองเหมาะกับอะไร และถ้าผ่านภารกิจจะได้สิทธิ์ปรึกษาและออกแบบเส้นทางเฉพาะของตัวเองกับผู้เชี่ยวชาญด้วย!
-        </p>
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/82.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/82.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <div className="course-video">
+        <video src="https://nj.dekhub.com/public/videos/s2u.mp4" controls></video>
       </div>
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/83.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/83.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/84.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/84.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/85.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/85.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/86.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/86.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/87.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/87.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/88.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/88.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/89.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/89.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/90.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/90.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/91.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/s2u/91.png" className="img-mobile" width={1920} height={1080} priority alt="" />
     </div>
   );
 }

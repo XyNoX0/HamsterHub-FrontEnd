@@ -4,7 +4,7 @@
   .timeline-text {
     width: 80vw;
     margin: auto;
-    padding: 5% 3%;
+    padding: 3% 2%;
     color: white;
 
     p {
@@ -31,6 +31,18 @@
   margin: auto;
 
   img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+.aigame-video {
+  width: 40vw;
+  height: auto;
+  margin: auto;
+
+  video {
     width: 100%;
     height: auto;
     border-radius: 15px;
@@ -105,75 +117,87 @@
   }
 }
 
-  @media screen and (max-width: 600px) {
-    .aigame-img {
-      width: 90vw;
+@media screen and (max-width: 600px) {
+  .aigame-img {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+
+    video {
+      width: 100%;
       height: auto;
+      border-radius: 15px;
+    }
+  }
+
+  .aigame-video {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+
+  .aigame-img-desktop {
+    display: block;
+  }
+
+  .aigame-img-mobile {
+    display: none;
+  }
+
+  .aigame-detail-timeline {
+    background: none;
+    width: 100vw;
+
+    .timeline-title {
+      width: max-content;
       margin: auto;
 
-      video {
-        width: 100%;
+      h3 {
+        color: white;
+        font-size: 2.5rem;
+      }
+    }
+
+    .timeline-img {
+      width: max-content;
+      margin: auto;
+
+      img {
+        width: 97vw;
         height: auto;
-        border-radius: 15px;
       }
     }
 
-    .aigame-img-desktop {
-      display: block;
-    }
+    .timeline-detail {
+      width: 90vw;
+      height: auto;
+      padding: 2% 3%;
+      background-color: white;
+      border-radius: 15px;
+      margin: auto;
 
-    .aigame-img-mobile {
-      display: none;
-    }
-
-    .aigame-detail-timeline {
-      background: none;
-      width: 100vw;
-
-      .timeline-title {
-        width: max-content;
-        margin: auto;
-
-        h3 {
-          color: white;
-          font-size: 2.5rem;
-        }
+      h3 {
+        font-size: 1.3rem;
+        color: #1d1148;
       }
 
-      .timeline-img {
-        width: max-content;
-        margin: auto;
-
-        img {
-          width: 97vw;
-          height: auto;
-        }
+      p {
+        color: #1d1148;
       }
 
-      .timeline-detail {
-        width: 90vw;
-        height: auto;
-        padding: 2% 3%;
-        background-color: white;
-        border-radius: 15px;
-        margin: auto;
+      .text-1 {
+        font-size: 0.9rem;
+      }
 
-        h3 {
-          font-size: 1.3rem;
-          color: #1d1148;
-        }
-
-        p {
-          color: #1d1148;
-        }
-
-        .text-1 {
-          font-size: 0.9rem;
-        }
-
-        .text-2 {
-          font-size: 0.9rem;
-        }
+      .text-2 {
+        font-size: 0.9rem;
       }
     }
   }
+}

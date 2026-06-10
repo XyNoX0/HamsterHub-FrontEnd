@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-sunscreen-u934439",
+  "title": "Sunscreen",
+  "description": "Sunscreen",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1ZcO48rcduPQ8YAUyy4wcWsitOVVJVyOL",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 3,
+    "creativity": 4,
+    "completeness": 4,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "kam",
+      "name": "Sasikhwan Nuankam",
+      "username": "Kam",
+      "profileSrc": "/godang/members/kam.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+.popupClose {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background-color 150ms, transform 150ms;
+}
+.popupClose:hover { transform: scale(1.05); }
+.popupClose:active { transform: scale(0.95); }
+.popupClose:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-sun) 70%, transparent);
+  outline-offset: 2px;
+}
+.popupClose-icon { height: 18px; width: 18px; }
+
+.popupClose--onDark {
+  background-color: color-mix(in srgb, var(--color-dark) 60%, transparent);
+  color: #fff;
+  border-color: color-mix(in srgb, #fff 22%, transparent);
+}
+.popupClose--onDark:hover {
+  background-color: var(--color-dark);
+}
+
+.popupClose--onLight {
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+  color: var(--text-on-light-strong);
+}
+.popupClose--onLight:hover {
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 16%, transparent);
+}
+
+@media (min-width: 1024px) {
+  .popupClose {
+    top: 24px;
+    right: 24px;
+  }
+}

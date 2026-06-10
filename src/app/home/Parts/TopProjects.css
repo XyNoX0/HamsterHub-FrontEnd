@@ -1,0 +1,353 @@
+/* ============= CONFIGURATION (Adjust Sizes Here) ============= */
+.top-projects {
+    --tp-max-width: 1140px;
+    --tp-padding-x: 80px;
+    --tp-gap: 1.5rem;
+    --tp-title-size: 1.8rem;
+    --tp-arrow-size: 44px;
+    --tp-arrow-offset: 5.5rem;
+    --tp-card-title: 0.95rem;
+    --tp-card-subtitle: 0.75rem;
+
+    /* === SHADOW CONFIG (เงา) === */
+    --tp-shadow-opacity: 0.45;
+    /* ใช้ drop-shadow แทน box-shadow (ตัด parameter ตัวที่ 4 ที่เป็น spread ออก เพราะ drop-shadow ไม่รองรับ) */
+    --tp-shadow: drop-shadow(0 15px 20px rgba(0, 0, 0, var(--tp-shadow-opacity)));
+
+    /* Go Theme Variables for Carousel Cards */
+    --color-light: #ffffff;
+    --color-light-soft: #f4f5f7;
+    --color-sea: #0b2e59;
+    --color-dang: #e8a030;
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-lift: 0 10px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
+    --text-on-light-strong: #1a1a2e;
+    --text-on-light-muted: #666666;
+    --font-heading: inherit;
+    --fs-card-role: 12px;
+    --fs-card-title: 1.1rem;
+}
+
+/* --- Large Screens (PC/Mac Desktop 2560px+) --- */
+@media screen and (min-width: 1920px) {
+    .top-projects {
+        --tp-max-width: 1645px;
+        --tp-padding-x: 100px;
+        --tp-gap: 2.35rem;
+
+        --tp-arrow-size: 52px;
+        --tp-arrow-offset: 5rem;
+
+        --tp-card-title: 1rem;
+        --tp-card-subtitle: 0.7rem;
+    }
+}
+
+/* --- Medium Screens (Large Laptop 1400px+) --- */
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+    .top-projects {
+        --tp-max-width: 1400px;
+        --tp-padding-x: 100px;
+        --tp-gap: 2rem;
+        --tp-arrow-offset: 6rem;
+        --tp-card-title: 1.1rem;
+        --tp-card-subtitle: 0.85rem;
+    }
+}
+
+/* --- Tablet (899px and below) --- */
+@media screen and (max-width: 899px) {
+    .top-projects {
+        --tp-padding-x: 20px;
+        --tp-arrow-size: 38px;
+        --tp-gap: 3rem;
+    }
+
+    .project-card {
+        padding: 0 1rem;
+    }
+}
+
+/* --- Mobile (600px and below) --- */
+@media screen and (max-width: 600px) {
+    .top-projects {
+        --tp-padding-x: 75px;
+        --tp-title-size: 1.4rem;
+        --tp-arrow-size: 30px;
+        --tp-gap: 0.5rem;
+        --tp-arrow-offset: 3rem;
+
+        --tp-card-title: 0.85rem;
+        --tp-card-subtitle: 0.65rem;
+    }
+
+    .project-card {
+        padding: 0 0.4rem;
+        /* Less padding on mobile to make the card image larger */
+    }
+}
+
+/* ============= LAYOUT ============= */
+
+.top-projects {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.top-projects-title {
+    font-size: var(--tp-title-size);
+    font-weight: 800;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.top-projects-subtitle {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tp-highlight {
+    color: #e8a030;
+    font-weight: 700;
+}
+
+.top-projects-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: var(--tp-max-width);
+    position: relative;
+    transition: max-width 0.3s ease;
+}
+
+/* ============= ARROWS ============= */
+
+.tp-arrow {
+    flex-shrink: 0;
+    width: var(--tp-arrow-size);
+    height: var(--tp-arrow-size);
+    border-radius: 50%;
+    border: 2px solid #d0d0d0;
+    background: white;
+    color: #1a1a2e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s, transform 0.1s;
+    outline: none;
+    z-index: 20;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--tp-arrow-offset);
+}
+
+.tp-arrow:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.tp-arrow:active {
+    transform: scale(0.9);
+}
+
+.tp-arrow-left {
+    margin-right: 2rem;
+}
+
+.tp-arrow-right {
+    margin-left: 2rem;
+}
+
+/* ============= VIEWPORT & TRACK ============= */
+
+.top-projects-viewport {
+    flex: 1;
+    min-width: 0;
+    overflow-x: clip;
+    overflow-y: visible;
+    margin: 0 calc(var(--tp-padding-x) * -1);
+    padding: 1rem var(--tp-padding-x) 2rem;
+}
+
+.top-projects-track {
+    display: flex;
+    gap: var(--tp-gap);
+    will-change: transform;
+    user-select: none;
+    -webkit-user-select: none;
+    /* Default: NO transition (instant moves for snapping / dragging) */
+    transition: none;
+    /* Force GPU compositing for the track */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Transition class: only added when we actually want to animate */
+.top-projects-track.tp-track-animate {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* During track animation, cards at the edges fade in/out smoothly.
+   When tp-track-animate is NOT present (snap reset), opacity changes are instant → no flicker */
+.top-projects-track.tp-track-animate .project-card {
+    transition:
+        transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+        filter 0.3s ease,
+        opacity 0.45s ease;
+}
+
+/* ============= CARDS ============= */
+
+.project-card {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transform-origin: center top;
+    /* Only transition hover properties — NOT opacity during slides */
+    transition:
+        transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+        filter 0.3s ease;
+    /* Opacity is handled via a separate, non-interfering transition */
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.15) translateZ(0);
+    z-index: 10;
+    filter: drop-shadow(0 0 15px var(--glow-color, rgba(0, 0, 0, 0.2)));
+    -webkit-filter: drop-shadow(0 0 15px var(--glow-color, rgba(0, 0, 0, 0.2)));
+}
+
+.project-card-image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 12px;
+    background: transparent;
+
+    /* ใส่ Shadow ที่นี่ โดยใช้ filter แทน */
+    -webkit-filter: var(--tp-shadow);
+    /* สำหรับ Safari/MacOS */
+    filter: var(--tp-shadow);
+
+    transition: filter 0.3s ease;
+
+    /* บังคับแยก Layer เพื่อแก้บั๊กกราฟิกบน Mac */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.project-card-info {
+    padding: 0.6rem 0;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project-card-info h4 {
+    font-size: var(--tp-card-title);
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.project-card-info p {
+    font-size: var(--tp-card-subtitle);
+    color: #666;
+    margin: 0.1rem 0 0;
+}
+
+/* Use specific mobile padding adjustments */
+@media screen and (max-width: 600px) {
+    .top-projects {
+        padding: 2rem 1rem 0rem;
+    }
+
+    .tp-arrow-left {
+        margin-right: 1rem;
+    }
+
+    .tp-arrow-right {
+        margin-left: 1rem;
+    }
+}
+
+/* ============= MODAL POPUP ============= */
+.tp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeInModal 0.3s ease;
+}
+
+.tp-modal-content {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tp-modal-media {
+    max-width: calc(90vw - 100px);
+    max-height: calc(90vh - 100px);
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: scaleInModal 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media screen and (max-width: 899px) {
+    .tp-modal-media {
+        max-width: calc(100vw - 70px);
+        max-height: calc(100vh - 100px);
+    }
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleInModal {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-silent-u691072",
+  "title": "silent",
+  "description": "silent",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1CzyMESA5dWMyGYO1TkCxKOk_yPsr3EEM",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 3,
+    "fun": 3
+  },
+  "teamMembers": [
+    {
+      "slug": "sranyu-amthim",
+      "name": "ศรัณยู อ่ำทิม",
+      "username": "C",
+      "profileSrc": "/godang/members/sranyu-amthim.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

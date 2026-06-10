@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1248881698628833355",
+  "slug": "tang",
+  "name": "Kitsadaphong Bunkhun",
+  "username": "Tang",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ Kitsadaphong Bunkhun · ชื่อเล่น Tang — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/tang.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "web",
+      "tone": "color"
+    }
+  ]
+}

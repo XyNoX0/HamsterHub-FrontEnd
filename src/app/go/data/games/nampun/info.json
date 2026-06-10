@@ -1,0 +1,66 @@
+{
+  "id": "nampun",
+  "title": "NAMPUN",
+  "description": "6",
+  "teamName": "YAMA5",
+  "posterSrc": "/godang/games/nampun/poster.png",
+  "iconSrc": "/godang/games/nampun/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1GOuJAv7WHs0kW0MBuudCBD4s4uwnzO8P",
+  "gameUrl": "https://thastwindy.itch.io/nampun",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "ภัครวดี  ทองทวี",
+      "username": "มัดหมี่",
+      "profileSrc": "/godang/members/matmee.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "matmee"
+    },
+    {
+      "name": "Sirikanya",
+      "username": "Baitoey",
+      "profileSrc": "/godang/members/baitoey.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "baitoey"
+    },
+    {
+      "name": "ธรรศ เหล่าภัทรเกษม",
+      "username": "วิน",
+      "profileSrc": "/godang/members/win.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "win"
+    },
+    {
+      "name": "นางสาวอรนลิน เฟื่องฟูลอย",
+      "username": "นลิน",
+      "profileSrc": "/godang/members/nalin.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "nalin"
+    },
+    {
+      "name": "วิราศินี บัวกฎ",
+      "username": "เฟลม",
+      "profileSrc": "/godang/members/flame.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "flame"
+    }
+  ]
+}

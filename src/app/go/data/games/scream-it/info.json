@@ -1,0 +1,48 @@
+{
+  "id": "scream-it",
+  "title": "Scream it",
+  "description": "9",
+  "teamName": "triple bro",
+  "posterSrc": "/godang/games/scream-it/poster.png",
+  "iconSrc": "/godang/games/scream-it/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=14UErxjdiTj9onHtjBxrcWSZl_jdXvyOe",
+  "gameUrl": "https://xxanthalesxx.itch.io/scream-it",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "Kampanath Boritho",
+      "username": "Khun",
+      "profileSrc": "/godang/members/khun.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "khun"
+    },
+    {
+      "name": "สุรบดินทร์ บุญถนัด",
+      "username": "โตโต้",
+      "profileSrc": "/godang/members/toto.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "toto"
+    },
+    {
+      "name": "Phit Puangson",
+      "username": "Phit",
+      "profileSrc": "/godang/members/phit.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "phit"
+    }
+  ]
+}

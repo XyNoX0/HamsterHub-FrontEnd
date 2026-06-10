@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-escapefromhee-hee-u727232",
+  "title": "Escapefromhee-hee",
+  "description": "Escapefromhee-hee",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 4,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "phmi",
+      "name": "ภูมิพัฒน์ แก้ววงษา",
+      "username": "ภูมิ",
+      "profileSrc": "/godang/members/phmi.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

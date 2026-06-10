@@ -1,0 +1,10 @@
+{
+  "description": "Event metadata. id must be ASCII, URL-safe. Game info.json `event` field should use the same `name` as this file so getEvent() resolves.",
+  "id": "ic2",
+  "name": "Intelligent Camp 2",
+  "kind": "jam",
+  "date": "",
+  "theme": "",
+  "location": "Hamsterhub Discord",
+  "posterSrc": ""
+}

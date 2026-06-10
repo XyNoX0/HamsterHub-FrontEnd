@@ -1,0 +1,61 @@
+.stamp {
+  --stamp-color: var(--color-sun-on-light);
+  --stamp-bg: color-mix(in srgb, var(--color-sun) 14%, transparent);
+  --stamp-rotate: -8deg;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border: 2px dashed var(--stamp-color);
+  border-radius: 8px;
+  background-color: var(--stamp-bg);
+  transform: rotate(var(--stamp-rotate));
+  box-shadow: 0 6px 14px -8px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
+
+.stamp-inner {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stamp-color);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.stamp-sun {
+  --stamp-color: var(--color-sun-on-light);
+  --stamp-bg: color-mix(in srgb, var(--color-sun) 16%, var(--color-light));
+}
+.stamp-dang {
+  --stamp-color: var(--color-dang);
+  --stamp-bg: color-mix(in srgb, var(--color-dang) 10%, var(--color-light));
+}
+.stamp-mint {
+  --stamp-color: var(--color-mint-on-light);
+  --stamp-bg: color-mix(in srgb, var(--color-mint) 18%, var(--color-light));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .stamp {
+    animation: stamp-drop 280ms cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  }
+  @keyframes stamp-drop {
+    from {
+      transform: rotate(calc(var(--stamp-rotate) - 8deg)) scale(1.18);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(var(--stamp-rotate)) scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .stamp { padding: 4px 10px; }
+  .stamp-inner { font-size: 9px; letter-spacing: 0.14em; }
+}

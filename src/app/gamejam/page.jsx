@@ -1,26 +1,24 @@
 import React from "react";
-import "./GameJam.css";
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import CourseHero from "./components/CourseHero"
-import CourseContent from "./components/CourseContent"
-import CourseGet from "./components/CourseGet"
-import CourseTag from "./components/CourseTag"
+import CourseHero from "./components/CourseHero";
+import CourseContent from "./components/CourseContent";
 
-function Page() {
+import { getCourseData } from "@/utils/api";
 
+
+async function Page() {
+  const data = await getCourseData("152");
   return (
     <div>
       <Navbar />
-      <CourseHero/>
-      <CourseContent/>
-      <CourseGet/>
-      <CourseTag/>
+      <CourseHero courseData={data.course}/>
+      <CourseContent />
       <Footer />
     </div>
   );
 }
 
- 
+
 export default Page;

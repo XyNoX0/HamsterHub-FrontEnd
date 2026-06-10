@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1161375845953323048",
+  "slug": "aung-un",
+  "name": "Nattharat phanphank",
+  "username": "Aung-un",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ Nattharat phanphank · ชื่อเล่น Aung-un — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/aung-un.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "roblox",
+      "tone": "color"
+    }
+  ]
+}

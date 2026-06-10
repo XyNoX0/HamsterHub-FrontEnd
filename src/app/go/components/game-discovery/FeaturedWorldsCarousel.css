@@ -1,0 +1,266 @@
+.carousel-section {
+  position: relative;
+  width: 100%;
+  padding: 40px 20px 20px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .carousel-section {
+    padding: 48px 32px 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-section {
+    padding: 56px 48px 28px;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.carousel-header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  padding-bottom: 16px;
+}
+.carousel-titleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.carousel-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-section);
+  font-weight: 900;
+  letter-spacing: var(--track-tight);
+  line-height: var(--lh-tight);
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.carousel-titleStar {
+  color: var(--color-sun-on-light);
+  font-weight: 900;
+  font-style: italic;
+  transform: rotate(-2deg);
+  display: inline-block;
+  text-shadow: 0 2px 0 var(--color-sun-soft), 0 4px 14px color-mix(in srgb, var(--color-sun) 50%, transparent);
+}
+.carousel-titleProjects {
+  color: var(--text-on-light-strong);
+  font-weight: 900;
+}
+
+.carousel-carouselRelative {
+  position: relative;
+}
+
+.carousel-arrowBtnLeft, .carousel-arrowBtnRight {
+  position: absolute;
+  top: 33.333333%;
+  z-index: 20;
+  display: none;
+  height: 96px;
+  width: 48px;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: color-mix(in srgb, var(--color-light) 90%, transparent);
+  color: var(--text-on-light-strong);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 200ms;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  box-shadow: var(--shadow-lift);
+  cursor: pointer;
+}
+.carousel-arrowBtnLeft { left: -24px; }
+.carousel-arrowBtnRight { right: -24px; }
+.carousel-arrowBtnLeft:hover, .carousel-arrowBtnRight:hover {
+  background-color: var(--color-light);
+  border-color: color-mix(in srgb, var(--text-on-light-strong) 18%, transparent);
+}
+.carousel-arrowBtnLeft:active, .carousel-arrowBtnRight:active {
+  transform: translateY(-50%) scale(0.95);
+}
+@media (min-width: 1024px) {
+  .carousel-arrowBtnLeft, .carousel-arrowBtnRight {
+    display: flex;
+  }
+}
+.carousel-arrowIcon {
+  height: 24px;
+  width: 8px;
+}
+.carousel-arrowIconRight {
+  height: 24px;
+  width: 8px;
+  transform: rotate(180deg);
+}
+
+.carousel-scrollContainer {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.carousel-scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-cardItem {
+  width: 280px;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: var(--color-light);
+  border-radius: 24px;
+  padding: 12px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-card);
+  border: 1px solid color-mix(in srgb, var(--color-sea) 14%, transparent);
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out, border-color 200ms ease-out;
+}
+@media (min-width: 1024px) {
+  .carousel-cardItem {
+    width: 420px;
+  }
+}
+.carousel-cardItem:hover {
+  box-shadow: var(--shadow-lift);
+  border-color: color-mix(in srgb, var(--color-sea) 28%, transparent);
+}
+.carousel-cardItem:active {
+  transform: translateY(-1px) scale(0.985);
+  box-shadow: var(--shadow-card);
+  transition-duration: 80ms;
+}
+.carousel-imageBox {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: var(--color-light-soft);
+}
+.carousel-imageObj {
+  object-fit: cover;
+}
+.carousel-badge {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  border-radius: 6px;
+  background-color: var(--color-dang);
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  box-shadow: 0 6px 16px -4px color-mix(in srgb, var(--color-dang) 60%, transparent);
+}
+.carousel-infoBox {
+  margin-top: 0;
+  padding: 14px 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.carousel-eventSubtitle {
+  font-family: var(--font-heading);
+  font-size: var(--fs-card-role);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-dang);
+}
+.carousel-itemTitle {
+  font-family: var(--font-heading);
+  font-size: var(--fs-card-title);
+  font-weight: 700;
+  color: var(--text-on-light-strong);
+  line-height: 1.25;
+  margin: 0;
+}
+.carousel-itemDesc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-on-light-muted);
+  margin: 0;
+}
+
+.carousel-placeholderCard {
+  width: 280px;
+  flex-shrink: 0;
+  background-color: var(--color-light);
+  border-radius: 24px;
+  padding: 12px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid color-mix(in srgb, var(--color-sea) 10%, transparent);
+  opacity: 0.72;
+}
+@media (min-width: 1024px) {
+  .carousel-placeholderCard {
+    width: 420px;
+  }
+}
+.carousel-placeholderImageBox {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: color-mix(in srgb, var(--color-sea) 4%, var(--color-light-soft));
+  border: 2px dashed color-mix(in srgb, var(--color-sea) 28%, transparent);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-on-light-subtle);
+}
+.carousel-placeholderInfo {
+  margin-top: 0;
+  padding: 14px 8px 6px;
+}
+.carousel-phLine1 {
+  height: 8px;
+  width: 64px;
+  border-radius: 4px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+  margin-bottom: 8px;
+}
+.carousel-phLine2 {
+  height: 20px;
+  width: 160px;
+  border-radius: 4px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  margin-bottom: 8px;
+}
+.carousel-phLine3 {
+  height: 12px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}

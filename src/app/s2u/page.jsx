@@ -5,7 +5,6 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import CourseHero from "./components/CourseHero"
 import CourseContent from "./components/CourseContent"
-import CourseGet from "./components/CourseGet"
 import CourseTag from "./components/CourseTag"
 import Slider from "../components/Slider";
 
@@ -42,7 +41,6 @@ function Page() {
       <Navbar />
       <CourseHero />
       <CourseContent />
-      <CourseGet />
       <CourseTag />
       <div style={{ textAlign: "center", marginBottom: "90px" }}>
         <h5><b>ผลงานตัวอย่างของปีนี้ที่ได้เข้า จุฬา เกษตร และ U of Washington</b></h5>

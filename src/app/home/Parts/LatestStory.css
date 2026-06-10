@@ -1,0 +1,380 @@
+.latest-story {
+    width: 100%;
+    padding: 0.8rem 5rem 6rem;
+    /* สามารถเพิ่ม 4rem เป็น 5rem หรือมากกว่า เพื่อให้ซ้ายขวาแคบลง */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.latest-story-header {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.latest-story-header h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.latest-story-header p {
+    font-size: 0.8rem;
+    color: #444;
+    margin-top: -0.4rem;
+}
+
+.ls-highlight {
+    color: #e8a030;
+    font-weight: 700;
+}
+
+/* ===== GRID LAYOUT ===== */
+.ls-grid {
+    display: grid;
+    grid-template-columns: 2.2fr 1.8fr;
+    gap: 0.8rem;
+    width: 95%;
+}
+
+/* ===== CARD BASE ===== */
+.ls-card {
+    overflow: visible;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.ls-card:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+/* ===== IMAGE WRAPPER ===== */
+.ls-card-image-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+}
+
+.ls-card-image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+/* ===== TEXT AREA ===== */
+.ls-card-text {
+    padding: 0.3rem 0.1rem 0.1rem 0.1rem;
+    background: white;
+    flex-shrink: 0;
+}
+
+.ls-main-text {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.ls-date-text {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #e8a030;
+    margin: 0.2rem 0 0.1rem;
+    line-height: 1.3;
+}
+
+.ls-sub-text {
+    font-size: 0.65rem;
+    color: #666;
+    margin: 0.05rem 0 0 0;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.ls-mid-text {
+    font-size: 0.72rem;
+    color: #4a4a5a;
+    margin: 0.15rem 0 0.05rem 0;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+/* ===== LARGE CARD (LEFT) ===== */
+.ls-card-large .ls-main-text {
+    font-size: 0.85rem;
+}
+
+.ls-card-large .ls-date-text {
+    font-size: 0.72rem;
+}
+
+.ls-card-large .ls-sub-text {
+    font-size: 0.65rem;
+}
+
+.ls-card-large .ls-mid-text {
+    font-size: 0.72rem;
+}
+
+/* ===== RIGHT STACK ===== */
+.ls-right-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    min-width: 0;
+}
+
+/* ===== SMALL CARDS (RIGHT) - Horizontal layout ===== */
+.ls-card-small {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ls-card-small-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.7rem;
+    height: 100%;
+}
+
+.ls-card-small .ls-card-image-wrapper {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.ls-card-small .ls-card-text {
+    padding: 0.1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    margin-right: -3rem;
+}
+
+.ls-card-small .ls-main-text {
+    font-size: 0.8rem;
+}
+
+.ls-card-small .ls-date-text {
+    font-size: 0.62rem;
+}
+
+.ls-card-small .ls-sub-text {
+    font-size: 0.6rem;
+}
+
+/* ============= RESPONSIVE: Mobile (< 768px) ============= */
+@media screen and (max-width: 768px) {
+    .latest-story {
+        padding: 1.5rem 1rem 4rem;
+        align-items: center;
+    }
+
+    .ls-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .latest-story-header {
+        text-align: left;
+    }
+
+    .latest-story-header h2 {
+        font-size: 1.3rem;
+    }
+
+    /* On mobile, small cards go vertical */
+    .ls-card-small-inner {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ls-card-small .ls-card-image-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    .ls-card-small .ls-card-text {
+        padding: 0.4rem 0.1rem 0.15rem 0.1rem;
+        margin-right: 0;
+    }
+
+    .ls-main-text {
+        font-size: 0.8rem;
+    }
+
+    .ls-date-text {
+        font-size: 0.65rem;
+    }
+
+    .ls-sub-text {
+        font-size: 0.6rem;
+    }
+
+    .ls-mid-text {
+        font-size: 0.68rem;
+    }
+}
+
+/* ============= RESPONSIVE: Tablet (769px–1023px) ============= */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .latest-story {
+        padding: 1.2rem 2rem 5rem;
+    }
+
+    .ls-grid {
+        gap: 0.7rem;
+    }
+
+    .ls-right-stack {
+        gap: 0.5rem;
+    }
+
+    .ls-main-text {
+        font-size: 0.78rem;
+    }
+
+    .ls-date-text {
+        font-size: 0.62rem;
+    }
+
+    .ls-sub-text {
+        font-size: 0.58rem;
+    }
+
+    .ls-mid-text {
+        font-size: 0.65rem;
+    }
+}
+
+/* ============= RESPONSIVE: Small Desktop (1024px–1399px) ============= */
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+    .latest-story {
+        padding: 1.2rem 3rem 5rem;
+    }
+
+    .ls-grid {
+        gap: 0.8rem;
+    }
+
+    .ls-right-stack {
+        gap: 0.6rem;
+    }
+
+    .ls-card-small .ls-card-text {
+        margin-right: -2rem;
+    }
+}
+
+/* ============= RESPONSIVE: Medium-Large (1400–1919px) ============= */
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+    .latest-story {
+        padding: 1.2rem 4rem 6rem;
+    }
+
+    .ls-grid {
+        gap: 1rem;
+    }
+
+    .ls-right-stack {
+        gap: 0.7rem;
+    }
+
+    .latest-story-header h2 {
+        font-size: 1.8rem;
+        /* ขนาด A Latest Story สำหรับหน้าจอ 1400px+ */
+    }
+
+    .latest-story-header p {
+        font-size: 0.85rem;
+        /* ขนาด กิจกรรมเด็ดเร็วๆนี้ สำหรับหน้าจอ 1400px+ */
+    }
+
+    .ls-card-large .ls-main-text {
+        font-size: 1.05rem;
+    }
+
+    .ls-card-large .ls-sub-text {
+        font-size: 0.78rem;
+    }
+
+    .ls-card-large .ls-mid-text {
+        font-size: 0.88rem;
+    }
+
+    .ls-card-small .ls-main-text {
+        font-size: 0.9rem;
+    }
+
+    .ls-card-small .ls-sub-text {
+        font-size: 0.68rem;
+    }
+
+    .ls-card-small .ls-mid-text {
+        font-size: 0.76rem;
+    }
+
+}
+
+/* ============= RESPONSIVE: Ultra-wide (1920px+) ============= */
+@media screen and (min-width: 1920px) {
+    .latest-story {
+        padding: 1.5rem 5rem 7rem;
+    }
+
+    .ls-grid {
+        gap: 1.2rem;
+    }
+
+    .ls-right-stack {
+        gap: 0.8rem;
+    }
+
+    .latest-story-header h2 {
+        font-size: 1.6rem;
+        /* ขนาด A Latest Story สำหรับหน้าจอ 1920px+ */
+    }
+
+    .latest-story-header p {
+        font-size: 0.9rem;
+        /* ขนาด กิจกรรมเด็ดเร็วๆนี้ สำหรับหน้าจอ 1920px+ */
+    }
+
+    .ls-card-large .ls-main-text {
+        font-size: 1.0rem;
+    }
+
+    .ls-card-large .ls-sub-text {
+        font-size: 0.62rem;
+    }
+
+    .ls-card-large .ls-mid-text {
+        font-size: 0.65rem;
+    }
+
+    .ls-card-small .ls-main-text {
+        font-size: 1rem;
+    }
+
+    .ls-card-small .ls-sub-text {
+        font-size: 0.62rem;
+    }
+
+    .ls-card-small .ls-mid-text {
+        font-size: 0.65rem;
+    }
+
+    .ls-card-small .ls-card-text {
+        margin-right: -1rem;
+    }
+}

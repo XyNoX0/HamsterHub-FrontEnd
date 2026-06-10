@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-hamster-mookata-u897556",
+  "title": "Hamster mookata",
+  "description": "Hamster mookata",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1AgN0uHueTzOf5j8YiCO8W2dydzrSx2b9",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "thim-00",
+      "name": "ปิยมงคล คำสุวรรณ",
+      "username": "ทีม",
+      "profileSrc": "/godang/members/thim-00.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

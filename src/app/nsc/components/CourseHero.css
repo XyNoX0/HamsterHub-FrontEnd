@@ -6,7 +6,7 @@
   align-items: center;
   overflow: hidden;
   color: white;
-  background: var(--off-white);
+  background: #0b042b;
   height:auto;
   
 
@@ -49,7 +49,6 @@
   top: 0;
   left: 0;
   right: 0;
-
   animation: sizeInCourse  1s 0.4s forwards;
  
 }
@@ -106,9 +105,9 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-
+  
   z-index: 8;
-  background: var(--off-white);
+  background: #0b042b;
   padding: 1rem 0;
   opacity: 0;
 
@@ -123,7 +122,7 @@
   justify-content: space-between;
   width: 80%;
 
-  color: var(--gray);
+  color: white;
   text-align: left;
   align-items: center;
 
@@ -135,7 +134,7 @@
   align-items: center;
   justify-content: space-between;
 
-  color: var(--gray);
+  color: white;
   width: 80%;
   p {
     
@@ -168,20 +167,31 @@
   width: 100%;
   text-align: center;
 }
-
-.cover-mobile{
- display: none;
+.img-desktop{
+  display: block;
 }
-.discount-line{
-  text-decoration: line-through;
+.img-mobile{
+  display: none;
+}
+.video-desktop{
+  display: block;
+}
+.video-mobile{
+  display: none;
 }
 @media screen and (max-width: 600px) {
-  .cover-desktop{
+  .img-desktop{
     display: none;
-   }
-  .cover-mobile{
+  }
+  .img-mobile{
     display: block;
-   }
+  }
+  .video-desktop{
+    display: none;
+  }
+  .video-mobile{
+    display: block;
+  }
   .course-hero{
     min-height: 100vh;
     hr{

@@ -1,0 +1,29 @@
+{
+  "description": "Per-member profile. Fill any field to override the auto-derived value. Leave a field out (or omit the file entirely) to fall back to data derived from games/registry.ts.",
+  "slug": "flame",
+  "titleLine": "HamsterHub Creator",
+  "motto": "Enjoy creating!",
+  "aboutText": "สวัสดี เราชื่อ เฟลม เป็นหนึ่งในคนสร้างสรรค์เกมที่ HamsterHub.",
+  "skills": [
+    {
+      "name": "Creativity",
+      "level": 3
+    },
+    {
+      "name": "Collaboration",
+      "level": 4
+    }
+  ],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    }
+  ],
+  "profileSrc": "/godang/members/flame.png",
+  "name": "วิราศินี บัวกฎ",
+  "username": "เฟลม"
+}

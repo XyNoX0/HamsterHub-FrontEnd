@@ -1,0 +1,66 @@
+{
+  "id": "ic2-roblox-g-90e348462c-t2",
+  "title": "คลื่นสยอง",
+  "description": "คลื่นสยอง",
+  "teamName": "Team 2",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "https://www.roblox.com/th/games/127698102741179/unnamed",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "slug": "amm",
+      "name": "Phawinee Kaomaneechot",
+      "username": "Amm",
+      "profileSrc": "/godang/members/amm.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "farm",
+      "name": "Pattharawat Numvatee",
+      "username": "Farm",
+      "profileSrc": "/godang/members/farm.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "mikki",
+      "name": "นายกิตตินันท์ สันติมิตร์",
+      "username": "มิกกี้",
+      "profileSrc": "/godang/members/mikki.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "pingpong",
+      "name": "ธีรัตม์  ปริยพาณิช",
+      "username": "ปิงปอง",
+      "profileSrc": "/godang/members/pingpong.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "po",
+      "name": "",
+      "username": "ปอ",
+      "profileSrc": "/godang/members/po.png",
+      "roles": [
+        "Roblox"
+      ]
+    }
+  ]
+}

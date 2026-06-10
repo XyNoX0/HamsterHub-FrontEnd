@@ -1,0 +1,529 @@
+/* ── Google Fonts loaded via next/font/google in page.tsx ── */
+.page-layout {
+  /* ──────────────────────────────────────────────────────────────
+     Design tokens — v7 Foundation (lightmode-first)
+     Section bg flow: cream → near-white → sun-wash → dark → cream(modal)
+     ────────────────────────────────────────────────────────────── */
+
+  /* BG zones */
+  --color-dark: #0B2333;
+  --color-light: #FAF5EA;
+  --color-light-soft: #FCFAF5;
+  --color-sun-wash: #FFF4D6;
+
+  /* Text on light bg (4 levels) */
+  --text-on-light-strong: #0B2333;
+  --text-on-light: #1A3D54;
+  --text-on-light-muted: #4A6B7E;
+  --text-on-light-subtle: #8DA3B3;
+
+  /* Text on dark bg (4 levels) */
+  --text-on-dark-strong: #FAF5EA;
+  --text-on-dark: #DCD2BA;
+  --text-on-dark-muted: #8E8472;
+  --text-on-dark-subtle: #5C5547;
+
+  /* Accents — base + light/dark adjusted variants (AA-safe) */
+  --color-dang: #E05B30;
+  --color-dang-on-dark: #FF7A4F;
+  --color-sun: #FFCB47;
+  --color-sun-on-light: #C29A2B;
+  --color-mint: #7DD8A8;
+  --color-mint-on-light: #2F7B5A;
+
+  /* Sea palette — v9 blue-primary direction */
+  --color-sea: #1D87C1;
+  --color-sea-deep: #0B3D5C;
+  --color-sea-bright: #4FB3D9;
+  --color-sea-medium: #448FC3;
+  --color-sea-mist: #DCE9F2;
+  --color-sea-soft: #D4ECF5;
+
+  /* Text on sea-medium / sea-deep bg (cream family) */
+  --text-on-sea-strong: #FAF5EA;
+  --text-on-sea: #DCD2BA;
+  --text-on-sea-muted: color-mix(in srgb, #FAF5EA 70%, transparent);
+
+  /* Soft chip backgrounds */
+  --color-dang-soft: #FFE3DD;
+  --color-sun-soft: #FFF1B8;
+  --color-mint-soft: #D4F2E3;
+  --color-peach-soft: #FFE3DD;
+
+  /* Classic number palette (Arena tiles on dark) */
+  --num-1: #6FB1FF;
+  --num-2: #7DD8A8;
+  --num-3: #FF7A4F;
+  --num-4: #C8B6FF;
+  --num-5: #D4925A;
+
+  /* Legacy aliases — kept so existing component CSS keeps compiling.
+     Later phases migrate components to the new tokens and these can be retired. */
+  --color-cream: var(--color-light);
+  --color-surface: var(--color-light);
+  --color-surface-sunken: #E0D0AE;
+  --color-go-soft: #C7E8FA;
+  --color-charcoal: var(--text-on-light-strong);
+  --color-muted: var(--text-on-light-muted);
+  --color-border: color-mix(in srgb, var(--text-on-light-strong) 12%, transparent);
+  --color-on-bg-text: var(--text-on-light-strong);
+  --color-go: #1D87C1;
+  --color-go-ink: #0B3D5C;
+  --color-dang-ink: #5C4033;
+
+  /* Shape language — radius + shadow stack */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  --shadow-soft: 0 2px 6px -2px rgba(11, 35, 51, 0.08), 0 6px 16px -8px rgba(11, 35, 51, 0.10);
+  --shadow-card: 0 4px 12px -4px rgba(11, 35, 51, 0.10), 0 16px 36px -18px rgba(11, 35, 51, 0.18);
+  --shadow-lift: 0 10px 24px -10px rgba(11, 35, 51, 0.18), 0 28px 60px -24px rgba(11, 35, 51, 0.22);
+  --shadow-ambient: 0 32px 80px -24px rgba(11, 35, 51, 0.18), 0 12px 32px -8px rgba(11, 35, 51, 0.10);
+  --shadow-ambient-sm: 0 16px 40px -16px rgba(11, 35, 51, 0.14), 0 6px 16px -4px rgba(11, 35, 51, 0.08);
+
+  /* Type scale (clamped, mobile → desktop) */
+  --fs-hero: clamp(48px, 6vw, 72px);
+  --fs-section: clamp(36px, 4.5vw, 56px);
+  --fs-subtitle: clamp(16px, 1.3vw, 18px);
+  --fs-card-title: clamp(16px, 1.25vw, 18px);
+  --fs-body: 16px;
+  --fs-card-role: 12px;
+  --fs-label: 11px;
+  --fs-hud: 24px;
+  --fs-tile: 28px;
+
+  --lh-tight: 1.05;
+  --lh-heading: 1.15;
+  --lh-body: 1.6;
+
+  --track-tight: -0.03em;
+  --track-normal: 0;
+  --track-label: 0.1em;
+  --track-uppercase: 0.2em;
+
+  position: relative;
+
+  /* Font stack — uses loaded Google Fonts via Next.js variables */
+  --font-heading: var(--font-poppins, 'Poppins'), var(--font-prompt, 'Prompt'), sans-serif;
+  --font-body: var(--font-poppins, 'Poppins'), var(--font-prompt, 'Prompt'), sans-serif;
+  --font-italic: var(--font-prompt, 'Prompt'), var(--font-poppins, 'Poppins'), sans-serif;
+
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  /* Page bg is now the light cream zone. Individual sections override via .page-zone--* wrappers. */
+  background-color: var(--color-sea-soft);
+  color: var(--text-on-light-strong);
+  font-family: var(--font-body);
+
+  font-size: 16px;
+  /* Override :root clamp(24px, 2vw, 48px) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-layout--siteNav {
+  padding-top: 72px;
+}
+
+.page-layout--go {
+  padding-top: 0;
+  background-color: var(--color-dark);
+}
+
+@media (min-width: 1024px) {
+  .page-layout--siteNav {
+    padding-top: 96px;
+  }
+}
+
+/* Force font-family inheritance — overrides HamsterHub's * { font-family: "Noto Sans Thai" } */
+:where(.page-layout *) {
+  font-family: inherit;
+}
+
+/* Reset heading styles — overrides HamsterHub's h1-h6 weight rules */
+:where(.page-layout) h1,
+:where(.page-layout) h2,
+:where(.page-layout) h3,
+:where(.page-layout) h4,
+:where(.page-layout) h5,
+:where(.page-layout) h6 {
+  font-family: var(--font-heading);
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+/* Reset paragraph styles */
+:where(.page-layout) p {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Reset img/video baseline */
+:where(.page-layout) img,
+:where(.page-layout) video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus ring — Phase 6 a11y polish. 3px sun ring + 5px dark halo = visible on every zone.
+   No border-radius override — box-shadow naturally follows the focused element's own radius. */
+:where(.page-layout) :focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-sun), 0 0 0 5px var(--color-dark);
+}
+
+.page-main {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-width: 0;
+  /* Critical: allows flex child to shrink below its content size */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.page-main--standalone {
+  width: 100%;
+}
+
+.page-scroll {
+  flex: 1 1 0%;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.page-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Grain / noise overlay — subtle printed-paper texture on light bg.
+   Perf: must NOT use position:fixed + mix-blend-mode together — that combo
+   forces a full-viewport recomposite on every paint, which freezes the
+   page once content gets heavy (40+ cards + framer-motion + swiper). */
+.page-layout::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Perf: hide on mobile entirely — even without blend-mode, repainting a
+   full-page noise texture on low-power devices wastes battery. */
+@media (max-width: 1023px) {
+  .page-layout::after {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-layout::after {
+    display: none;
+  }
+}
+
+.page-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Zone backgrounds must reach the viewport edge, especially on wide MacBook
+   screens or when the user zooms out. Each section already constrains its
+   inner content with its own .*-container max-width (typically 1280px), so
+   capping the outer wrapper at 1600px just left empty stripes on the sides
+   at viewports above 1600px. Letting .page-container span 100% keeps the
+   colored bands edge-to-edge while reading width stays comfortable. */
+
+/* ──────────────────────────────────────────────────────────────
+   Zone utility classes — wrap sections to set bg + default text color.
+   Use as: <section className="page-zone page-zone--sun-wash">...</section>
+   ────────────────────────────────────────────────────────────── */
+.page-zone {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  /* Perf: skip layout/paint while offscreen. Massive win on long pages
+     (40 directory cards, multi-section Pro page). The intrinsic-size hint
+     keeps scrollbar from jumping when sections enter/leave viewport. */
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+}
+
+.page-zone--light {
+  background-color: var(--color-light);
+  color: var(--text-on-light-strong);
+}
+.page-zone--light-soft {
+  background-color: var(--color-light-soft);
+  color: var(--text-on-light-strong);
+}
+.page-zone--sun-wash {
+  background-color: var(--color-sun-wash);
+  color: var(--text-on-light-strong);
+}
+.page-zone--dark {
+  background-color: var(--color-dark);
+  color: var(--text-on-dark-strong);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Sea zones — Palette A "Deep Ocean" (solid blues, no gradients).
+   Hierarchy: deep → medium → soft → mist → almost-white.
+   Browsers paint solids ~3× faster than radial-gradient stacks; a
+   long /profile/[slug] page now scrolls without GPU thrash.
+   ────────────────────────────────────────────────────────────── */
+.page-zone--sea-deep {
+  background-color: var(--color-sea-deep);
+  color: var(--text-on-sea-strong);
+}
+.page-zone--sea {
+  background-color: var(--color-sea);
+  color: var(--text-on-sea-strong);
+}
+.page-zone--sea-mist {
+  background-color: var(--color-sea-mist);
+  color: var(--text-on-light-strong);
+}
+.page-zone--sea-soft {
+  background-color: var(--color-sea-soft);
+  color: var(--text-on-light-strong);
+}
+.page-zone--sea-medium {
+  background-color: var(--color-sea-medium);
+  color: var(--text-on-dark-strong);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Decoration utilities — at most 2 per heading.
+   ────────────────────────────────────────────────────────────── */
+
+/* highlight-sun: yellow marker bg behind a word (for light zones) */
+.deco-highlight-sun {
+  background-image: linear-gradient(120deg, var(--color-sun-soft) 0%, var(--color-sun-soft) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: 0 85%;
+  padding: 0 0.08em;
+  border-radius: 4px;
+}
+
+/* highlight-peach: soft peach marker */
+.deco-highlight-peach {
+  background-image: linear-gradient(120deg, var(--color-peach-soft) 0%, var(--color-peach-soft) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: 0 85%;
+  padding: 0 0.08em;
+  border-radius: 4px;
+}
+
+/* sparkle: star SVG pseudo-element preceding the word */
+.deco-sparkle {
+  position: relative;
+  display: inline-block;
+}
+.deco-sparkle::before {
+  content: '';
+  position: absolute;
+  top: -0.35em;
+  left: -0.55em;
+  width: 0.55em;
+  height: 0.55em;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFCB47'><path d='M12 0l2.39 7.36H22l-6.19 4.5L18.2 19.24 12 14.74 5.8 19.24l2.39-7.38L2 7.36h7.61z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.page-zone--dark .deco-sparkle::before {
+  filter: drop-shadow(0 0 6px rgba(255, 203, 71, 0.6));
+}
+
+/* underline-wave: SVG wavy line beneath word */
+.deco-underline-wave {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 12' preserveAspectRatio='none'><path d='M0 6 Q 10 0 20 6 T 40 6 T 60 6 T 80 6' stroke='%23FFCB47' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  padding-bottom: 0.08em;
+}
+.page-zone--light .deco-underline-wave,
+.page-zone--light-soft .deco-underline-wave,
+.page-zone--sun-wash .deco-underline-wave {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 12' preserveAspectRatio='none'><path d='M0 6 Q 10 0 20 6 T 40 6 T 60 6 T 80 6' stroke='%23C29A2B' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
+}
+
+/* underline-wave-dang: same shape but red stroke for Arena / dark zones */
+.deco-underline-wave-dang {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 12' preserveAspectRatio='none'><path d='M0 6 Q 10 0 20 6 T 40 6 T 60 6 T 80 6' stroke='%23FF7A4F' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  padding-bottom: 0.08em;
+}
+.page-zone--light .deco-underline-wave-dang,
+.page-zone--light-soft .deco-underline-wave-dang,
+.page-zone--sun-wash .deco-underline-wave-dang,
+.page-zone--sea-mist .deco-underline-wave-dang,
+.page-zone--sea-soft .deco-underline-wave-dang {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 12' preserveAspectRatio='none'><path d='M0 6 Q 10 0 20 6 T 40 6 T 60 6 T 80 6' stroke='%23E05B30' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
+}
+
+/* circle-brush: hand-drawn circle around word */
+.deco-circle-brush {
+  position: relative;
+  display: inline-block;
+  padding: 0.05em 0.3em;
+}
+.deco-circle-brush::after {
+  content: '';
+  position: absolute;
+  inset: -0.1em -0.15em;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80' preserveAspectRatio='none'><ellipse cx='100' cy='40' rx='96' ry='34' stroke='%23E05B30' stroke-width='3' fill='none' stroke-linecap='round' stroke-dasharray='4 3'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+/* italic-accent: italic + lighter weight for taglines */
+.deco-italic-accent {
+  font-family: var(--font-italic);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* uppercase-tracked: label treatment */
+.deco-uppercase-tracked {
+  text-transform: uppercase;
+  letter-spacing: var(--track-uppercase);
+  font-weight: 800;
+}
+
+/* mixed-weight: mix 300 + 900 in same line for contrast */
+.deco-mixed-weight {
+  font-weight: 300;
+}
+.deco-mixed-weight strong,
+.deco-mixed-weight .deco-strong {
+  font-weight: 900;
+}
+
+/* text-shadow-soft: subtle glow */
+.deco-text-shadow-soft {
+  text-shadow: 0 1px 2px rgba(11, 35, 51, 0.08), 0 4px 12px rgba(11, 35, 51, 0.06);
+}
+.page-zone--dark .deco-text-shadow-soft {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(255, 203, 71, 0.15);
+}
+
+/* tabular-nums: lined figures for HUD + data */
+.deco-tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Skeleton / shimmer — global utilities used by loading.tsx files
+   at /go, /go/pro, /profile/[slug]. Each route segment renders its
+   own skeleton (matching the real layout) using these classes, so
+   nothing ships to JS — pure CSS animation.
+   ────────────────────────────────────────────────────────────── */
+.skel {
+  position: relative;
+  overflow: hidden;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+  border-radius: 10px;
+  isolation: isolate;
+}
+.skel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, #ffffff 55%, transparent) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: skel-shimmer 1.4s ease-in-out infinite;
+}
+/* On dark zones, flip the tint so the base + highlight still read. */
+.page-zone--dark .skel,
+.page-zone--sea-deep .skel,
+.page-zone--sea .skel,
+.page-zone--sea-medium .skel {
+  background-color: color-mix(in srgb, var(--text-on-dark-strong) 14%, transparent);
+}
+.page-zone--dark .skel::after,
+.page-zone--sea-deep .skel::after,
+.page-zone--sea .skel::after,
+.page-zone--sea-medium .skel::after {
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, #ffffff 22%, transparent) 50%,
+    transparent 100%
+  );
+}
+.skel-circle { border-radius: 50%; }
+.skel-pill { border-radius: 999px; }
+
+/* Fill a positioned parent frame — used as a shimmer overlay underneath
+   <Image /> while the image is still loading. Parent must be position: relative. */
+.skel-imageFill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 0;
+  pointer-events: none;
+}
+/* Image fade-in helper — pair with inline style opacity:0/1 tied to onLoad. */
+.skel-imageFade {
+  transition: opacity 260ms ease-out;
+}
+
+@keyframes skel-shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skel::after { animation: none; opacity: 0.35; transform: none; }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Stagger reveal — game-feel grids (directory cards, project tiles,
+   achievement badges). Pair with inline style `--i: <index>` and an
+   `.is-staggered` parent class to opt in. Reduced-motion gate strips
+   the animation but keeps final visible state.
+   ────────────────────────────────────────────────────────────── */
+.is-staggered > * {
+  opacity: 0;
+  animation: stagger-in 420ms cubic-bezier(0.2, 0.8, 0.3, 1.05) forwards;
+  /* Perf: cap the stagger ladder so card #40 doesn't wait 1.8s. After the
+     12th item the rest enter together — feels like a wave, not a delay. */
+  animation-delay: min(calc(var(--i, 0) * 45ms), 540ms);
+}
+@keyframes stagger-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-staggered > * { opacity: 1; animation: none; transform: none; }
+}

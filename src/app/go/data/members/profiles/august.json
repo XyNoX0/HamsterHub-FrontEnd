@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "866193157586681876",
+  "slug": "august",
+  "name": "ปรวีร์ เพชรสุวรรณ",
+  "username": "August",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ ปรวีร์ เพชรสุวรรณ · ชื่อเล่น August — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/august.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "unity",
+      "tone": "color"
+    }
+  ]
+}

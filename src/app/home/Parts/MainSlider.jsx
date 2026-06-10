@@ -7,163 +7,40 @@ function MainSlider() {
   const sliderRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const intervalRef = useRef(null);
-
   const slides = [
-    // {
-    //   title: "mrCITY & veggie dash",
-    //   description:
-    //     '🏆 2nd & 3rd NSC Winners\n"Great success comes from small steps"',
-    //   type: "video",
-    //   content: "https://nj.dekhub.com/public/videos/LoopL2.mp4",
-    //   // image: "https://nj.dekhub.com/public/imgs/header1.png",
-    //   image: "/assets/header1.png",
-    //   placeholder: "https://nj.dekhub.com/public/imgs/GameJam.png",
-    //   link: "#",
-    // },
-    // {
-    //   title: "World of Programming",
-    //   description:
-    //     "Python Amazing Adventure\nThe challenged missions among friends",
-    //   type: "image",
-    //   content: "https://nj.dekhub.com/public/imgs/header2.png",
-    //   image: "https://nj.dekhub.com/public/imgs/header2.png",
-    //   link: "#",
-    // },
-    // {
-    //   title: "Unity 6 HDRP",
-    //   description:
-    //     "Beyond reality with hi-def graphics quality\nProfessional way of game production in HDRP",
-    //   type: "image",
-    //   content: "https://nj.dekhub.com/public/imgs/header3.png",
-    //   image: "https://nj.dekhub.com/public/imgs/header3.png",
-    //   link: "#",
-    // },
-    
-    // {
-    //   title: "Maximize AI Camp",
-    //   description: "",
-    //   type: "image",
-    //   content_desktop: "https://nj.dekhub.com/public/imgs/aicampDT2.png",
-    //   content_mobile: "https://nj.dekhub.com/public/imgs/aicampMB2.png",
-    //   image: "https://nj.dekhub.com/public/imgs/aicampTN.png",
-    //   placeholder: "",
-    //   link: "/aicamp",
-    //   book: "/apply/131",
-    // },
-    
     {
-      title: "from School to U",
+      title: "",
       description: "",
-      type: "image",
-      content_desktop: "https://nj.dekhub.com/public/imgs/s2uDT.png",
-      content_mobile: "https://nj.dekhub.com/public/imgs/s2uMB.png",
-      image: "https://nj.dekhub.com/public/imgs/s2uTN.png",
+      type: "video",
+      content_desktop: "https://nj.dekhub.com/public/videos/KGJamDT.mp4",
+      content_mobile: "https://nj.dekhub.com/public/videos/KGJamMB.mp4",
+      image: "https://nj.dekhub.com/public/imgs/KGJamIcon.png",
       placeholder: "",
-      link: "/s2u",
-      book: "/apply/137",
-    },
-
-    {
-      title: "Make Game with AI",
-      description: "",
-      type: "image",
-      content_desktop: "https://nj.dekhub.com/public/imgs/AIGame/AIGame_DT.png",
-      content_mobile: "https://nj.dekhub.com/public/imgs/AIGame/AIGame_MB.png",
-      image: "https://nj.dekhub.com/public/imgs/AI_Icon.png",
-      placeholder: "",
-      link: "/gameai",
-      book: "/apply/820",
+      link: "",
+      book: "",
     },
     {
-      title: "Unity Physics Engine With Math & Python Workshop",
+      title: "",
       description: "",
       type: "image",
-      content_desktop: "https://nj.dekhub.com/public/imgs/upm/1.png",
-      content_mobile: "https://nj.dekhub.com/public/imgs/upm/8.png",
-      image: "https://nj.dekhub.com/public/imgs/upm/Icon.png",
+      content_desktop: "https://nj.dekhub.com/public/imgs/HHMainSlideDT.png",
+      content_mobile: "https://nj.dekhub.com/public/imgs/HHMainSlideMB.png",
+      image: "https://nj.dekhub.com/public/imgs/Trophy-1.png",
       placeholder: "",
-      link: "/upm",
-      book: "/apply/138",
+      link: "",
+      book: "",
     },
-
-    // {
-    //   title: "Game Creator Journey",
-    //   description: "",
-    //   type: "image",
-    //   content_desktop: "https://nj.dekhub.com/public/imgs/gamejourneyDT.png",
-    //   content_mobile: "https://nj.dekhub.com/public/imgs/gamejourneyMB.png",
-    //   image: "https://nj.dekhub.com/public/imgs/GameJourneyIcon.png",
-    //   placeholder: "",
-    //   link: "/gamejourney",
-    //   book: "/apply/132",
-    // },
-
-    // {
-    //   title: "Stargate (Python)",
-    //   description: "",
-    //   type: "image",
-    //   content_desktop: "https://nj.dekhub.com/public/imgs/StargateDT2.png",
-    //   content_mobile: "https://nj.dekhub.com/public/imgs/StargateMB2.png",
-    //   image: "https://nj.dekhub.com/public/imgs/stargateIcon.png",
-    //   placeholder: "",
-    //   link: "/stargate1",
-    //   book: "/apply/129",
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   type: "image",
-    //   content_desktop: "https://nj.dekhub.com/public/imgs/pxp/pxpDT.png",
-    //   content_mobile: "https://nj.dekhub.com/public/imgs/pxp/pxpMB.png",
-    //   image: "https://nj.dekhub.com/public/imgs/pxp/pxpTN.png",
-    //   placeholder: "",
-    //   link: "/pxp",
-    //   book: "/apply/936",
-    // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   type: "image",
-    //   content_desktop: "https://nj.dekhub.com/public/imgs/Tech/Banner_DT.png",
-    //   content_mobile: "https://nj.dekhub.com/public/imgs/Tech/Banner_MB.png",
-    //   image: "https://nj.dekhub.com/public/imgs/TN_Icon.png",
-    //   placeholder: "",
-    //   link: "/starter",
-    //   book: "/apply/126",
-    // },
-    // {
-    //   title: "NSC Software Project S2",
-    //   description: "ฝึกออกแบบและนำเสนอผลงานสำหรับเข้าแข่งขันรายการระดับประเทศ",
-    //   type: "image",
-    //   content_desktop: "https://nj.dekhub.com/public/imgs/NSCBannerDesktop.png",
-    //   content_mobile: "https://nj.dekhub.com/public/imgs/NSCBannerMobile.png",
-    //   image: "https://nj.dekhub.com/public/imgs/NSCTN.png",
-    //   placeholder: "",
-    //   link: "/nsc",
-    //   book: "/apply/935",
-    // },
     {
-      title: "Python Adventure Camp",
+      title: "",
       description: "",
-      type: "image",
-      content_desktop: "https://nj.dekhub.com/public/imgs/PythonOLDT.png",
-      content_mobile: "https://nj.dekhub.com/public/imgs/PythonOLMB.png",
-      image: "https://nj.dekhub.com/public/imgs/PyTN.png",
+      type: "video",
+      content_desktop: "https://nj.dekhub.com/public/videos/LoopL2.mp4",
+      content_mobile: "https://nj.dekhub.com/public/videos/SKDemo.mp4",
+      image: "https://nj.dekhub.com/public/imgs/IC.png",
       placeholder: "",
-      link: "/course/811",
-      book: "/apply/125",
+      link: "",
+      book: "",
     }
-    // {
-    //   title: "mrCITY & veggie dash",
-    //   description: '🏆 2nd & 3rd NSC Winners\n"Great success comes from small steps"',
-    //   type: "video",
-    //   content_desktop: "https://nj.dekhub.com/public/videos/header1.mp4",
-    //   content_mobile: "https://nj.dekhub.com/public/videos/header1.mp4",
-    //   image: "https://nj.dekhub.com/public/imgs/header1.png",
-    //   placeholder: "https://nj.dekhub.com/public/imgs/veggiestart.png",
-    //   link: "/gallery",
-    //   book: "#",
-    // }
   ];
 
   const scrollToSlide = useCallback((index) => {
@@ -272,7 +149,7 @@ function MainSlider() {
 
                 )}
               </div>
-              <div className="home-text-overlay">
+              {/* <div className="home-text-overlay">
                 <h1>{slide.title}</h1>
                 <div className="slide-description">
                   {slide.description.split("\n").map((line, i) => (
@@ -306,7 +183,7 @@ function MainSlider() {
                       Project Gallery
                     </a>
                 )}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

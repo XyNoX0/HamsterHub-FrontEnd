@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1081540856525357066",
+  "slug": "muftee",
+  "name": "Pakin Yindee",
+  "username": "Muftee",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ Pakin Yindee · ชื่อเล่น Muftee — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/muftee.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "unity",
+      "tone": "color"
+    }
+  ]
+}

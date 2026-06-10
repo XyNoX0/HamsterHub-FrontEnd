@@ -13,9 +13,8 @@ function CourseTag() {
         </div>
         <hr />
         <div className="course-links">
-          <h3>5,990฿ สำหรับ Onsite <br /> 4,990฿ สำหรับ Online
-          </h3>
-          <Link href="/apply/138">Book</Link>
+          <h3>4,990฿</h3>
+          <Link href="/apply/140">Book</Link>
         </div>
       </div>
       <div className="course-hero-buttom-mobile">
@@ -27,9 +26,8 @@ function CourseTag() {
           <hr />
         </div>
         <div className="course-links">
-          <h3>5,990฿ สำหรับ Onsite <br /> 4,990฿ สำหรับ Online
-          </h3>
-          <Link href="/apply/138">Book</Link>
+          <h3>4,990฿</h3>
+          <Link href="/apply/140">Book</Link>
         </div>
       </div>
     </div>

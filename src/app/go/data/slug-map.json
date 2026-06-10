@@ -1,0 +1,34 @@
+{
+  "description": "Maps display username (Thai or alt nickname) → ASCII slug. Used at runtime as the canonical lookup for member slugs, and by the sync script when Discord ID is missing. ASCII slug must match /^[a-z0-9][a-z0-9-]*$/.",
+  "members": {
+    "มาร์ค": "marc",
+    "ออโต้": "auto",
+    "นาย": "nai",
+    "โจม": "jom",
+    "ไบร์ท": "bright",
+    "เป๊ป": "pep",
+    "เดียร์": "dear",
+    "เฟิด": "ferd",
+    "โกเท็น": "goten",
+    "ไอเดีย": "idea",
+    "โฟล์ค": "folk",
+    "เบสท์": "best",
+    "ปาล์ม": "palm",
+    "กาย": "guy",
+    "เพชร": "phet",
+    "เจ": "jay",
+    "ไอซ์": "ice",
+    "มัดหมี่": "matmee",
+    "วิน": "win",
+    "นลิน": "nalin",
+    "เฟลม": "flame",
+    "โตโต้": "toto",
+    "ต้นกล้า": "tonkla",
+    "ปัณณ์": "pann",
+    "Tin Soiraya": "tin-soiraya"
+  },
+  "games": {
+    "ตัวบัคfm": "tuabug-fm",
+    "meow_lostonship": "meow-lostonship"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ic2-roblox-omni-piece-t5",
+  "title": "omni piece",
+  "description": "omni piece",
+  "teamName": "Team 5",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "https://www.roblox.com/th/games/129311454361619/Omni-Piece",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 4,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "slug": "champ",
+      "name": "Kanokphon Insuwanno",
+      "username": "CHAMP",
+      "profileSrc": "/godang/members/champ.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "jimmy",
+      "name": "กันตพงษ์ เจมิวัง",
+      "username": "Jimmy",
+      "profileSrc": "/godang/members/jimmy.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "mawin",
+      "name": "Mawin Yooyen",
+      "username": "Mawin",
+      "profileSrc": "/godang/members/mawin.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "nuea",
+      "name": "นายนิรัตศัลย์ ศรวณียารักษผื",
+      "username": "Nuea",
+      "profileSrc": "/godang/members/nuea.png",
+      "roles": [
+        "Roblox"
+      ]
+    }
+  ]
+}

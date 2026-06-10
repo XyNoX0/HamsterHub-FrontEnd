@@ -1,0 +1,57 @@
+{
+  "id": "meow-lostonship",
+  "title": "MEOW_LOSTONSHIP",
+  "description": "No description available.",
+  "teamName": "Meow",
+  "posterSrc": "/godang/games/meow-lostonship/poster.png",
+  "iconSrc": "/godang/games/meow-lostonship/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1jcmLfd28B1_MzTRMNG_vVnPPhas0K0Ii",
+  "gameUrl": "https://kolobit.itch.io/meowlostship",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "ปาริวัฒน์​ ยา​สมุทร​",
+      "username": "ไอเดีย",
+      "profileSrc": "/godang/members/idea.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "idea"
+    },
+    {
+      "name": "Kobchok",
+      "username": "Kob",
+      "profileSrc": "/godang/members/kob.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "kob"
+    },
+    {
+      "name": "นาย นพรุจ กฤษวัฒนานนท์",
+      "username": "โฟล์ค",
+      "profileSrc": "/godang/members/folk.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "folk"
+    },
+    {
+      "name": "นายภูริวัฒน์ ภูทองแหลม",
+      "username": "เบสท์",
+      "profileSrc": "/godang/members/best.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "best"
+    }
+  ]
+}

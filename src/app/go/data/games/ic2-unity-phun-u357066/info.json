@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-phun-u357066",
+  "title": "PHUN",
+  "description": "PHUN",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "https://drive.google.com/drive/folders/1DEVtQuecP2Lpsa12TtXO4YUFNh6BWac5?usp=drive_link",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 3,
+    "creativity": 4,
+    "completeness": 4,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "muftee",
+      "name": "Pakin Yindee",
+      "username": "Muftee",
+      "profileSrc": "/godang/members/muftee.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

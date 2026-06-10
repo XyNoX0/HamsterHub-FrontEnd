@@ -1,48 +1,37 @@
-import React from "react";
+import { cookies } from 'next/headers';
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Profile from "./components/Profile"
+import Profile from "./components/Profile";
 
 import "./Member.css";
 
-import { GetMemberData } from "@/utils/api";
+export default async function MemberPage() {
+    let disData = null;
+    const cookieStore = cookies();
+    const discordDataCookie = cookieStore.get('discord_data');
 
-export default async function MemberPage({ searchParams }) {
-    const id = searchParams.id;
-
-    if (!id) {
-        return (
-            <div className="loading-container">
-                <p className="loading-text">Missing ID</p>
-            </div>
-        );
-    }
-
-    try {
-        const Data = await GetMemberData(id);
-
-        if (!Data) {
-            return (
-                <div className="loading-container">
-                    <p className="loading-text">Member not found</p>
-                </div>
-            );
+    if (discordDataCookie) {
+        try {
+            disData = JSON.parse(discordDataCookie.value);
+        } catch (error) {
+            console.error("Failed to parse discord data from cookie:", error);
         }
+    }
 
-        return (
-            <div>
-                <Navbar />
-                <Profile Data={Data} />
-                <Footer />
-            </div>
-        );
-    } catch (error) {
-        console.error("Error fetching member data:", error);
+    if (!disData) {
         return (
             <div className="loading-container">
-                <p className="loading-text">Error</p>
+                <p className="loading-text">Loading...</p>
             </div>
         );
     }
+    return (
+        <div>
+            <Navbar />
+            
+            <Profile DiscordData={disData} />
+            <Footer />
+        </div>
+    );
 }

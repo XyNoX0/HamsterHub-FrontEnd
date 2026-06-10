@@ -63,7 +63,7 @@ function Detail({ items }) {
         </div>
         <div className="summary-content">
           <h5 className="summary-title">รวมทั้งหมด</h5>
-          {ref === "1" ? (
+          {(ref === "1" || courseData.promotion === "1") ? (
             <div className="price">
               <h5 className="price-text"><b>ราคาพิเศษ ฿{courseData.discount}</b></h5>
             </div>

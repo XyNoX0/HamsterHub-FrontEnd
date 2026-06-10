@@ -5,7 +5,7 @@ import Image from "next/image";
 function CourseGet() {
   return (
     <div className="course-get">
-      <Image src="https://nj.dekhub.com/public/imgs/Port70Poster.png" width={1920} height={1080} priority />
+      <Image src="https://nj.dekhub.com/public/imgs/Port70Poster.png" width={1920} height={1080} priority alt="" />
     </div>
   );
 }

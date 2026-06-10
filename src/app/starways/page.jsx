@@ -6,8 +6,11 @@ import Footer from "../components/Footer";
 import Detail from "./components/Detail";
 import Slider from "./components/Slider";
 
+import { getCourseData } from "@/utils/api";
 
-function Starway() {
+
+async function Starway() {
+    const data = await getCourseData("128");
     var items = [
     {
       "title": "Veggie Dash",
@@ -38,7 +41,7 @@ function Starway() {
     return (
         <div>
             <Navbar />
-            <Detail />
+            <Detail courseData={data.course}/>
             <Slider items={items} />
             <Footer />
         </div>

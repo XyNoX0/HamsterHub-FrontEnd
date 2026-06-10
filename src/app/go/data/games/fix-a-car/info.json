@@ -1,0 +1,36 @@
+{
+  "id": "fix-a-car",
+  "title": "Fix a Car",
+  "description": "เกม Puzzle-Adventure ที่ผู้เล่นต้องแก้ปริศนาเพื่อซ่อมรถและเดินทางไป Supermarket จุดเด่นคือระบบ Non-linear Gameplay ที่มอบ Freedom of Choice ให้ทดลองปฏิสัมพันธ์กับสิ่งของในฉาก เพื่อค้นหา Multiple Endings ที่หลากหลาย — มอบประสบการณ์ที่แปลกใหม่และไม่จำเจ",
+  "teamName": "Slow Run Team",
+  "posterSrc": "/godang/games/fix-a-car/poster.png",
+  "iconSrc": "/godang/games/fix-a-car/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1dvh8YSF8ScHUsnDfSOuP0ThtsLhGBFY5",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Hamster Hub Game Jam 6",
+  "achievements": [
+    "FINALIST"
+  ],
+  "stats": {
+    "complexity": 3,
+    "creativity": 4,
+    "completeness": 3,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "name": "ศุภฤกษ์ อรุณรัตน์",
+      "username": "เฟิร์ส",
+      "profileSrc": "/godang/members/first.png",
+      "roles": [
+        "Team Leader",
+        "Technical Artist",
+        "3D Animation",
+        "Rigging",
+        "Programming"
+      ],
+      "slug": "first"
+    }
+  ]
+}

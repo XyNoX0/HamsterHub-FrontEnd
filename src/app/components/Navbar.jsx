@@ -1,118 +1,106 @@
 "use client"
-import React, { useEffect, useState } from "react";
-import { HiOutlineBars3 } from "react-icons/hi2";
-import { SiPython, SiUnity, SiRoblox } from "react-icons/si";
-import { getCourses } from "@/utils/api";
-import Link from "next/link"; // Import Link from next/link
+import React, { useEffect, useRef, useState } from "react";
+import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
+import { getDiscordProfileAuthUrl } from "@/utils/profileAuth";
+import Link from "next/link";
 import "./Navbar.css";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({ variant = "", forceHidden = false }) {
   const [LinkData, setLinkData] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastScrollY = useRef(0);
 
   const loginWithDiscord = () => {
-    const params = new URLSearchParams({
-      client_id: "1380043089862987846",
-      redirect_uri: 'http://localhost:3000/api/auth/callback',
-      response_type: 'code',
-      scope: 'identify email',
-    });
-    window.location.href = `https://discord.com/api/oauth2/authorize?${params}`;
+    window.location.href = getDiscordProfileAuthUrl();
   };
-
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const LinkCourseData = await getCourses();
-        setLinkData(LinkCourseData);
       } catch (error) {
         console.error("Error fetching course data:", error);
       }
     };
     fetchData();
-  }, [getCourses]);
+  }, []);
 
-  if (!LinkData) {
-    return
-  }
+  useEffect(() => {
+    const onScroll = () => {
+      const currentY = window.scrollY || 0;
+      const delta = currentY - lastScrollY.current;
 
-  // const LinkData = await getCourses();
+      if (menuOpen || currentY < 16) {
+        setHidden(false);
+      } else if (delta > 8 && currentY > 96) {
+        setHidden(true);
+      } else if (delta < -6) {
+        setHidden(false);
+      }
+
+      lastScrollY.current = currentY;
+    };
+
+    lastScrollY.current = window.scrollY || 0;
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [menuOpen]);
+
   return (
-    <div className="navbar">
-      <ul>
-        <li>
-          <Link href="/">
-            <Image
-              src="/assets/Hamster.png"
-              width={200}
-              height={200}
-              alt="Hamster Logo"
-              className="hamster-logo"
-              priority
-            />
-          </Link>
-        </li>
-        <div className="nav-wrapper">
-          <div className="nav-link">
-            <Link href="/python">
-              <SiPython className="nav-icon" />
-            </Link>
-            <Link href="/unity">
-              <SiUnity className="nav-icon" />
-            </Link>
-            <a href="/roblox">
-              <SiRoblox className="nav-icon" />
-            </a>
-          </div>
-
-          <label htmlFor="hamburger-checkbox" className="hamburger-button">
-            <HiOutlineBars3 />
-          </label>
-          <input
-            type="checkbox"
-            id="hamburger-checkbox"
-            className="hamburger-checkbox"
+    <nav className={`navbar ${variant ? `navbar--${variant}` : ""} ${hidden || forceHidden ? "navbar-hidden" : ""}`}>
+      <div className="navbar-inner">
+        <Link href="/" className="navbar-logo">
+          <Image
+            src="/assets/Hamster.png"
+            width={200}
+            height={200}
+            alt="Hamster Logo"
+            className="hamster-logo"
+            priority
           />
-          <div className="dropdown-menu">
-            <h1 className="blue">Courses</h1>
-            {LinkData.map((item, index) => (
-              <Link
-                href={`/course/${item.no}`}
-                key={index}
-                className="dropdown-item"
-              >
-                <div className="course-list">
-                  <h1>{item.subject}</h1>
-                </div>
-                <hr />
-              </Link>
-            ))}
-            <Link href="/gallery">
-              <h3 className="about">Gallery</h3>
-            </Link>
-            <hr />
-            <div className="login-container">
-              <Image
-                src="/assets/Hams_Icon.png"
-                width={200}
-                height={200}
-                alt="Hamster Logo"
-                className="hamster-logo"
-                priority
-                onClick={loginWithDiscord}
-              />
-              <Link href="/about">
-                <h3 className="about">About us</h3>
-              </Link>
-            </div>
+        </Link>
 
-            <hr />
-            {/* <button onClick={loginWithDiscord} className="login">Member Sign in</button> */}
-            <hr />
-          </div>
+        <div className="nav-center">
+          <Link href="/" className="nav-link-item">Home</Link>
+          <Link href="/" className="nav-link-item" onClick={(e) => { const el = document.getElementById('success-story'); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } }}>Course</Link>
+          <Link href="/hamstore" className="nav-link-item">HamStore</Link>
+          <Link href="/profile" className="nav-link-item">Profile</Link>
+          <Link href="/about" className="nav-link-item">About</Link>
         </div>
-      </ul>
-    </div>
+
+        <div className="nav-right">
+          <Link href="/go" className="nav-login-btn" aria-label="เปิดหน้าโปรไฟล์น้องๆ">
+            Project Showcase
+          </Link>
+
+          <button
+            className="hamburger-button"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <HiOutlineXMark /> : <HiOutlineBars3 />}
+          </button>
+        </div>
+      </div>
+
+      <div className={`mobile-menu ${menuOpen ? "mobile-menu-open" : ""}`}>
+        <Link href="/" className="mobile-menu-item" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link href="/" className="mobile-menu-item" onClick={(e) => { const el = document.getElementById('success-story'); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } setMenuOpen(false); }}>Course</Link>
+        <Link href="/gallery" className="mobile-menu-item" onClick={() => setMenuOpen(false)}>Gallery</Link>
+        <Link href="/about" className="mobile-menu-item" onClick={() => setMenuOpen(false)}>About</Link>
+        <Link href="/profile" className="mobile-menu-item mobile-menu-profile" onClick={() => setMenuOpen(false)}>โปรไฟล์น้องๆ!</Link>
+        {LinkData && LinkData.map((item, index) => (
+          <Link
+            href={`${item.href}`}
+            key={index}
+            className="mobile-menu-item mobile-menu-course"
+            onClick={() => setMenuOpen(false)}
+          >
+            {item.subject}
+          </Link>
+        ))}
+      </div>
+    </nav>
   );
 }

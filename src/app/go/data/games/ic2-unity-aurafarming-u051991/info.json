@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-aurafarming-u051991",
+  "title": "Aurafarming",
+  "description": "Aurafarming",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1-6QTJoRdYDRmMmJZWZRc71kI6xfxDl-o",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 5,
+    "completeness": 5,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "khun-00",
+      "name": "คุณัชญ์ เลิศศรี",
+      "username": "Khun",
+      "profileSrc": "/godang/members/khun-00.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

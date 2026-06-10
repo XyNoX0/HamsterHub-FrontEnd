@@ -1,215 +1,227 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import "./Profile.css";
+import Slider from "./Slider.jsx";
 
 
-const Profile = ({ Data }) => {
-    const { memberData, courseData } = Data;
+import { getMemberData } from "@/utils/api";
+
+
+const Profile = ({ DiscordData }) => {
+    DiscordData = DiscordData.DiscordData
+    var id = DiscordData.id;
+    const [data, setData] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isClipOpen, setIsClipOpen] = useState(false);
+    const togglePopup = () => {
+        setIsOpen(!isOpen);
+    };
+    const toggleClip = () => {
+        setIsClipOpen(!isClipOpen);
+    };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await getMemberData(id);
+                setData(data);
+            } catch (error) {
+                console.error("Error fetching course data:", error);
+            }
+        };
+        fetchData();
+    }, [id]);
+
+    if (!data) {
+        return (
+            <div className="loading-container">
+                <p className="loading-text">Loading...</p>
+            </div>
+        );
+    }
+
 
     return (
-        <div className="profile">
-            <Image src="/assets/test-2.png" className="img-desktop" width={1920} height={1080} priority />
-            <Image src="/assets/test.png" className="img-mobile" width={1920} height={1080} priority />
-            <div className="overlay">
-                <div className="stats-content">
-                    <div className="stats-header">
-                        <h2>Stats</h2>
-                    </div>
-                    <div className="stats-info">
-                        <div className="info-1">
-                            <div className="name">
-                                <p>Name</p>
-                                <h1>{memberData.nick}</h1>
-                            </div>
-                            <div className="rank">
-                                <p>Rank</p>
-                                <h1>{memberData.rank}</h1>
-                            </div>
-                        </div>
-                        <div className="info-2">
-                            <div className="code">
-                                <p>Code</p>
-                                <h2>{memberData.code}</h2>
-                            </div>
-                            {["Hero", "hero", "Ace", "ace", "Admin", "admin", "Ass", "ass"].includes(memberData.rank) ? (
-                                <div className="coin">
-                                    <p>Balls</p>
-                                    <h2>{memberData.ball} <Image src="/assets/H-Coin.png" width={100} height={100} /></h2>
-                                </div>
-                            ) : (
-                                <div className="coin">
-                                    <p>Coins</p>
-                                    <h2>{memberData.coin} <Image src="/assets/HCoin.png" width={100} height={100} /></h2>
-                                </div>
-                            )}
+        <div>
+            <div className="clip-wrapper">
+                {isClipOpen && <div className="overlay" onClick={toggleClip}></div>}
+                <div className={`popup ${isClipOpen ? 'popup-open' : ''}`}>
+                    <div className="popupContent">
+                        <div className="clip">
+                            <iframe
+                                src={`${data.MemberData.about.clip}`}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="youtube-embed-frame"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <div className="icons">
-                <div className="icon-1">
-                    <Image src="/assets/IP.png" width={100} height={100} />
-                    <p>In Progress</p>
-                </div>
-                <div className="icon-2">
-                    <Image src="/assets/Item.png" width={100} height={100} />
-                    <p>Items</p>
-                </div>
-                <div className="icon-3">
-                    <Image src="/assets/Course.png" width={100} height={100} />
-                    <p>Course</p>
-                </div>
-                <div className="icon-4">
-                    <Image src="/assets/Friend.png" width={100} height={100} />
-                    <p>Friends</p>
-                </div>
-            </div> */}
-            {/* <div className="progress">
-                <div className="header">
-                    <h2>In Progress</h2>
-                </div>
-                <Image src="/assets/test-3.png" className="img-desktop" width={1920} height={1080} priority />
-                <Image src="/assets/test3.png" className="img-mobile" width={1920} height={1080} priority />
-                <div className="detail">
-                    <div className="box">
-                        <h2>Minecraft</h2>
-                        <h3>เกมเหลี่ยมของคนเหลี่ยมๆ ใช้เวลาพัฒนา 2 ปี แต่ก็ไม่เป็นไรไหวชิว</h3>
-                    </div>
-                    <br />
-                    <div className="button">
-                        <a href="#">
-                            Game Design
-                        </a>
-                    </div>
-                </div>
-            </div> */}
-            {/* <br />
-            <div className="item">
-                <div className="header">
-                    <h2>Items</h2>
-                </div>
-                <div className="desktop">
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                </div>
-                <div className="mobile">
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                    <p className="space"></p>
-                    <div className="detail">
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                        <div className="box"></div>
-                    </div>
-                </div>
-            </div> */}
-            <br />
-            <div className="course">
-                <div className="header">
-                    <h2>Recent Courses</h2>
-                </div>
-                <div className="detail">
-                    {courseData.map((course, index) => (
-                        <div key={index} className="course-box">
-                            {course.courseDetail?.cover_desktop && course.courseDetail?.cover_mobile && (
-                                <a href={`/course/${course.id}`}>
-                                    <div className="detail-img" >
-                                        <Image src={`${course.courseDetail.cover_desktop}`} className="img-desktop" width={1920} height={500} alt="" priority />
-                                        <Image src={`${course.courseDetail.cover_mobile}`} className="img-mobile" width={500} height={350} alt="" priority />
-                                    </div>
-                                </a>
-                            )}
+            <div className="popup-wrapper">
+                {isOpen && <div className="overlay" onClick={togglePopup}></div>}
+                <div className={`popup ${isOpen ? 'popup-open' : ''}`}>
+                    <div className="popupContent">
+                        <div className="header" onClick={toggleClip}>
+                            <h5>{data.MemberData.nick}</h5>
+                            <div className="icon-img">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/clip.png`} width={200} height={200} alt="" priority />
+                            </div>
                         </div>
-                    ))}
+                        <p>{data.MemberData.about.detail}</p>
+                        <button onClick={togglePopup} className="closeButton">
+                            OK
+                        </button>
+                    </div>
                 </div>
+            </div>
+            <div className="profile">
+                <br />
+                <br />
+                <div className="main-detail">
+                    <div className="content">
+                        <div className="profile-img">
+                            <Image src={`https://cdn.discordapp.com/avatars/${DiscordData.id}/${DiscordData.avatar}.png`} width={200} height={200} alt="" priority />
+                        </div>
+                        <div className="detail">
+                            <div className="name">
+                                <h2>{data.MemberData.fullname}</h2>
+                            </div>
+                            <div className="bio">
+                                <p>{data.MemberData.quota}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="category">
+                        <button className="about-btn">
+                            <Image src={`https://nj.dekhub.com/public/imgs/Member/paper.png`} width={200} height={200} alt="" priority />
+                            About
+                        </button>
+                        <button className="skill-btn">
+                            <Image src={`https://nj.dekhub.com/public/imgs/Member/star.png`} width={200} height={200} priority alt="" />
+                            Item
+                        </button>
+                        <button className="gallery-btn">
+                            <Image src={`https://nj.dekhub.com/public/imgs/Member/computer.png`} width={200} height={200} priority alt="" />
+                            Gallery
+                        </button>
+                    </div> */}
+                </div>
+                <div className="space-1"></div>
+                <div className="about-section">
+                    <div className="detail">
+                        <div className="rank">
+                            <Image src={`https://nj.dekhub.com/public/imgs/Member/hero.png`} width={200} height={200} alt="" priority />
+                            <p>{data.MemberData.rank}</p>
+                        </div>
+                        <div className="line"></div>
+                        <div className="code">
+                            <Image src={`https://nj.dekhub.com/public/imgs/Member/code.png`} width={200} height={200} alt="" priority />
+                            <p>{data.MemberData.code}</p>
+                        </div>
+                        <div className="line"></div>
+                        <div className="coin">
+                            <Link href="/shop" className="coin-img">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/coin.png`} width={200} height={200} alt="" priority />
+                            </Link>
+                            <p>{data.MemberData.coin}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="space-1"></div>
+                <div className="contact-section">
+                    <div className="detail">
+                        <div className="about" onClick={togglePopup}>
+                            <Image src={`https://nj.dekhub.com/public/imgs/Member/aboutme.png`} width={200} height={200} alt="" priority />
+                        </div>
+                        {data.MemberData.contact.ig != "" && (
+                            <Link href={data.MemberData.contact.ig} className="ig">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/ig.png`} width={200} height={200} alt="" priority />
+                            </Link>
+                        )}
+                        {data.MemberData.contact.github != "" && (
+                            <Link href={data.MemberData.contact.github} className="github">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/github.png`} width={200} height={200} alt="" priority />
+                            </Link>
+                        )}
+                        {data.MemberData.contact.facebook != "" && (
+                            <Link href={data.MemberData.contact.facebook} className="facebook">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/facebook.png`} width={200} height={200} alt="" priority />
+                            </Link>
+                        )}
+                        {data.MemberData.contact.youtube != "" && (
+                            <Link href={data.MemberData.contact.youtube} className="youtube">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/youtube.png`} width={200} height={200} alt="" priority />
+                            </Link>
+                        )}
+                    </div>
+                </div>
+                <div className="space-1"></div>
+                <div className="skill-section">
+                    <div className="header">
+                        <h2>Skills</h2>
+                    </div>
+                    <div className="top">
+                        <div className="fogus">
+                            <div className="img">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/fogus.png`} width={200} height={200} alt="" priority />
+                            </div>
+                            <div className="text">
+                                <h3>Focus</h3>
+                                <p>{data.MemberData.skill.fogus}</p>
+                            </div>
+                        </div>
+                        <div className="attitude">
+                            <div className="img">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/attitude.png`} width={200} height={200} alt="" priority />
+                            </div>
+                            <div className="text">
+                                <h3>Attitude</h3>
+                                <p>{data.MemberData.skill.attitude}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <div className="creativity">
+                            <div className="img">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/creativity.png`} width={200} height={200} alt="" priority />
+                            </div>
+                            <div className="text">
+                                <h3>Creativity</h3>
+                                <p>{data.MemberData.skill.creativity}</p>
+                            </div>
+                        </div>
+                        <div className="speed">
+                            <div className="img">
+                                <Image src={`https://nj.dekhub.com/public/imgs/Member/speed.png`} width={200} height={200} alt="" priority />
+                            </div>
+                            <div className="text">
+                                <h3>Speed</h3>
+                                <p>{data.MemberData.skill.speed}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="space-1"></div>
+                {data.MemberData.courses.length > 0 ? (
+                    <div className="course-section">
+                        <div className="header">
+                            <h2>Recent Courses</h2>
+                        </div>
+                        <div className="detail">
+                            <Slider data={data.MemberData.courses} courseData={data.CourseData} />
+                        </div>
+                    </div>
+                ) : (
+                    <div className="course-section">
+                        <div className="header">
+                            <h2>Recent Courses</h2>
+                        </div>
+                    </div>
+                )}
+                <br />
             </div>
         </div>
     );

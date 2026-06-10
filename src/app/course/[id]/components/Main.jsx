@@ -10,14 +10,11 @@ import CourseOutline from "../components/CourseOutline";
 import CourseContent from "../components/CourseContent";
 import CourseTag from "../components/CourseTag";
 import "./Main.css";
-import Link from "next/link";
-import Async from 'react-promise'
 
 import { getCourseData } from "@/utils/api";
 
 
 function MainCourse({ id }) {
-    console.log("id", id)
     const [courseData, setCourseData] = useState(null);
 
     useEffect(() => {
@@ -42,14 +39,13 @@ function MainCourse({ id }) {
         )
     }
 
-    console.log("courseData", courseData)
     return (
         <div>
-            <CourseHero courseData={courseData.courseDetail} />
-            <CourseContent content={courseData.content} courseDetail={courseData.courseDetail} />
-            <CourseGet get={courseData.get} courseDetail={courseData.courseDetail} />
+            <CourseHero courseData={courseData} />
+            <CourseContent content={courseData.content}/>
+            <CourseGet get={courseData.get}/>
             <CourseOutline timeline={courseData.timeline} />
-            <CourseTag courseData={courseData.courseDetail} />
+            <CourseTag courseData={courseData} />
             <Slider items={courseData.items} />
         </div>
     );

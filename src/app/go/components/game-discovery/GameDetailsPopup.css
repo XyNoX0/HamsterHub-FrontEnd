@@ -1,0 +1,640 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+@media (min-width: 1024px) {
+  .popup-overlay {
+    padding: 32px;
+  }
+}
+
+.popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.popup-cardContainer {
+  position: relative;
+  display: flex;
+  height: auto;
+  max-height: 92vh;
+  max-height: 92dvh;
+  width: 100%;
+  max-width: 420px;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: var(--color-light);
+  color: var(--text-on-light-strong);
+  box-shadow: var(--shadow-lift);
+}
+@media (min-width: 1024px) {
+  .popup-cardContainer {
+    max-height: 85vh;
+    max-height: 85dvh;
+    max-width: 1024px;
+    flex-direction: row;
+    border-radius: 48px;
+  }
+}
+
+.popup-headerMobile {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 32px 0;
+}
+@media (min-width: 1024px) {
+  .popup-headerMobile {
+    display: none;
+  }
+}
+.popup-headerDesktop {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .popup-headerDesktop {
+    display: flex;
+  }
+}
+
+.popup-titleTextMobile {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: var(--track-tight);
+  color: var(--text-on-light-strong);
+  margin: 0;
+}
+.popup-titleTextDesktop {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: var(--track-tight);
+  color: var(--text-on-light-strong);
+  margin: 0;
+}
+.popup-sparkleIcon {
+  display: inline-block;
+  vertical-align: -4px;
+  height: 22px;
+  width: 22px;
+  color: var(--color-sun-on-light);
+}
+
+.popup-achievementBadgeMobile {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9999px;
+  background-color: var(--color-dang-soft);
+  padding: 6px 12px;
+  color: var(--color-dang);
+}
+.popup-achievementBadgeDesktop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  background-color: var(--color-dang-soft);
+  padding: 8px 16px;
+  color: var(--color-dang);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.popup-achievementIconMobile {
+  height: 14px;
+  width: 14px;
+}
+.popup-achievementIconDesktop {
+  height: 16px;
+  width: 16px;
+}
+.popup-achievementTextMobile {
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.popup-achievementTextDesktop {
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.popup-mediaCol {
+  position: relative;
+  flex-shrink: 0;
+  padding: 24px;
+}
+@media (min-width: 1024px) {
+  .popup-mediaCol {
+    width: 55%;
+    padding: 32px;
+  }
+}
+
+.popup-mediaWrapper {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: black;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+@media (min-width: 1024px) {
+  .popup-mediaWrapper {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+.popup-layerAbsolute {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.popup-layerBgBlack {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.popup-videoPlayer {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.popup-processing {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 12px;
+  padding: 28px;
+  text-align: center;
+  color: white;
+  background:
+    radial-gradient(circle at center, rgba(255, 209, 84, 0.16), transparent 38%),
+    #061521;
+}
+.popup-processingSpinner {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 4px solid rgba(255, 255, 255, 0.22);
+  border-top-color: #ffd154;
+  animation: popupSpin 900ms linear infinite;
+}
+.popup-processing h3 {
+  margin: 4px 0 0;
+  font-size: clamp(20px, 5vw, 30px);
+  font-weight: 900;
+}
+.popup-processing p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+.popup-processing button {
+  margin-top: 8px;
+  border: 0;
+  border-radius: 999px;
+  background: #ffd154;
+  color: #071724;
+  padding: 9px 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+@keyframes popupSpin {
+  to { transform: rotate(360deg); }
+}
+.popup-skipBtn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 20;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  backdrop-filter: blur(12px);
+  transition: background-color 150ms;
+  border: none;
+  cursor: pointer;
+}
+.popup-skipBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+@media (min-width: 1024px) {
+  .popup-skipBtn {
+    top: auto;
+    left: auto;
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+.popup-imageObjectCover {
+  object-fit: cover;
+}
+.popup-imageOpacity {
+  opacity: 0.6;
+}
+
+.popup-playBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform 150ms;
+  cursor: pointer;
+  border: none;
+}
+.popup-playBtn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.popup-playBtn:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+.popup-playIcon {
+  margin-left: 4px;
+  height: 40px;
+  width: 40px;
+  color: var(--color-dang);
+  fill: currentColor;
+}
+
+.popup-gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent, transparent);
+}
+.popup-bottomContentArea {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.popup-replayBtn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(12px);
+  transition: background-color 150ms;
+  border: none;
+  cursor: pointer;
+}
+.popup-replayBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.popup-replayIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.popup-contentCol {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 8px 32px 32px;
+}
+@media (min-width: 1024px) {
+  .popup-contentCol {
+    padding-top: 40px;
+  }
+}
+
+.popup-contentFlex1 {
+  flex: 1 1 0%;
+}
+.popup-spaceY10 > * + * {
+  margin-top: 40px;
+}
+
+/* Split grid: mobile = single column (DOM order: Stats, Team).
+   Desktop ≥1024 = two columns, Team on the LEFT, Stats on the RIGHT. */
+.popup-splitGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.popup-statsSection {
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .popup-splitGrid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    grid-template-areas: "team stats";
+    gap: 28px;
+    align-items: start;
+  }
+  .popup-splitGrid .popup-teamSection {
+    grid-area: team;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .popup-splitGrid .popup-statsSection {
+    grid-area: stats;
+  }
+  /* Team member cards stack vertically inside the split column to avoid cramming. */
+  .popup-splitGrid .popup-teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popup-statsHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.popup-statsTitle {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text-on-light-strong);
+  margin: 0;
+}
+.popup-statsLine {
+  height: 4px;
+  flex: 1 1 0%;
+  border-radius: 9999px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 10%, transparent);
+}
+.popup-spaceY1 > * + * {
+  margin-top: 4px;
+}
+
+.popup-statsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}
+.popup-statsRow:last-child {
+  border-bottom: 0;
+}
+.popup-statsRowLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.popup-statsRowIconBox {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.popup-bg-peach { background-color: var(--color-peach-soft); }
+.popup-bg-mint { background-color: var(--color-mint-soft); }
+.popup-bg-sun { background-color: var(--color-sun-soft); }
+.popup-bg-sea { background-color: var(--color-sea-soft); }
+.popup-statsRowIcon {
+  height: 18px;
+  width: 18px;
+  color: var(--text-on-light-strong);
+}
+.popup-statsRowLabel {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-on-light-strong);
+}
+.popup-statsRowRight {
+  display: flex;
+  gap: 4px;
+}
+
+.popup-descriptionBox {
+  position: relative;
+  border-radius: 24px;
+  background-color: var(--color-sun-soft);
+  padding: 24px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--text-on-light-strong);
+  box-shadow: inset 0 2px 4px 0 rgba(11, 35, 51, 0.05);
+  transition: background-color 150ms;
+}
+.popup-descriptionBox:hover {
+  background-color: color-mix(in srgb, var(--color-sun-soft) 88%, white);
+}
+.popup-descriptionText {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+}
+.popup-descriptionDeco {
+  position: absolute;
+  bottom: -10px;
+  right: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 200ms, transform 200ms;
+  pointer-events: none;
+}
+.popup-descriptionBox:hover .popup-descriptionDeco {
+  opacity: 1;
+  transform: rotate(-4deg) scale(1.06);
+}
+.popup-descBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 68px;
+  position: relative;
+  background-image: linear-gradient(180deg, #1A4566, var(--color-sea));
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  filter: drop-shadow(0 6px 12px rgba(11, 35, 51, 0.32));
+}
+.popup-descBadge::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background-image: linear-gradient(180deg, var(--color-sun), color-mix(in srgb, var(--color-sun) 60%, #000));
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 0;
+}
+.popup-descBadge::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background-image:
+    radial-gradient(ellipse 70% 55% at 50% 28%, rgba(255, 255, 255, 0.22) 0%, transparent 60%),
+    linear-gradient(180deg, #1A4566 0%, var(--color-sea) 65%, color-mix(in srgb, var(--color-sea) 70%, #000) 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 1;
+}
+.popup-descBadgeInner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-descBadgeIcon {
+  height: 24px;
+  width: 24px;
+  color: var(--color-sun);
+  fill: color-mix(in srgb, var(--color-sun) 55%, transparent);
+}
+
+.popup-teamSection {
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+.popup-teamHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.popup-teamHeaderIconBox {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+}
+.popup-teamHeaderIcon {
+  height: 18px;
+  width: 18px;
+  color: var(--text-on-light);
+}
+.popup-teamHeaderCol {
+  display: flex;
+  flex-direction: column;
+}
+.popup-teamSubtitle {
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-on-light-muted);
+}
+.popup-teamTitle {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-on-light-strong);
+  line-height: 1;
+  margin: 0;
+}
+
+.popup-teamGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .popup-teamGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.popup-teamMemberBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 16px;
+  background-color: var(--color-light-soft);
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--text-on-light-strong) 6%, transparent);
+  transition: background-color 150ms, border-color 150ms;
+}
+.popup-teamMemberBox:hover {
+  background-color: var(--color-light);
+  border-color: color-mix(in srgb, var(--text-on-light-strong) 14%, transparent);
+}
+.popup-teamAvatarWrapper {
+  height: 48px;
+  width: 48px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: var(--color-light);
+  box-shadow: 0 2px 6px -2px rgba(11, 35, 51, 0.2);
+}
+.popup-teamAvatarImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}
+.popup-teamInfoBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.popup-teamName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-on-light-strong);
+}
+.popup-teamRoles {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-on-light-muted);
+}
+
+.popup-mobileDivider {
+  margin-top: 32px;
+  height: 4px;
+  width: 100%;
+  border-radius: 9999px;
+  background-color: color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+}
+@media (min-width: 1024px) {
+  .popup-mobileDivider {
+    display: none;
+  }
+}

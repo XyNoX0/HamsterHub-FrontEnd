@@ -1,0 +1,198 @@
+.goProAuth {
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin: 10px auto 0;
+  padding: 12px 16px;
+  border: 1px solid color-mix(in srgb, var(--color-sea-deep) 14%, transparent);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 24px -18px rgba(11, 35, 51, 0.38);
+}
+
+@media (min-width: 820px) {
+  .goProAuth {
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 12px 18px;
+  }
+}
+
+.goProAuth-main {
+  min-width: 0;
+}
+
+.goProAuth--loginOnly {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goProAuth--loginOnly .goProAuth-button {
+  width: auto;
+  min-width: 210px;
+}
+
+@media (max-width: 640px) {
+  .goProAuth--loginOnly {
+    justify-content: stretch;
+  }
+
+  .goProAuth--loginOnly .goProAuth-button {
+    width: 100%;
+  }
+}
+
+.goProAuth-kicker {
+  margin: 0 0 3px;
+  color: var(--color-dang);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.goProAuth-title {
+  margin: 0;
+  color: var(--text-on-light-strong);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.goProAuth-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0 0;
+  color: var(--color-sea-deep);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.goProAuth-text svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.goProAuth-error {
+  margin: 10px 0 0;
+  color: #b42318;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.goProAuth-action {
+  width: 100%;
+}
+
+@media (min-width: 820px) {
+  .goProAuth-action {
+    width: auto;
+    min-width: 220px;
+  }
+}
+
+.goProAuth-form {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (min-width: 820px) {
+  .goProAuth-form {
+    width: min(520px, 44vw);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.goProAuth-form input {
+  width: 100%;
+  min-height: 42px;
+  box-sizing: border-box;
+  border: 1px solid color-mix(in srgb, var(--color-sea-deep) 20%, transparent);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--text-on-light-strong);
+  background: #fff;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+@media (min-width: 820px) {
+  .goProAuth-form .goProAuth-button {
+    grid-column: span 1;
+  }
+}
+
+.goProAuth-form input:focus {
+  border-color: var(--color-sea-deep);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-sea) 22%, transparent);
+}
+
+.goProAuth-button {
+  min-height: 42px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 16px;
+  background: var(--color-sea-deep);
+  color: var(--text-on-dark-strong);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.goProAuth-button--secondary {
+  background: #fff;
+  color: var(--color-sea-deep);
+  border: 1.5px solid color-mix(in srgb, var(--color-sea-deep) 22%, transparent);
+}
+
+.goProAuth-actions {
+  display: grid;
+  gap: 8px;
+}
+
+@media (min-width: 820px) {
+  .goProAuth-actions {
+    grid-template-columns: repeat(3, auto);
+  }
+  .goProAuth-actions .goProAuth-button {
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+.goProAuth-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.goProAuth-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.goProAuth-spin {
+  animation: goProAuthSpin 900ms linear infinite;
+}
+
+@keyframes goProAuthSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

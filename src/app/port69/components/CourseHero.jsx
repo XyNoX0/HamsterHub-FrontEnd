@@ -7,8 +7,8 @@ function CourseHero() {
   return (
     <div className="course-hero">
       <div className="course-hero-img">
-        <Image src="https://nj.dekhub.com/public/imgs/PortDT.png" className="img-desktop" width={1920} height={1080} priority />
-        <Image src="https://nj.dekhub.com/public/imgs/PortMB.png" className="img-mobile" width={1920} height={1080} priority />
+        <Image src="https://nj.dekhub.com/public/imgs/PortDT.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+        <Image src="https://nj.dekhub.com/public/imgs/PortMB.png" className="img-mobile" width={1920} height={1080} priority alt="" />
       </div>
 
       <div className="course-hero-buttom">

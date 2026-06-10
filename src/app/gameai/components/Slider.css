@@ -1,0 +1,205 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.sliderComponent {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: #13093f;
+}
+
+.sliderComponent .slider {
+  display: flex;
+  scroll-snap-type: x mandatory; /* Enable snapping for smooth UX */
+  overflow-x: auto;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+  gap: 0; /* No gaps between slides */
+  object-fit: cover;
+  scrollbar-width: none;
+}
+
+.sliderComponent .slide {
+aspect-ratio: 1/1;
+  position: relative;
+  flex: 0 0 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.4s ease;
+  margin: 24px 12px;
+  border-radius: 10px;
+}
+.sliderComponent .slide:hover {
+  transform: scale(1);
+}
+
+.sliderComponent .slide img,
+.sliderComponent .slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+.sliderComponent .slide video {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.sliderComponent .slide:hover {
+  transform: scale(1);
+  .sliderOverlay {
+    transform: scale(1.1);
+    .description {
+      opacity: 1;
+    }
+  }
+  video {
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(1);
+  }
+}
+
+.sliderComponent .slide:hover .play {
+  opacity: 0;
+  display: none;
+}
+
+.sliderComponent .slide::after {
+  content: ""; /* Create pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  pointer-events: none; /* Prevent clicks on this layer */
+}
+
+.sliderOverlay,
+.play {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+
+  h2 {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  p {
+    font-size: 0.6rem;
+    line-height: 1;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+  }
+  .description {
+    display: none;
+    height: 0;
+    opacity: 0;
+    transition: 0.2s;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+  }
+}
+.play {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  bottom: 40%;
+  opacity: 0.7;
+  transition: 0.8s;
+}
+
+#left-prevSlide-button,
+#right-nextSlide-button {
+  position: absolute;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10vw;
+  height: 50vh;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+
+  z-index: 2;
+}
+#left-prevSlide-button {
+  left: 0;
+  background: radial-gradient(
+    circle at left,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+}
+
+#right-nextSlide-button {
+  right: 0;
+  background: radial-gradient(
+    circle at right,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+}
+
+@media screen and (max-width: 1400px) {
+  .sliderComponent {
+    height: auto;
+  }
+  .sliderComponent .slide video {
+    opacity: 0;
+  }
+
+  .sliderComponent .slide {
+    flex: 0 0 50%;
+  }
+  #left-prevSlide-button,
+  #right-nextSlide-button {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sliderComponent {
+    height: auto;
+  }
+  .sliderComponent .slide {
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+  .sliderComponent .slide::after {
+    margin: 0 10px;
+  }
+  .sliderComponent .slide img,
+  .sliderComponent .slide video {
+    padding: 0 10px;
+  } 
+}

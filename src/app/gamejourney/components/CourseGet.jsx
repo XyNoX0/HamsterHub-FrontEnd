@@ -19,7 +19,7 @@ function CourseGet() {
   ]
   return (
     <div className="course-get">
-      <Image src="https://nj.dekhub.com/public/imgs/gamejourneyPT.png" width={1920} height={1080} priority />
+      <Image src="https://nj.dekhub.com/public/imgs/gamejourneyPT.png" width={1920} height={1080} priority alt="" />
       <br />
       <h3 id="coursegettext">🎁 สิ่งที่น้อง ๆ จะได้รับ:</h3>
       <div className="course-get-text">

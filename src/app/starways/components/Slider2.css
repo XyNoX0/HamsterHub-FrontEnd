@@ -20,7 +20,6 @@ body {
 .sliderComponent2 .slider2 {
   display: flex;
   scroll-snap-type: x mandatory;
-  /* Enable snapping for smooth UX */
   overflow-x: auto;
   align-items: center;
   width: 50%;

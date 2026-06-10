@@ -1,0 +1,19 @@
+{
+  "description": "Auto-generated profile from games registry. Customize this file to override defaults.",
+  "slug": "fan",
+  "name": "Natthaphon Maliwan",
+  "username": "Fan",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี เราชื่อ Fan เป็นหนึ่งในคนสร้างสรรค์เกมที่ HamsterHub.",
+  "profileSrc": "/godang/members/fan.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    }
+  ]
+}

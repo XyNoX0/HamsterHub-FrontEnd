@@ -1,0 +1,173 @@
+.statsbar-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 0;
+  z-index: 5;
+}
+@media (min-width: 768px) {
+  .statsbar-wrapper { padding: 0 32px; margin-top: 20px; }
+}
+@media (min-width: 1024px) {
+  .statsbar-wrapper { padding: 0 48px; margin-top: 24px; }
+}
+
+.statsbar-pill {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 8px;
+  row-gap: 6px;
+  padding: 18px 14px;
+  border-radius: 18px;
+  background-image:
+    linear-gradient(180deg, #2A2459 0%, #221C49 100%);
+  border: 2px solid color-mix(in srgb, var(--color-sun) 70%, transparent);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.10),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.45),
+    0 14px 30px -10px rgba(0, 0, 0, 0.5),
+    0 0 80px -16px color-mix(in srgb, var(--color-sun) 55%, transparent);
+}
+.statsbar-pill::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 14px;
+  border: 1px dashed color-mix(in srgb, var(--color-sun) 38%, transparent);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .statsbar-pill {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 20px;
+    padding: 26px 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .statsbar-pill { column-gap: 28px; padding: 28px 44px; }
+}
+
+.statsbar-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  min-width: 0;
+}
+@media (min-width: 768px) {
+  .statsbar-cell {
+    padding: 16px 22px;
+    gap: 28px;
+  }
+  .statsbar-cell + .statsbar-cell::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 18%;
+    bottom: 18%;
+    width: 2px;
+    border-radius: 2px;
+    background-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in srgb, var(--color-sun) 55%, transparent) 50%,
+      transparent 100%);
+  }
+}
+@media (min-width: 1024px) {
+  .statsbar-cell {
+    padding: 18px 28px;
+    gap: 32px;
+  }
+  .statsbar-cell + .statsbar-cell::before {
+    left: -14px;
+  }
+}
+
+/* Icon — big, glowing, no box. Sits on a soft halo, not a hard container. */
+.statsbar-iconBox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  flex-shrink: 0;
+  background: transparent;
+  border: 0;
+}
+.statsbar-iconBox::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, currentColor 0%, transparent 65%);
+  opacity: 0.28;
+  filter: blur(4px);
+  pointer-events: none;
+}
+.statsbar-icon,
+.statsbar-icon-img {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35)) drop-shadow(0 0 10px currentColor);
+}
+.statsbar-icon-img {
+  /* For images, currentColor won't work for the glow, so we use a default gold glow if tone is mint */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+.statsbar-cell-mint .statsbar-icon-img {
+  filter: drop-shadow(0 0 8px rgba(111, 183, 255, 0.4));
+}
+
+/* Tone variants — color flows through `color`, drop-shadow uses currentColor */
+.statsbar-cell-sun  { color: var(--color-sun); }
+.statsbar-cell-dang { color: #FF6B6B; }
+.statsbar-cell-sea  { color: #6FB7FF; }
+.statsbar-cell-mint { color: var(--color-mint); }
+
+.statsbar-cell-sun  .statsbar-icon { color: var(--color-sun);  fill: var(--color-sun); }
+.statsbar-cell-dang .statsbar-icon { color: #FF6B6B; }
+.statsbar-cell-sea  .statsbar-icon { color: #6FB7FF; }
+.statsbar-cell-mint .statsbar-icon { color: var(--color-mint); fill: color-mix(in srgb, var(--color-mint) 40%, transparent); }
+
+.statsbar-textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.statsbar-num {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-on-dark-strong);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+.statsbar-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-on-dark-strong) 75%, transparent);
+}
+
+@media (min-width: 1024px) {
+  .statsbar-textCol { gap: 4px; }
+  .statsbar-iconBox { height: 48px; width: 48px; }
+  .statsbar-icon,
+  .statsbar-icon-img { height: 36px; width: 36px; }
+  .statsbar-num { font-size: 30px; }
+}

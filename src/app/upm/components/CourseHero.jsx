@@ -7,8 +7,8 @@ function CourseHero() {
   return (
     <div className="course-hero">
       <div className="course-hero-img">
-        <Image src="https://nj.dekhub.com/public/imgs/upm/1.png" className="img-desktop" width={1920} height={1080} priority />
-        <Image src="https://nj.dekhub.com/public/imgs/upm/8.png" className="img-mobile" width={1920} height={1080} priority />
+        <Image src="https://nj.dekhub.com/public/imgs/UPMOnlineDT.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+        <Image src="https://nj.dekhub.com/public/imgs/UPMOnlineMB.png" className="img-mobile" width={1920} height={1080} priority alt="" />
       </div>
 
       <div className="course-hero-buttom">
@@ -19,9 +19,9 @@ function CourseHero() {
         <hr />
         <div className="course-links">
           <h3>
-            5,990฿ สำหรับ Onsite <br /> 4,990฿ สำหรับ Online
+            4,990฿
           </h3>
-          <Link href="/apply/138/">Book</Link>
+          <Link href="/apply/140/">Book</Link>
         </div>
       </div>
       <div className="course-hero-buttom-mobile">
@@ -34,9 +34,9 @@ function CourseHero() {
         </div>
         <div className="course-links">
           <h3>
-            5,990฿ สำหรับ Onsite <br /> 4,990฿ สำหรับ Online
+            4,990฿
           </h3>
-          <Link href="/apply/138/">Book</Link>
+          <Link href="/apply/140/">Book</Link>
         </div>
       </div>
     </div>

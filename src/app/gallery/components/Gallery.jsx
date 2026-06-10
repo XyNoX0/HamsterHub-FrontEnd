@@ -74,7 +74,7 @@ const items = [
         "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_program.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_program.mp4",
       },
-    ],
+    ]
   },
   {
     title: "Mobile Game",
@@ -188,7 +188,7 @@ function GallerySlider() {
       {items.map((group, groupIndex) => (
         <div key={groupIndex} className="gallery-slider">
           {/* <div className="gallery-cover">
-          <Image src='/assets/Gallery1.png' width={1920} height={1080} priority />
+          <Image src='/assets/Gallery1.png' width={1920} height={1080} priority alt="" />
           <video src="/assets/Gallery1.mp4" autoPlay muted></video>
           </div> */}
           <div className="gallery-text">

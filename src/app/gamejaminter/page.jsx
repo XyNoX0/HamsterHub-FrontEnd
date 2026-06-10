@@ -5,44 +5,87 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import CourseHero from "./components/CourseHero"
 import CourseContent from "./components/CourseContent"
-import Slider from "../components/Slider";
+import CourseTag from "./components/CourseTag"
+import Slider from "./components/Slider";
 
 
 function Page() {
   var items = [
     {
-      "title": "Veggie Dash",
+      "title": "ARIEAK",
       "description": null,
-      "image": "https://nj.dekhub.com/public/imgs/Veggie Dash.png",
-      "content": "https://nj.dekhub.com/public/videos/Veggie%20Dash.mp4"
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/ARIEAK.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/ARIEAK.mp4"
     },
     {
-      "title": "mrCITY",
+      "title": "Slime",
       "description": null,
-      "image": "https://nj.dekhub.com/public/imgs/mrCITY.PNG",
-      "content": "https://nj.dekhub.com/public/videos/mrCITY.mp4"
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/Slime.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/Slime.mp4"
     },
     {
-      "title": "GDS",
+      "title": "NSG",
       "description": null,
-      "image": "https://nj.dekhub.com/public/imgs/Fish.png",
-      "content": "https://nj.dekhub.com/public/videos/Fish.mov"
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/NSG.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/NSG.mp4"
     },
-
     {
-      "title": "Beam",
+      "title": "HPC",
       "description": null,
-      "image": "https://nj.dekhub.com/public/imgs/Beam.png",
-      "content": "https://nj.dekhub.com/public/videos/Beam.mp4"
-    }
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/HPC.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/HPC.mp4"
+    },
+    {
+      "title": "Footwork",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/Footwork.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/Footwork.mp4"
+    },
+    {
+      "title": "AO",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/AO.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/AO.mp4"
+    },
+    {
+      "title": "Pong",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/Pong.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/Pong.mp4"
+    },
+    {
+      "title": "Starlight",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/Starlight.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/Starlight.mp4"
+    },
+    {
+      "title": "AOB",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/AOB.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/AOB.mp4"
+    },
+    {
+      "title": "RunForPack",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/RunForPack.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/RunForPack.mp4"
+    },
+    {
+      "title": "SRT",
+      "description": null,
+      "image": "https://nj.dekhub.com/public/imgs/GamejamInter/SRT.png",
+      "content": "https://nj.dekhub.com/public/videos/GamejamInter/SRT.mp4"
+    },
   ]
   return (
     <div>
       <Navbar />
       <CourseHero />
       <CourseContent />
-      <div style={{ textAlign: "center", marginBottom: "50px" }}>
-        <h3><b>ผลงาน Game Jam ของเพื่อนๆ</b></h3>
+      <CourseTag />
+      <div style={{ textAlign: "center","backgroundColor":"white" }}>
+        <h3><b>Previous Game Jam Projects</b></h3>
       </div>
       <Slider items={items} />
       <Footer />

@@ -1,0 +1,593 @@
+/* ============= WHY SUCCESS ============= */
+
+.why-success {
+    width: 100%;
+    padding: 1rem 2rem 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ============= ROWS (Staircase Layout) ============= */
+
+.ws-row {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ws-row-1 {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ws-row-2 {
+    justify-content: center;
+}
+
+.ws-row-3 {
+    justify-content: flex-end;
+}
+
+/* ============= HEADER (Top Right) ============= */
+
+.why-success-header {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.why-success-header h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.why-success-header p {
+    font-size: 0.75rem;
+    color: #444;
+    margin: 0.15rem 0 0;
+}
+
+.ws-highlight {
+    color: #e8a030;
+    font-weight: 700;
+}
+
+/* ============= STEP ============= */
+
+.ws-step {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.ws-step-1 {
+    flex-direction: row;
+}
+
+.ws-step-2 {
+    flex-direction: row;
+}
+
+.ws-step-3 {
+    flex-direction: row;
+}
+
+.ws-step-number {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    color: #1a1a2e;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.ws-step-text {
+    max-width: 240px;
+    flex-shrink: 0;
+}
+
+.ws-step-title {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #e8a030;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.2rem;
+}
+
+.ws-step-text p {
+    font-size: 0.6rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+}
+
+.ws-step-image {
+    width: 320px;
+    height: 220px;
+    /* Remove overflow: hidden so the glow can spill out */
+    /* overflow: hidden; */
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rotating Circular Glow Behind */
+.ws-step-image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    /* Size of the glow circle */
+    height: 280px;
+    background: conic-gradient(from 0deg,
+            transparent 0%,
+            #ffd700 20%,
+            rgba(232, 160, 48, 0.8) 40%,
+            #ffd700 60%,
+            transparent 80%);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(25px);
+    /* Make it glowy and soft */
+    opacity: 0.5;
+    animation: rotateGlow 6s linear infinite;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Add a second layer for the core brightness */
+.ws-step-image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.ws-step-image:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.ws-step-image:hover::before {
+    opacity: 0.8;
+    filter: blur(20px);
+    /* Sharpen slightly on hover */
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Floating Animations for Images */
+@keyframes wsImageFloat1 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes wsImageFloat2 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes wsImageFloat3 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}
+
+.ws-step-image-wrapper {
+    flex-shrink: 0;
+}
+
+.ws-step-1 .ws-step-image-wrapper {
+    animation: wsImageFloat1 5.5s ease-in-out infinite;
+}
+
+.ws-step-2 .ws-step-image-wrapper {
+    animation: wsImageFloat2 5s ease-in-out infinite 1s;
+}
+
+.ws-step-3 .ws-step-image-wrapper {
+    animation: wsImageFloat3 6.5s ease-in-out infinite 0.5s;
+}
+
+/* ============= VIDEO MODAL ============= */
+
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.video-modal-content {
+    position: relative;
+    /* Use a smart bounded width to prevent height overflowing max screens like Macs */
+    width: min(90vw, 130vh);
+    max-width: 1000px;
+    background: black;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 16px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+.close-btn:hover {
+    transform: scale(1.15);
+    /* Removed the rotation step to prevent buggy appearance */
+    color: #ffd700;
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #ffd700;
+}
+
+/* ============= MAGIC THREAD CONNECTORS ============= */
+
+.ws-connector {
+    width: 90%;
+    max-width: 900px;
+    height: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.ws-thread-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.ws-connector-2 {
+    margin-top: 0.5rem;
+    /* Reduced for compact layout */
+}
+
+/* ---- Thread glow pulse animation ---- */
+.ws-thread {
+    animation: threadPulse 3s ease-in-out infinite;
+}
+
+.ws-thread-1 {
+    animation-delay: 0s;
+}
+
+.ws-thread-2 {
+    animation-delay: 0.5s;
+}
+
+.ws-thread-3 {
+    animation-delay: 1.0s;
+}
+
+.ws-thread-4 {
+    animation-delay: 0.3s;
+}
+
+.ws-thread-5 {
+    animation-delay: 0.8s;
+}
+
+.ws-thread-6 {
+    animation-delay: 1.3s;
+}
+
+@keyframes threadPulse {
+
+    0%,
+    100% {
+        opacity: inherit;
+    }
+
+    50% {
+        opacity: 1;
+        filter: brightness(1.6);
+    }
+}
+
+/* ---- Floating energy sparks ---- */
+.ws-spark {
+    animation: sparkFloat 2.8s ease-in-out infinite;
+}
+
+.ws-spark-1 {
+    animation-delay: 0s;
+}
+
+.ws-spark-2 {
+    animation-delay: 0.5s;
+}
+
+.ws-spark-3 {
+    animation-delay: 1.0s;
+}
+
+.ws-spark-4 {
+    animation-delay: 0.2s;
+}
+
+.ws-spark-5 {
+    animation-delay: 0.7s;
+}
+
+.ws-spark-6 {
+    animation-delay: 1.2s;
+}
+
+@keyframes sparkFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translate(4px, -6px) scale(1.8);
+        opacity: 1;
+    }
+}
+
+/* ---- Connection orb glow ---- */
+.ws-orb {
+    animation: orbGlow 2.2s ease-in-out infinite;
+}
+
+.ws-orb-1 {
+    animation-delay: 0s;
+}
+
+.ws-orb-2 {
+    animation-delay: 0.6s;
+}
+
+.ws-orb-3 {
+    animation-delay: 1.2s;
+}
+
+.ws-orb-4 {
+    animation-delay: 1.8s;
+}
+
+@keyframes orbGlow {
+
+    0%,
+    100% {
+        r: 5;
+        opacity: 0.5;
+    }
+
+    50% {
+        r: 10;
+        opacity: 0.9;
+    }
+}
+
+/* ============= RESPONSIVE (Large Screens 1920px+) ============= */
+
+@media screen and (min-width: 1920px) {
+    .ws-row {
+        max-width: 1400px;
+    }
+
+    .ws-connector {
+        max-width: 1400px;
+        height: 100px;
+        /* Reduced from 140px */
+    }
+
+    .why-success-header h2 {
+        font-size: 1.8rem;
+        margin-left: 3.5rem;
+    }
+
+    .why-success-header p {
+        font-size: 0.9rem;
+    }
+
+    .ws-step {
+        gap: 1.2rem;
+    }
+
+    .ws-step-number {
+        font-size: 2.5rem;
+    }
+
+    .ws-step-title {
+        font-size: 0.9rem;
+    }
+
+    .ws-step-text {
+        max-width: 500px;
+    }
+
+    .ws-step-text p {
+        font-size: 0.8rem;
+    }
+
+    .ws-step-image {
+        width: 290px;
+        height: 280px;
+    }
+}
+
+/* Medium-large screens (Includes 1080p with scaling) */
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+    .ws-row {
+        max-width: 1200px;
+    }
+
+    .ws-connector {
+        max-width: 1200px;
+        height: 80px;
+        /* Reduced from 120px */
+    }
+
+    .ws-step-image {
+        width: 290px;
+        height: 280px;
+        margin-left: 2rem;
+    }
+
+    .ws-step-text {
+        max-width: 240px;
+    }
+
+    .ws-step-title {
+        font-size: 0.85rem;
+    }
+
+    .ws-step-text p {
+        font-size: 0.6rem;
+    }
+
+    .ws-step-number {
+        font-size: 3rem;
+    }
+}
+
+/* ============= RESPONSIVE (Small Screens) ============= */
+
+@media screen and (max-width: 899px) {
+    .why-success {
+        padding: 0.5rem 1rem 1.5rem;
+    }
+
+    .ws-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ws-row-1 {
+        gap: 1.5rem;
+    }
+
+    .why-success-header {
+        text-align: center;
+        order: -1;
+    }
+
+    .ws-step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ws-step-1,
+    .ws-step-2,
+    .ws-step-3 {
+        flex-direction: column;
+    }
+
+    .ws-step-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ws-step-image {
+        width: 320px;
+        height: 230px;
+    }
+
+    /* Connector is centered and smaller on mobile */
+    .ws-connector {
+        height: 60px;
+        width: 60%;
+    }
+
+    /* Vertical mode for specific videos on mobile (e.g. Innovation) */
+    .video-modal-content.vertical-mobile {
+        aspect-ratio: 9 / 16;
+        width: auto;
+        height: min(85vh, 150vw);
+        max-width: 90vw;
+    }
+}

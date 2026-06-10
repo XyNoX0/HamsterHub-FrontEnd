@@ -108,10 +108,10 @@ function Post() {
               <h1>{post.title}</h1>
               <p>{post.subtitle}</p>
               <div className="post-links">
-                <a href={post.about}>More Detail</a>
-                <a href={post.link} className="post-trans">
+                <a href={post.about}>ดูผลงาน</a>
+                {/* <a href={post.link} className="post-trans">
                   Book
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

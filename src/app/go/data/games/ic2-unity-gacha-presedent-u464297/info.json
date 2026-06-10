@@ -1,0 +1,30 @@
+{
+  "id": "ic2-unity-gacha-presedent-u464297",
+  "title": "gacha-presedent",
+  "description": "gacha-presedent",
+  "teamName": "Solo",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1BNB20W9qqjqaRyg1RP1ikJ9DiyYhLs8f",
+  "gameUrl": "",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 5,
+    "creativity": 4,
+    "completeness": 4,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "hnun",
+      "name": "ชยพัทธ์ ถิ่นพุดซา",
+      "username": "หนุน",
+      "profileSrc": "/godang/members/hnun.png",
+      "roles": [
+        "Unity"
+      ]
+    }
+  ]
+}

@@ -3,29 +3,33 @@ import "./CourseContent.css";
 import Image from "next/image";
 
 function CourseContent() {
-
   return (
     <div className="course-content">
-      <div className="content-text">
-        <h3>คำอธิบายกิจกรรม</h3>
-        <p>
-          Hamster Hub ชวนน้องๆ ที่มีไฟ อยากลองสร้างผลงานและฝึกฝีมือการสร้างเกม เข้าร่วมการแข่งขัน Hamster Hub – Game Jam Special 2 <br /> <br />
-          สร้างเกมจากหัวข้อที่กำหนดภายในเวลา 48 ชั่วโมง(2 วัน) โดยไม่จำกัดโปรแกรมที่ใช้ <br />
-          รูปแบบการแข่งขันจะเป็นการจัดแบบ Online ผ่านโปรแกรม Discord โดยน้องๆ จะต้องรวมกลุ่มกันสร้างเกม 1 เกมภายใต้หัวข้อที่จะประกาศพร้อมกัน<br />
-          วันที่ 3 กรกฏาคม เวลา 14:00 โดยจะเริ่มพัฒนาเกมตั้งแต่วันที่ 4 กรกฏาคม เวลา 14:00 ถึงวันที่ 6 กรกฏาคม เวลา 14:00 และในระหว่างสร้างเกมพี่จะมีกิจกรรมระหว่างการแข่งขันให้น้องได้ผ่อนคลายและทำความรู้จักกับเพื่อนๆ กลุ่มอื่น พร้อมทั้งการแนะนำการอัพโหลดผลงานเกมขึ้นไปยังเว็บ itch.io เพื่อให้น้องสามารถสร้าง Profile เป็นของตัวเอง <br /> <br />
-          ของรางวัล <br />
-          รางวัลที่ 1: เงินรางวัล 3,000 บาท พร้อมประกาศนียบัตร <br />
-          รางวัลที่ 2: เงินรางวัล 2,000 บาท พร้อมประกาศนียบัตร <br />
-          รางวัลที่ 3: เงินรางวัล 1,000 บาท พร้อมประกาศนียบัตร <br /><br />
-          กติกาการแข่งขัน<br />
-          – ทีมสามารถมีสมาชิกได้ตั้งแต่ 1 – 5 คน <br />
-          – สามารถใช้งาน Game Engine ตัวไหนก็ได้ <br />
-          – ผู้สมัครต้องมีอายุ 10-24 ปี <br />
-          – สามารถเตรียม Asset มาก่อนได้ <br />
-          – ไม่อนุญาติให้ใช้ Asset จาก Asset Store <br /> <br />
-          กติกาเพิ่มเติมอื่นๆ จะประกาศอีกครั้งเมื่อถึงเวลาการแข่งขัน
-        </p>
-      </div>
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-1.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-2.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-3.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-4.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-5.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-6.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-7.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-8.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-9.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-10.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-11.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamDT-12.png" className="img-desktop" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-1.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-2.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-3.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-4.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-5.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-6.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-7.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-8.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-9.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-10.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-11.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-12.png" className="img-mobile" width={1920} height={1080} priority alt="" />
+      <Image src="https://nj.dekhub.com/public/imgs/GameJam/GameJamMB-13.png" className="img-mobile" width={1920} height={1080} priority alt="" />
     </div>
   );
 }

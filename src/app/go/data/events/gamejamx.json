@@ -1,0 +1,10 @@
+{
+  "description": "Event metadata. id must be ASCII, URL-safe. kind: jam|workshop|showcase|competition. Game info.json `event` field references this id (case-insensitive).",
+  "id": "gamejamx",
+  "name": "GameJamX",
+  "kind": "jam",
+  "date": "2026-04",
+  "theme": "",
+  "location": "Hamsterhub",
+  "posterSrc": ""
+}

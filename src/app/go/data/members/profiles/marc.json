@@ -1,0 +1,58 @@
+{
+  "description": "Per-member profile. Fill any field to override the auto-derived value. Leave a field out (or omit the file entirely) to fall back to data derived from games/registry.ts.",
+  "slug": "marc",
+  "titleLine": "HamsterHub Creator",
+  "motto": "ทำเกมกับเพื่อน สนุกที่สุด",
+  "aboutText": "สวัสดี เราชื่อ มาร์ค เป็นหนึ่งในคนสร้างสรรค์เกมที่ HamsterHub.",
+  "skills": [
+    {
+      "name": "Programming",
+      "level": 4
+    },
+    {
+      "name": "Game Design",
+      "level": 3
+    },
+    {
+      "name": "Teamwork",
+      "level": 4.5
+    }
+  ],
+  "achievements": [
+    {
+      "id": "jam-debut",
+      "label": "JAM DEBUT",
+      "sublabel": "GameJamX",
+      "kind": "top"
+    },
+    {
+      "id": "team-aob",
+      "label": "TEAM AΩβ",
+      "sublabel": "Founding crew",
+      "kind": "team"
+    }
+  ],
+  "journey": [
+    {
+      "id": "start",
+      "label": "เริ่มเรียนเขียนโค้ด",
+      "sublabel": "ก่อน GameJamX",
+      "tone": "muted"
+    },
+    {
+      "id": "gjx",
+      "label": "GameJamX",
+      "sublabel": "A3Omega · ทีม AΩβ",
+      "tone": "color"
+    },
+    {
+      "id": "now",
+      "label": "ปัจจุบัน",
+      "sublabel": "พัฒนาเกมต่อ",
+      "tone": "glow"
+    }
+  ],
+  "profileSrc": "/godang/members/marc.png",
+  "name": "ธิติวุฒิ ศรจันทร์",
+  "username": "มาร์ค"
+}

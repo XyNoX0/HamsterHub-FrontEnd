@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1266396327550652437",
+  "slug": "alex-00",
+  "name": "อลิสา ครามาเชค",
+  "username": "Alex",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ อลิสา ครามาเชค · ชื่อเล่น Alex — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/alex-00.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "roblox",
+      "tone": "color"
+    }
+  ]
+}

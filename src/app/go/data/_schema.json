@@ -1,0 +1,32 @@
+{
+  "_README": "This directory contains the structured data for HamsterHub Go.",
+  "structure": {
+    "members/": {
+      "index.ts": "Registry of all member profiles. New profiles must be imported and added here.",
+      "profiles/": "Individual JSON files for each member containing overrides for stats and bio."
+    },
+    "games/": {
+      "registry.ts": "Central list of all game projects.",
+      "[game-slug]/": "Each game has its own folder with an info.json file containing metadata and team info."
+    },
+    "events/": {
+      "JSON files describing events like GameJamX."
+    }
+  },
+  "schemas": {
+    "member_profile": {
+      "slug": "string (matches filename and registry key)",
+      "name": "string (ชื่อจริง + นามสกุล จากข้อมูลเท่านั้น)",
+      "username": "string (ชื่อเล่น — ไม่ใช่ Discord login)",
+      "level": "number (Experience level)",
+      "skills": "Array<{ name: string, level: number }>",
+      "achievements": "Array<{ id: string, label: string, sublabel: string, kind: 'top'|'team'|'fast'|'custom' }>",
+      "journey": "Array<{ id: string, label: string, sublabel: string, tone: 'color'|'glow'|'muted' }>"
+    },
+    "game_info": {
+      "id": "string",
+      "title": "string",
+      "teamMembers": "Array<{ name: string (ชื่อจริง), username: string (ชื่อเล่น), slug: string, roles: string[] }>"
+    }
+  }
+}

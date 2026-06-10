@@ -1,0 +1,31 @@
+.course-content {
+    width: 100%;
+    background-color: #04041f;
+    img,
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.img-desktop {
+    display: block;
+}
+
+.img-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .course-content {
+        padding: 0;
+    }
+}

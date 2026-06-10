@@ -1,241 +1,254 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
-    background-color: rgba(22, 22, 22, 0.5);
-    
-    border-bottom: rgb(161, 161, 161, 0.2) 2px solid;
-    width: 100vw;
-    z-index: 10000000;
-}   
-
-.navbar ul {
-    width: 88%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-.navbar li {
-    display: flex;
-    align-items: center;
-
-}
-
-
-.navbar img{
-    width: 2rem;
-    height: auto;
-}
-
-.nav-wrapper {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 2rem;
+    left: 0;
     width: 100%;
+    z-index: 10000000;
+    padding: 0;
+    background:
+        linear-gradient(100deg, rgba(7, 7, 18, 0.82) 0%, rgba(6, 15, 27, 0.78) 52%, rgba(7, 32, 48, 0.76) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transform: translateY(0);
+    transition:
+        transform 360ms cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 220ms ease,
+        border-color 220ms ease;
+    will-change: transform;
 }
-.nav-link{
+
+.navbar--go {
+    background:
+        linear-gradient(100deg, rgba(7, 7, 18, 0.82) 0%, rgba(6, 15, 27, 0.78) 52%, rgba(7, 32, 48, 0.76) 100%);
+}
+
+.navbar--go .nav-link-item {
+    color: rgba(250, 245, 234, 0.9);
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+}
+
+.navbar--go .nav-link-item:hover {
+    color: #ffcb47;
+}
+
+.navbar--go .nav-link-item::after {
+    background: #ffcb47;
+}
+
+.navbar-hidden {
+    transform: translateY(calc(-100% - 8px));
+}
+
+.navbar-inner {
     display: flex;
-    padding: 0 1rem;
-    width: 20%;
-    align-items: end;
     justify-content: space-between;
-
+    align-items: center;
+    width: 100%;
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 10px 5.1vw;
 }
 
-.navbar a, .hamburger-button {
-
-    color: #FAF9F6;
-    font-size: 1rem;
-    font-weight: lighter;
+.navbar-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+
+.navbar img.hamster-logo {
+    width: 54px;
+    height: auto;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: clamp(44px, 5vw, 84px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link-item {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.nav-link-item::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--blue);
+    transition: width 0.3s ease;
+}
+
+.nav-link-item:hover {
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.nav-link-item:hover::after {
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-login-btn {
+    min-height: 38px;
+    min-width: 178px;
+    padding: 0 22px;
+    border: 1px solid rgba(255, 223, 83, 0.92);
+    border-radius: 999px;
+    background:
+        radial-gradient(circle at 18% 50%, rgba(255, 244, 128, 0.28), transparent 40%),
+        linear-gradient(180deg, rgba(255, 237, 104, 0.2), rgba(255, 193, 46, 0.07));
+    color: #ffe66f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow:
+        0 0 0 1px rgba(255, 232, 102, 0.1),
+        0 0 18px rgba(255, 215, 64, 0.26),
+        inset 0 1px 0 rgba(255, 248, 182, 0.22),
+        inset 0 -1px 0 rgba(157, 114, 21, 0.24);
+    text-shadow: 0 0 12px rgba(255, 232, 102, 0.54);
+    transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-login-btn:hover {
+    transform: translateY(-1px);
+    color: #fff08a;
+    border-color: rgba(255, 236, 111, 1);
+    box-shadow:
+        0 0 0 1px rgba(255, 240, 132, 0.16),
+        0 0 26px rgba(255, 216, 58, 0.38),
+        inset 0 1px 0 rgba(255, 250, 194, 0.28),
+        inset 0 -1px 0 rgba(157, 114, 21, 0.28);
+}
+
+.nav-login-btn:active {
+    transform: translateY(0);
+}
+
+.nav-login-icon {
+    width: 1.8rem !important;
+    height: auto !important;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(110, 231, 255, 0.25));
+}
+
+.hamburger-button {
+    display: none;
     background: none;
     border: none;
+    color: white;
+    font-size: 1.4rem;
     cursor: pointer;
     z-index: 100;
     transition: 0.2s;
 }
-.nav-wrapper a:hover{
 
-    color: #00bfff;
-}
-
-.nav-link a:hover{
-    transform: scale(1.1);
-    
-}
-
-.nav-icon {
-    font-size: 1rem;
-}
-
-.hamburger-checkbox {
+.mobile-menu {
     display: none;
-}
-
-.hamburger-button {
-    cursor: pointer;
-    z-index: 8;
-    font-size: 1.6rem;
-    font-weight: 100;
-}
-
-/* Styles for the dropdown menu */
-.dropdown-menu {
     position: fixed;
-    top: -100%;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #1d1d1d;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    transition: top 0.4s ease, opacity 0.2s ease;
-    padding: 2.5rem 2rem;
-    overflow-y: scroll;
-    text-align: left;
-    z-index: 2;
-    opacity: 0;
-    
-    
-}
-/* Styles for individual dropdown items */
-.dropdown-item {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    transition: 0.8s;
-    opacity: 0;
-    
-    hr{
-        opacity: 0.2;
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 1rem;
-        font-weight: 600;
-        margin: 0;
-    }
-
-    h2 {
-        font-size: 1rem;
-        font-weight: 400; /* Slightly increased weight for better readability */
-        margin: 0;
-    
-    }
-    
-}
-
-/* Styles for the course name container */
-.course-list {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    min-height: 2rem;
-    height: auto;
-    flex-direction: column;
- 
-    
-    
-}
-
-/* Hover effect for dropdown items */
-.dropdown-item:hover {
-    color: #00bfff; /* Bright blue for hover state */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Optional: Add animation for dropdown items when menu becomes visible */
-
-.dropdown-menu.active .dropdown-item {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* Show dropdown menu when checkbox is checked */
-.hamburger-checkbox:checked ~ .dropdown-menu {
-    top: 0px;
-    opacity: 0.98;
+    background-color: rgba(10, 10, 46, 0.98);
     backdrop-filter: blur(20px);
-}
-
-.hamburger-checkbox:checked ~ .dropdown-menu .dropdown-item {
-    opacity: 1;
-}
-
-.about{
-    color: var(--blue);
-}
-.about:hover{
-    font-size: 1.2rem;
-    color: #ffdc5c;
-}
-.login{
-    background: none;
-    color: var(--blue);
-    font-size: 1.17rem;
-    border: none;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-weight: 600;
-}
-.login:hover{
-    font-size: 1.2rem;
-    color: #ffdc5c;
-}
-
-hr{
-    opacity: .2;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
-.login-container {
+.mobile-menu-open {
     display: flex;
-    justify-content: start;
-    gap: 0.5rem;
-    img {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    img:hover {
-        transform: scale(1.1);
-        transition: 0.2s;
-    }
+    opacity: 1;
+    pointer-events: all;
 }
-@media screen and (max-width: 1000px) {
-    
-    .nav-wrapper {
-        display: flex;
-       
-gap: 0;
-        width: 68%;
+
+.mobile-menu-item {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mobile-menu-item:hover {
+    color: #6ee7ff;
+}
+
+.mobile-menu-course {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mobile-menu-course:hover {
+    color: var(--blue);
+}
+
+.mobile-menu-profile {
+    min-width: 11rem;
+    padding: 0.68rem 1.2rem;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #ffe779 0%, #ffc83f 55%, #ffb12e 100%);
+    color: #111827;
+    font-weight: 800;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(255, 187, 42, 0.28);
+}
+
+.mobile-menu-profile:hover {
+    color: #111827;
+    filter: brightness(1.04);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-center {
+        display: none;
     }
-    .nav-link{
+
+    .hamburger-button {
         display: flex;
-        width: 100%;
-        max-width: 200px;
-        justify-content: space-between;
-    
+    }
+
+    .navbar-inner {
+        min-height: 64px;
+        padding: 8px 18px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .dropdown-item {
-        h1 {
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin: 0;
-        }   
+@media screen and (max-width: 480px) {
+    .navbar img.hamster-logo {
+        width: 42px;
     }
-    
+
+    .nav-login-btn {
+        min-height: 34px;
+        min-width: 142px;
+        padding: 0 13px;
+        font-size: 12px;
+    }
 }

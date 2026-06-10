@@ -10,8 +10,8 @@ function AiGameDeatail() {
           <h3><b>เลือกเส้นทางที่ใช่</b></h3>
         </div>
         <div className="header-img">
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/2.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/2.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/2.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/2.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
       </div> */}
       <br />
@@ -22,13 +22,13 @@ function AiGameDeatail() {
         <br />
         <div className="timeline-title-python">
           <h3><b>Path of PYTHON</b></h3>
-          <Image src="https://nj.dekhub.com/public/imgs/Python-Icon.png" className="img-desktop" width={200} height={200} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Python-Icon.png" className="img-mobile" width={50} height={50} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Python-Icon.png" className="img-desktop" width={200} height={200} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Python-Icon.png" className="img-mobile" width={50} height={50} priority alt="" />
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/3.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/3.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/3.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/3.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -46,8 +46,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/4.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/4.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/4.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/4.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -68,14 +68,14 @@ function AiGameDeatail() {
       {/* <div className="tech-detail-timeline-2">
         <br />
         <div className="timeline-title-unity">
-          <Image src="https://nj.dekhub.com/public/imgs/Unity-Icon.png" className="img-desktop" width={200} height={200} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Unity-Icon.png" className="img-mobile" width={50} height={50} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Unity-Icon.png" className="img-desktop" width={200} height={200} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Unity-Icon.png" className="img-mobile" width={50} height={50} priority alt="" />
           <h3><b>Way Of UNITY</b></h3>
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/5.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/5.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/5.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/5.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">
@@ -93,8 +93,8 @@ function AiGameDeatail() {
         </div>
         <br />
         <div className="timeline-img">
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/6.png" className="img-desktop" width={2000} height={1000} priority />
-          <Image src="https://nj.dekhub.com/public/imgs/Tech/6.png" className="img-mobile" width={400} height={300} priority />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/6.png" className="img-desktop" width={2000} height={1000} priority alt="" />
+          <Image src="https://nj.dekhub.com/public/imgs/Tech/6.png" className="img-mobile" width={400} height={300} priority alt="" />
         </div>
         <br />
         <div className="timeline-detail">

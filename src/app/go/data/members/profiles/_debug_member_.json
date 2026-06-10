@@ -1,0 +1,73 @@
+{
+  "slug": "pong",
+  "name": "ภาคิน ชูสังข์",
+  "username": "ป้อง",
+  "rank": "Warrior",
+  "coins": 1250,
+  "questsCount": 8,
+  "visits": 2500,
+  "location": "Bangkok, Thailand",
+  "link": {
+    "label": "My Portfolio",
+    "href": "https://hamsterhub.com"
+  },
+  "titleLine": "HamsterHub Pro Creator",
+  "motto": "Keep pushing boundaries!",
+  "aboutText": "สวัสดีครับ ผมชื่อ ป้อง เป็นนักสร้างเกมที่ชอบความท้าทาย และร่วมสร้างสรรค์ผลงานมากมายใน HamsterHub",
+  "level": 12,
+  "skills": [
+    {
+      "name": "Programming",
+      "level": 5
+    },
+    {
+      "name": "Game Design",
+      "level": 4.8
+    },
+    {
+      "name": "Collaboration",
+      "level": 5
+    }
+  ],
+  "achievements": [
+    {
+      "id": "legend",
+      "label": "LEGENDARY",
+      "sublabel": "Completed 10+ projects",
+      "kind": "top"
+    },
+    {
+      "id": "team-lead",
+      "label": "TEAM LEADER",
+      "sublabel": "Led 5 successful jams",
+      "kind": "team"
+    },
+    {
+      "id": "speed",
+      "label": "SPEEDRUNNER",
+      "sublabel": "Finished game in 24h",
+      "kind": "fast"
+    }
+  ],
+  "journey": [
+    {
+      "id": "j1",
+      "label": "GameDev",
+      "sublabel": "Multiverse of SUS - Lead Developer",
+      "tone": "color"
+    },
+    {
+      "id": "j2",
+      "label": "Minecraft",
+      "sublabel": "Senior Level Designer",
+      "tone": "muted"
+    },
+    {
+      "id": "j3",
+      "label": "Future World",
+      "sublabel": "Coming Soon",
+      "tone": "glow"
+    }
+  ],
+  "profileSrc": "/godang/members/guy.png"
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "599503356968566784",
+  "slug": "okas",
+  "name": "กฤษดาภาสน์ สังข์ทอง",
+  "username": "ออกัส",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ กฤษดาภาสน์ สังข์ทอง · ชื่อเล่น ออกัส — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/okas.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "web",
+      "tone": "color"
+    }
+  ]
+}

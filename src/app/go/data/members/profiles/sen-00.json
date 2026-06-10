@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1229104775380074537",
+  "slug": "sen-00",
+  "name": "พัชรดนัย สุขยุคล",
+  "username": "เซน",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ พัชรดนัย สุขยุคล · ชื่อเล่น เซน — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/sen-00.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "web",
+      "tone": "color"
+    }
+  ]
+}

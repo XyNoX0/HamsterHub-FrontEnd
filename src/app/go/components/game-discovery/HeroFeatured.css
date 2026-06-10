@@ -1,0 +1,487 @@
+.hero-pulseSection {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-color: var(--color-light-soft);
+  border-radius: 32px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-pulseSection {
+    animation: hero-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-pulseSection {
+    height: 480px;
+  }
+}
+@keyframes hero-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .6; }
+}
+
+.hero-section {
+  width: 100%;
+  padding: 88px 16px 8px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 96px 24px 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 116px 48px 16px;
+  }
+}
+
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Shared image + fallback */
+.hero-image {
+  object-fit: cover;
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-imageFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: color-mix(in srgb, var(--text-on-light-muted) 60%, transparent);
+  background-color: color-mix(in srgb, var(--color-dang-soft) 30%, transparent);
+}
+
+/* Shared chip */
+.hero-chip {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 8px;
+  background-color: var(--color-sun);
+  color: var(--color-dark);
+  box-shadow: 0 8px 18px -6px rgba(255, 203, 71, 0.55);
+  transform: rotate(-2deg);
+}
+.hero-chipDesktop {
+  background-color: var(--color-sun);
+  color: var(--color-dark);
+  box-shadow: 0 10px 22px -6px rgba(255, 203, 71, 0.7);
+}
+
+/* ── Mobile card ─────────────────────────────────────────────── */
+.hero-mobileCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 28px;
+  background-color: var(--color-light-soft);
+  box-shadow:
+    0 20px 50px -20px rgba(0, 0, 0, 0.5),
+    0 0 48px -12px color-mix(in srgb, var(--color-sea-bright) 45%, transparent);
+  border: 1px solid color-mix(in srgb, #FAF5EA 16%, transparent);
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 200ms ease-out;
+}
+.hero-mobileCard:hover { transform: translateY(-2px); }
+.hero-mobileCard:active { transform: translateY(0); }
+@media (min-width: 768px) {
+  .hero-mobileCard {
+    display: none;
+  }
+}
+.hero-mobileImageWrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-mobileCard:hover .hero-image {
+  transform: scale(1.02);
+}
+.hero-mobileGradient {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--color-light) 96%, transparent) 0%,
+    color-mix(in srgb, var(--color-light) 88%, transparent) 18%,
+    color-mix(in srgb, var(--color-light) 50%, transparent) 40%,
+    transparent 70%
+  );
+}
+.hero-mobileOverlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-titleMobile {
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 7vw, 40px);
+  font-weight: 900;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-tight);
+  color: var(--text-on-light-strong);
+  margin: 0;
+}
+
+/* Lockup bar — App Store "Today" card pattern */
+.hero-lockupBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px 16px;
+  border-top: 1px solid color-mix(in srgb, var(--text-on-light-strong) 8%, transparent);
+  background-color: color-mix(in srgb, var(--color-light) 96%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.hero-lockupIconBox {
+  position: relative;
+  height: 44px;
+  width: 44px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--color-light-soft);
+  box-shadow: var(--shadow-soft);
+  flex-shrink: 0;
+}
+.hero-lockupImage {
+  object-fit: cover;
+}
+.hero-lockupFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--text-on-light-muted);
+}
+.hero-lockupInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.2;
+  min-width: 0;
+}
+.hero-lockupTitle {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-on-light-strong);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-lockupTeam {
+  font-size: 12px;
+  color: var(--text-on-light-muted);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Desktop card ────────────────────────────────────────────── */
+.hero-desktopCard {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero-desktopCard {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: clamp(360px, 48vw, 560px);
+    overflow: hidden;
+    border-radius: 32px;
+    background-color: var(--color-dark);
+    border: 1px solid color-mix(in srgb, #FAF5EA 18%, transparent);
+    box-shadow:
+      0 30px 80px -30px rgba(0, 0, 0, 0.6),
+      0 0 80px -20px color-mix(in srgb, var(--color-sea-bright) 50%, transparent);
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 200ms ease-out;
+  }
+  .hero-desktopCard:hover { transform: translateY(-3px); }
+  .hero-desktopCard:active { transform: translateY(0); }
+}
+.hero-desktopCard:hover .hero-image {
+  transform: scale(1.02);
+}
+.hero-desktopGradient {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(11, 35, 51, 0.70) 0%, rgba(11, 35, 51, 0.20) 42%, transparent 70%),
+    linear-gradient(to top, rgba(11, 35, 51, 0.60) 0%, rgba(11, 35, 51, 0.05) 45%, transparent 75%);
+  z-index: 1;
+}
+.hero-desktopOverlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 640px;
+  z-index: 2;
+}
+.hero-titleDesktop {
+  font-family: var(--font-heading);
+  font-size: var(--fs-hero);
+  font-weight: 900;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-tight);
+  color: var(--text-on-dark-strong);
+  margin: 0;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.4),
+    0 0 40px color-mix(in srgb, var(--color-sun) 35%, transparent);
+}
+.hero-desktopTeam {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--text-on-dark-strong) 80%, transparent);
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+/* ── Swiper Customization ────────────────────────────────────── */
+.hero-swiper {
+  width: 100%;
+  min-width: 0;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.hero-swiper .swiper-wrapper,
+.hero-swiper .swiper-slide {
+  width: 100%;
+}
+.hero-swiper .swiper-slide {
+  flex-shrink: 0;
+}
+
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.3);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.hero-swiper .swiper-button-next:after,
+.hero-swiper .swiper-button-prev:after {
+  font-size: 16px !important;
+  font-weight: 900;
+}
+.hero-swiper .swiper-button-next:hover,
+.hero-swiper .swiper-button-prev:hover {
+  background: var(--color-sun);
+  color: var(--color-dark) !important;
+  transform: scale(1.1);
+}
+@media (max-width: 767px) {
+  .hero-swiper .swiper-button-next,
+  .hero-swiper .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: var(--color-sun) !important;
+  opacity: 1;
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+.hero-swiper .swiper-pagination {
+  bottom: 24px !important;
+  z-index: 10;
+  /* Hidden — replaced by .hero-slider indicator below the swiper, which
+     also surfaces a progress bar + slide count to communicate "this is
+     a slider" instead of "this just fades on its own". */
+  display: none !important;
+}
+
+@media (max-width: 1023px) {
+  .hero-swiper .swiper-pagination {
+    bottom: 84px !important; /* Above the lockup bar */
+  }
+  .hero-swiper {
+    border-radius: 28px;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Slider indicator — sits below the hero card, makes it obvious
+   the section is a slider with auto-advance + manual swipe.
+   ────────────────────────────────────────────────────────────── */
+
+.hero-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 4px 4px;
+  margin-top: 8px;
+}
+
+.hero-sliderTrack {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hero-sliderTick {
+  position: relative;
+  display: block;
+  flex: 1 1 0;
+  height: 4px;
+  padding: 0;
+  border: 0;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 160ms ease, background 160ms ease;
+}
+
+.hero-sliderTick:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.hero-sliderTickActive {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.hero-sliderFill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--color-sun) 0%, #FFE9A8 100%);
+  transform-origin: left center;
+  transform: scaleX(0);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.hero-sliderTickActive .hero-sliderFill {
+  animation-name: hero-sliderDrain;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-sliderDrain {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.hero-sliderMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.hero-sliderCount {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  font-family: var(--font-poppins, ui-sans-serif), ui-monospace, monospace;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.hero-sliderCountActive {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero-sliderCountSep {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.55;
+}
+
+.hero-sliderCountTotal {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.65;
+}
+
+.hero-sliderHint {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 1023px) {
+  .hero-slider {
+    padding: 12px 8px 6px;
+    gap: 10px;
+  }
+  .hero-sliderHint {
+    /* On mobile the gesture is more discoverable; save horizontal space. */
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-sliderFill {
+    animation: none !important;
+    transform: scaleX(1);
+    opacity: 0.5;
+  }
+}

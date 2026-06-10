@@ -3,40 +3,36 @@ import "./CourseHero.css";
 import Image from "next/image";
 import Link from "next/link";
 
-function CourseHero() {
+
+function CourseHero({ courseData }) {
   return (
     <div className="course-hero">
       <div className="course-hero-img">
-        <Image src="https://nj.dekhub.com/public/imgs/aicampDT.png" className="img-desktop" width={1920} height={1080} priority />
-        <Image src="https://nj.dekhub.com/public/imgs/aicampMB.png" className="img-mobile" width={1920} height={1080} priority />
+        <Image src={courseData.cover_desktop} className="img-desktop" width={1920} height={1080} priority alt="" unoptimized/>
+        <Image src={courseData.cover_mobile} className="img-mobile" width={1920} height={1080} priority alt="" unoptimized/>
       </div>
-
       <div className="course-hero-buttom">
         <div className="course-price">
-          <p>19-20 ก.ค. (เสาร์, อาทิตย์)</p>
-          <p>เรียนเวลา 19:00-21:00</p>
+          <p>{courseData.date}</p>
+          <p>เรียนเวลา {courseData.time}</p>
         </div>
         <hr />
         <div className="course-links">
-          <h3>
-            190฿
-          </h3>
-          <Link href="/apply/131/">Book</Link>
+          <h3>{courseData.price}฿</h3>
+          <Link href={courseData.book_link}>Book</Link>
         </div>
       </div>
       <div className="course-hero-buttom-mobile">
         <div className="course-price">
           <div className="course-price-mobile-wrapper">
-            <p>28,29 มิ.ย. 5-20 ก.ค. (เสาร์, อาทิตย์)</p>
-            <p>เรียนเวลา 19:00-21:00</p>
+            <p>{courseData.date}</p>
+            <p>เรียนเวลา {courseData.time}</p>
           </div>
           <hr />
         </div>
         <div className="course-links">
-          <h3>
-            190฿
-          </h3>
-          <Link href="/apply/131/">Book</Link>
+          <h3>{courseData.price}฿</h3>
+          <Link href={courseData.book_link}>Book</Link>
         </div>
       </div>
     </div>

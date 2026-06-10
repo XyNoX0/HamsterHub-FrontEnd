@@ -1,19 +1,24 @@
 import React from "react";
-import "./AiCamp.css";
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 import CourseHero from "./components/CourseHero"
-import AiCampDetail from "./components/CourseDetail"
+import CourseContent from "./components/CourseContent"
 
-function AiCamp() {
+import { getCourseData } from "@/utils/api";
+
+
+async function Page() {
+  const data = await getCourseData("149");
   return (
-    <div className="AiCamp">
+    <div>
       <Navbar />
-      <CourseHero />
-      <AiCampDetail />
+      <CourseHero courseData={data.course}/>
+      <CourseContent />
       <Footer />
     </div>
-  )
-};
-export default AiCamp;
+  );
+}
+
+
+export default Page;

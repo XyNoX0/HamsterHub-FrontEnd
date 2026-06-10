@@ -1,0 +1,133 @@
+.course-timeline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease, overflow 0.3s ease;
+  background: transparent;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.timeline-title {
+  background-color: var(--off-white);
+  text-align: left;
+  width: 80%;
+  padding: 1rem 0;
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.timeline {
+  width: 40%;
+
+  position: relative;
+  height: auto;
+  transition: width 0.3s ease, padding 0.3s ease, height 0.3s ease;
+  h5 {
+    color: var(--gray);
+  }
+  h3 {
+    color: var(--dark-gray);
+  }
+}
+
+.timeline ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  transition: padding-left 0.3s ease;
+  list-style: none;
+  li{
+    padding: 0.5rem;
+  }
+}
+
+.timeline.left {
+  align-self: flex-start;
+  margin-left: 10%;
+  padding-right: 1rem;
+  /* padding: 0 2rem 2rem 2rem; */
+}
+
+.timeline.right {
+  width: 50%;
+  align-self: flex-end;
+  padding-left: 2rem;
+  align-self: left;
+  /* padding: 0 2rem 2rem 2rem; */
+}
+
+
+.line {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 50%;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(86, 188, 255, 1) 0%,
+    rgb(86, 188, 255, 0.8) 100%
+  );
+  transition: left 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.outline-img {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .course-timeline::after {
+    display: block;
+  }
+
+  .line {
+    left: 90%;
+  }
+  .timeline-title {
+    background-color: var(--off-white);
+    text-align: left;
+    width: 100%;
+    padding: 01rem;
+  }
+
+  .timeline.left,
+  .timeline.right {
+    align-self: center;
+    margin: 0;
+    padding-left: 2rem;
+    padding-right: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .timeline.left ul,
+  .timeline.right ul {
+    padding-left: 1rem;
+  }
+
+  #timeline-checkbox:checked ~ .course-timeline {
+    height: 100%;
+
+    overflow: visible;
+    #up {
+      display: block;
+    }
+    #down {
+      display: none;
+    }
+  }
+  #timeline-checkbox:checked ~ .course-timeline::after {
+    display: none;
+  }
+}

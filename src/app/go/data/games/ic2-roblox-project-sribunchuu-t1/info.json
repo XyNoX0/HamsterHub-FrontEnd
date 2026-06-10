@@ -1,0 +1,66 @@
+{
+  "id": "ic2-roblox-project-sribunchuu-t1",
+  "title": "project sribunchuu",
+  "description": "project sribunchuu",
+  "teamName": "Team 1",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "https://www.roblox.com/games/131974872858267/project-sribunchuu",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 3,
+    "creativity": 3,
+    "completeness": 3,
+    "fun": 3
+  },
+  "teamMembers": [
+    {
+      "slug": "aung-un",
+      "name": "Nattharat phanphank",
+      "username": "Aung-un",
+      "profileSrc": "/godang/members/aung-un.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "both",
+      "name": "ธนพล  คงเจริญ",
+      "username": "โบ๊ท",
+      "profileSrc": "/godang/members/both.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "dday",
+      "name": "Dichapol Mingmanee",
+      "username": "Dday",
+      "profileSrc": "/godang/members/dday.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "phach",
+      "name": "นายพชร ศรีปัณฑกุล",
+      "username": "พัช",
+      "profileSrc": "/godang/members/phach.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "wan",
+      "name": "วาจาสิทธิ์ ไชยสีดา",
+      "username": "ว่าน",
+      "profileSrc": "/godang/members/wan.png",
+      "roles": [
+        "Roblox"
+      ]
+    }
+  ]
+}

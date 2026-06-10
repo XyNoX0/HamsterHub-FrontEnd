@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1248846989517389894",
+  "slug": "tiotoer",
+  "name": "ภูมิธรรม เนติวิภัชธรรม",
+  "username": "ติวเตอร์",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ ภูมิธรรม เนติวิภัชธรรม · ชื่อเล่น ติวเตอร์ — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/tiotoer.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "web",
+      "tone": "color"
+    }
+  ]
+}

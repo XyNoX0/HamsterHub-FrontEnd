@@ -1,0 +1,26 @@
+{
+  "description": "Imported from Intelligent Camp 2 CSV. Edit to add skills, achievements, and journey milestones.",
+  "importDiscordId": "1464022988994248807",
+  "slug": "setomp",
+  "name": "อรญาวีร์ พงษ์นุช",
+  "username": "เเสตมป์",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี · ชื่อ อรญาวีร์ พงษ์นุช · ชื่อเล่น เเสตมป์ — ร่วม Intelligent Camp 2 บน Hamsterhub Discord",
+  "profileSrc": "/godang/members/setomp.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "ic2",
+      "label": "Intelligent Camp 2",
+      "sublabel": "web",
+      "tone": "color"
+    }
+  ]
+}

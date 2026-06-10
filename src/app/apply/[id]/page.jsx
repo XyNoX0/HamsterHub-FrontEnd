@@ -4,8 +4,8 @@ import Footer from '../../components/Footer'
 import ApplyForm from './components/ApplyForm'
 import './Apply.css'
 
-function Apply({ params }) {
-  var id = params.id
+async function Apply({ params }) {
+  const { id } = await params;
   return (
     <div className='gallery'>
       <Navbar />

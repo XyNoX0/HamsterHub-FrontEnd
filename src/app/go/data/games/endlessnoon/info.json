@@ -1,0 +1,39 @@
+{
+  "id": "endlessnoon",
+  "title": "EndlessNoon",
+  "description": "7",
+  "teamName": "Deep",
+  "posterSrc": "/godang/games/endlessnoon/poster.png",
+  "iconSrc": "/godang/games/endlessnoon/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=13Q8nCDyOAmntKX6s1KSVVITj_XOSWQAr",
+  "gameUrl": "https://tixn1.itch.io/endlessnoon",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "ณชพล ชูพันธุ์",
+      "username": "โจม",
+      "profileSrc": "/godang/members/jom.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "jom"
+    },
+    {
+      "name": "Tin Soiraya",
+      "username": "Tin Soiraya",
+      "profileSrc": "/godang/members/tin-soiraya.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "tin-soiraya"
+    }
+  ]
+}

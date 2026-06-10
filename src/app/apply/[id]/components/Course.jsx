@@ -39,12 +39,20 @@ function CourseApply({ items }) {
                 <div className="course-icon">
                     <Image className="Icon" src={icon} alt="Course Icon" width={60} height={60} />
                 </div>
-                <div className="course-detail">
-                    {/* <p className="course-tag">{courseData.tag}</p> */}
-                    <h2 className="course-subject">{courseData.subject}</h2>
-                    <h5 className="course-price"><b>{courseData.price}฿</b></h5>
-                    <h5 className="course-day">เริ่ม {courseData.startdate} ⏰{courseData.time}</h5>
-                </div>
+                {courseData.promotion === "1" ? (
+                    <div className="course-detail">
+                        <h2 className="course-subject">{courseData.subject}</h2>
+                        <h5 className="course-price"><b>{courseData.discount}฿</b></h5>
+                        <h5 className="course-day">เริ่ม {courseData.startdate} ⏰{courseData.time}</h5>
+                    </div>
+                ) : (
+                    <div className="course-detail">
+                        <h2 className="course-subject">{courseData.subject}</h2>
+                        <h5 className="course-price"><b>{courseData.price}฿</b></h5>
+                        <h5 className="course-day">เริ่ม {courseData.startdate} ⏰{courseData.time}</h5>
+                    </div>
+                )}
+
             </div>
         </div>
     );

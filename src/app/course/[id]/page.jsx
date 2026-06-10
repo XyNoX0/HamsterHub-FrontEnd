@@ -5,8 +5,8 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import MainCourse from "./components/Main"
 
-function Page({ params }) {
-  var id = params.id
+async function Page({ params }) {
+  var { id } = await params
   return (
     <div>
       <Navbar />

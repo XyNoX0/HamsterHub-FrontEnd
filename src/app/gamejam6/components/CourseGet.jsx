@@ -27,7 +27,7 @@ function CourseGet() {
   ]
   return (
     <div className="course-get">
-      <Image src="https://nj.dekhub.com/public/imgs/HGJ6_Poster.jpg" width={1920} height={1080} priority />
+      <Image src="https://nj.dekhub.com/public/imgs/HGJ6_Poster.jpg" width={1920} height={1080} priority alt="" />
       <br />
       <h3 id="coursegettext">ของรางวัล</h3>
       <div className="course-get-text">

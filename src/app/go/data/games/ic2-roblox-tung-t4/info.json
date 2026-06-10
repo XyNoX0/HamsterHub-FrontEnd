@@ -1,0 +1,66 @@
+{
+  "id": "ic2-roblox-tung-t4",
+  "title": "tung",
+  "description": "tung",
+  "teamName": "Team 4",
+  "posterSrc": "",
+  "iconSrc": "",
+  "videoUrl": "",
+  "gameUrl": "https://www.roblox.com/games/105231216661853/4-TUNG-TUNG",
+  "location": "Hamsterhub",
+  "event": "Intelligent Camp 2",
+  "achievements": [],
+  "stats": {
+    "complexity": 3,
+    "creativity": 3,
+    "completeness": 5,
+    "fun": 4
+  },
+  "teamMembers": [
+    {
+      "slug": "alex-00",
+      "name": "อลิสา ครามาเชค",
+      "username": "Alex",
+      "profileSrc": "/godang/members/alex-00.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "finiks",
+      "name": "ธนธรณ์ เลิศสําโรง",
+      "username": "ฟีนิกซ์",
+      "profileSrc": "/godang/members/finiks.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "format",
+      "name": "Thanut kanokyuraphan",
+      "username": "Format",
+      "profileSrc": "/godang/members/format.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "frame",
+      "name": "Pichapop Thongrod",
+      "username": "Frame",
+      "profileSrc": "/godang/members/frame.png",
+      "roles": [
+        "Roblox"
+      ]
+    },
+    {
+      "slug": "sea",
+      "name": "",
+      "username": "sea",
+      "profileSrc": "/godang/members/sea.png",
+      "roles": [
+        "Roblox"
+      ]
+    }
+  ]
+}

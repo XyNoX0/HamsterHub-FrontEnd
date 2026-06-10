@@ -13,6 +13,7 @@ const nextConfig = {
           { protocol: 'https', hostname: 'staticg.sportskeeda.com' },
           { protocol: 'https', hostname: 'assetstorev1-prd-cdn.unity3d.com' },
           { protocol: 'https', hostname: 'mfranc.com' },
+          { protocol: 'https', hostname: 'cdn.discordapp.com' },
       ],
   },
 };

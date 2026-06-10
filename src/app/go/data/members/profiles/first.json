@@ -1,0 +1,50 @@
+{
+  "description": "Per-member profile. Fill any field to override the auto-derived value. Leave a field out (or omit the file entirely) to fall back to data derived from games/registry.ts.",
+  "slug": "first",
+  "titleLine": "Team Leader & Technical Artist",
+  "motto": "Experiment, fail, find the multiple endings.",
+  "aboutText": "สวัสดี เราชื่อ เฟิร์ส — Technical Artist สาย 3D Animation & Rigging ที่ HamsterHub\n\nผลงานเด่น: นำทีมพัฒนาเกม \"Fix a Car\" (Puzzle-Adventure) ใน Hamster Hub Game Jam 6 ภายใน 3 วัน คว้ารางวัล Finalist — ออกแบบระบบ Non-linear Gameplay ที่ให้ผู้เล่นทดลองปฏิสัมพันธ์เพื่อค้นหา Multiple Endings",
+  "skills": [
+    { "name": "Animation", "level": 5 },
+    { "name": "Rigging", "level": 3 },
+    { "name": "Coding", "level": 2 },
+    { "name": "Modelling", "level": 3.5 }
+  ],
+  "achievements": [
+    {
+      "id": "hhgj6-finalist",
+      "label": "FINALIST",
+      "sublabel": "Hamster Hub Game Jam 6 — Fix a Car",
+      "kind": "top"
+    },
+    {
+      "id": "hhgj6-leader",
+      "label": "TEAM LEADER",
+      "sublabel": "Fix a Car · Technical Artist",
+      "kind": "team"
+    }
+  ],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    },
+    {
+      "id": "hhgj6",
+      "label": "Hamster Hub Game Jam 6",
+      "sublabel": "Fix a Car · Leader & Technical Artist · 3 วัน",
+      "tone": "color"
+    },
+    {
+      "id": "finalist",
+      "label": "Finalist Award",
+      "sublabel": "Fix a Car · Puzzle-Adventure · Multiple Endings",
+      "tone": "glow"
+    }
+  ],
+  "profileSrc": "/godang/members/first.png",
+  "name": "ศุภฤกษ์ อรุณรัตน์",
+  "username": "เฟิร์ส"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "fartspace",
+  "title": "FartSpace",
+  "description": "No description available.",
+  "teamName": "ZERO WINRATE",
+  "posterSrc": "/godang/games/fartspace/poster.png",
+  "iconSrc": "/godang/games/fartspace/icon.png",
+  "videoUrl": "https://drive.google.com/uc?export=download&id=1nt9o43225JECTBMyHWDg8IedXt4GRPEx",
+  "gameUrl": "https://masterzxd2.itch.io/fartspace",
+  "location": "Hamsterhub",
+  "event": "GameJamX",
+  "achievements": [],
+  "stats": {
+    "complexity": 4,
+    "creativity": 4,
+    "completeness": 5,
+    "fun": 5
+  },
+  "teamMembers": [
+    {
+      "name": "นายนนทพัทธ์ ศรีหะ",
+      "username": "เดียร์",
+      "profileSrc": "/godang/members/dear.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "dear"
+    },
+    {
+      "name": "Wachirawit Narasiriroek",
+      "username": "เฟิด",
+      "profileSrc": "/godang/members/ferd.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "ferd"
+    },
+    {
+      "name": "Jinnipa bunjobsamai",
+      "username": "Jin",
+      "profileSrc": "/godang/members/jin.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "jin"
+    },
+    {
+      "name": "Chaninart Anantakul",
+      "username": "Papai",
+      "profileSrc": "/godang/members/papai.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "papai"
+    },
+    {
+      "name": "ทนุธรรม สาลี",
+      "username": "โกเท็น",
+      "profileSrc": "/godang/members/goten.png",
+      "roles": [
+        "Developer"
+      ],
+      "slug": "goten"
+    }
+  ]
+}

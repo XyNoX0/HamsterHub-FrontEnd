@@ -1,0 +1,19 @@
+{
+  "description": "Auto-generated profile from games registry. Customize this file to override defaults.",
+  "slug": "baitoey",
+  "name": "Sirikanya",
+  "username": "Baitoey",
+  "titleLine": "HamsterHub Creator",
+  "aboutText": "สวัสดี เราชื่อ Baitoey เป็นหนึ่งในคนสร้างสรรค์เกมที่ HamsterHub.",
+  "profileSrc": "/godang/members/baitoey.png",
+  "skills": [],
+  "achievements": [],
+  "journey": [
+    {
+      "id": "start",
+      "label": "Go Dang",
+      "sublabel": "จุดเริ่มต้นการสร้างสรรค์",
+      "tone": "muted"
+    }
+  ]
+}
